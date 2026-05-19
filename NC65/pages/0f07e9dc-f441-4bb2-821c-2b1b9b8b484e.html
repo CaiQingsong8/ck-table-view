@@ -1,0 +1,1996 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>wfm_task 任务实例</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 0f07e9dc-f441-4bb2-821c-2b1b9b8b484e -->
+<b><span style="font-size:24px">任务实例 (wfm_task)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2012-02-05 14:18:24 &nbsp;修改时间 ：2015-12-01 12:48:58 &nbsp;路径：\webimp\METADATA\wfm\wfm_task.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.uap.wfm.vo.WfmTaskVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+actiontype
+</td>
+<td >
+动作类型
+</td>
+<td>actiontype</td>
+<td>
+varchar(50)
+</td>
+<td>
+活动类型
+</td>
+<td></td>
+<td>
+ActionType_Normal=正常任务，ActionType_Deliver=传阅任务，ActionType_Major=主办任务，ActionType_Assist=协办任务，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+addsigntimes
+</td>
+<td >
+加签次数
+</td>
+<td>addsigntimes</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+billno
+</td>
+<td >
+单据号
+</td>
+<td>billno</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+createtype
+</td>
+<td >
+创建方式
+</td>
+<td>createtype</td>
+<td>
+varchar(50)
+</td>
+<td>
+创建类型
+</td>
+<td></td>
+<td>
+CreateType_Normal=正常产生，CreateType_AddSign=加签产生，CreateType_Tramsmit=转发产生，CreateType_Deliver=传阅产生，CreateType_Reject=驳回产生，CreateType_BeforeAddSign=前加签产生，CreateType_AfterAddSign=后加签产生，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+创建时间
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7ff02653-09c6-44a6-91a0-82aae18af085.html" >协同用户</a>
+</td>
+<td>协同用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+dynamicext0
+</td>
+<td >
+逐级审批扩展属性0
+</td>
+<td>dynamicext0</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+dynamicext1
+</td>
+<td >
+逐级审批扩展属性1
+</td>
+<td>dynamicext1</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+dynamictype
+</td>
+<td >
+逐级审批类型
+</td>
+<td>dynamictype</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+enddate
+</td>
+<td >
+接收日期
+</td>
+<td>enddate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+ext0
+</td>
+<td >
+扩展属性0
+</td>
+<td>ext0</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+ext1
+</td>
+<td >
+扩展属性1
+</td>
+<td>ext1</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+ext2
+</td>
+<td >
+扩展属性2
+</td>
+<td>ext2</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+ext3
+</td>
+<td >
+扩展属性3
+</td>
+<td>ext3</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+ext4
+</td>
+<td >
+扩张属性4
+</td>
+<td>ext4</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+ext5
+</td>
+<td >
+扩张属性5
+</td>
+<td>ext5</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+ext6
+</td>
+<td >
+扩张属性6
+</td>
+<td>ext6</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+ext7
+</td>
+<td >
+扩张属性7
+</td>
+<td>ext7</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+ext8
+</td>
+<td >
+扩张属性8
+</td>
+<td>ext8</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+ext9
+</td>
+<td >
+扩张属性9
+</td>
+<td>ext9</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+finishdate
+</td>
+<td >
+完成日期
+</td>
+<td>finishdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+finishtype
+</td>
+<td >
+完成方式
+</td>
+<td>finishtype</td>
+<td>
+varchar(50)
+</td>
+<td>
+完成方式
+</td>
+<td></td>
+<td>
+FinishType_Reject=驳回完成，FinishType_Deliver=传阅完成，FinishType_Normal=正常完成，FinishType_Tramsmit=转发完成，FinishType_SignStart=签发完成，FinishType_Countersign=会签完成，FinishType_Auto=自动完成，FinishType_GateWay=网关完成，FinishType_Read=已阅完成，FinishType_MajorEnd=主办完成，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+flowtypename
+</td>
+<td >
+流程类型名称
+</td>
+<td>flowtypename</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+handlepiece
+</td>
+<td >
+办件情况
+</td>
+<td>handlepiece</td>
+<td>
+varchar(50)
+</td>
+<td>
+办件情况
+</td>
+<td></td>
+<td>
+HandlerPiece_UnRead=未看件，HandlerPiece_Readed=看过件，HandlerPiece_Rejected=退回件，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+humactname
+</td>
+<td >
+活动名称
+</td>
+<td>humactname</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+isnotended
+</td>
+<td >
+流程实例是否结束的标记
+</td>
+<td>isnotended</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+isnotexe
+</td>
+<td >
+任务是否执行
+</td>
+<td>isnotexe</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+isnotpas
+</td>
+<td >
+任务是否通过
+</td>
+<td>isnotpas</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+issendovertimemsg
+</td>
+<td >
+是否已经发送超时消息
+</td>
+<td>issendovertimemsg</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+isurgency
+</td>
+<td >
+isurgency
+</td>
+<td>isurgency</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+最后修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+最后修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7ff02653-09c6-44a6-91a0-82aae18af085.html" >协同用户</a>
+</td>
+<td>协同用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+msgdate
+</td>
+<td >
+提醒时间
+</td>
+<td>msgdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+opinion
+</td>
+<td >
+意见
+</td>
+<td>opinion</td>
+<td>
+varchar(1000)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+pk_agenter
+</td>
+<td >
+任务代办者
+</td>
+<td>pk_agenter</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7ff02653-09c6-44a6-91a0-82aae18af085.html" >协同用户</a>
+</td>
+<td>协同用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+pk_assigner
+</td>
+<td >
+任务的转发者
+</td>
+<td>pk_assigner</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7ff02653-09c6-44a6-91a0-82aae18af085.html" >协同用户</a>
+</td>
+<td>协同用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+pk_creater
+</td>
+<td >
+任务创建者
+</td>
+<td>pk_creater</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7ff02653-09c6-44a6-91a0-82aae18af085.html" >协同用户</a>
+</td>
+<td>协同用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+pk_dynamiconwer
+</td>
+<td >
+逐级审批点
+</td>
+<td>pk_dynamiconwer</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+pk_executer
+</td>
+<td >
+任务执行者
+</td>
+<td>pk_executer</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7ff02653-09c6-44a6-91a0-82aae18af085.html" >协同用户</a>
+</td>
+<td>协同用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+pk_flowtype
+</td>
+<td >
+流程类型
+</td>
+<td>pk_flowtype</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+pk_frmdef
+</td>
+<td >
+表单定义
+</td>
+<td>pk_frmdef</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+pk_frmins
+</td>
+<td >
+表单实例
+</td>
+<td>pk_frmins</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+所属集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7ea61d3e-a945-4a38-91b6-74e2df0e5221.html" >协同组织</a>
+</td>
+<td>协同当前集团+业务单元</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+pk_humactins
+</td>
+<td >
+活动实例Pk
+</td>
+<td>pk_humactins</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+pk_myvisa
+</td>
+<td >
+电子签章标识
+</td>
+<td>pk_myvisa</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+所属组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7ea61d3e-a945-4a38-91b6-74e2df0e5221.html" >协同组织</a>
+</td>
+<td>协同当前集团+业务单元</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">47</td>
+<td>&nbsp;
+pk_owner
+</td>
+<td >
+任务拥有者
+</td>
+<td>pk_owner</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7ff02653-09c6-44a6-91a0-82aae18af085.html" >协同用户</a>
+</td>
+<td>协同用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">48</td>
+<td>&nbsp;
+pk_ownerdept
+</td>
+<td >
+任务拥有的部门
+</td>
+<td>pk_ownerdept</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">49</td>
+<td>&nbsp;
+pk_parent
+</td>
+<td >
+父任务实例
+</td>
+<td>pk_parent</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="0f07e9dc-f441-4bb2-821c-2b1b9b8b484e.html" >任务实例</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">50</td>
+<td>&nbsp;
+pk_prodef
+</td>
+<td >
+流程定义Pk
+</td>
+<td>pk_prodef</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6250f03-b7fb-4a39-a033-ac9b7225db2e.html" >流程定义</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">51</td>
+<td>&nbsp;
+pk_proins
+</td>
+<td >
+流程实例
+</td>
+<td>pk_proins</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7301be78-7ddd-40ae-a489-0de270dd27ec.html" >流程实例</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">52</td>
+<td>&nbsp;
+pk_rootproins
+</td>
+<td >
+根流程实例
+</td>
+<td>pk_rootproins</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7301be78-7ddd-40ae-a489-0de270dd27ec.html" >流程实例</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">53</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_task</b></span>
+</td>
+<td >
+<span style="color:#09C">任务主键</span>
+</td>
+<td>pk_task</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">54</td>
+<td>&nbsp;
+port_id
+</td>
+<td >
+活动节点ID
+</td>
+<td>port_id</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">55</td>
+<td>&nbsp;
+portalext0
+</td>
+<td >
+portal扩张属性0
+</td>
+<td>portalext0</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">56</td>
+<td>&nbsp;
+portalext1
+</td>
+<td >
+portal扩张属性1
+</td>
+<td>portalext1</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">57</td>
+<td>&nbsp;
+portalext2
+</td>
+<td >
+portal扩张属性2
+</td>
+<td>portalext2</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">58</td>
+<td>&nbsp;
+portalext3
+</td>
+<td >
+portal扩张属性3
+</td>
+<td>portalext3</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">59</td>
+<td>&nbsp;
+portalext4
+</td>
+<td >
+portal扩张属性4
+</td>
+<td>portalext4</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">60</td>
+<td>&nbsp;
+portalext5
+</td>
+<td >
+portal扩张属性5
+</td>
+<td>portalext5</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">61</td>
+<td>&nbsp;
+portalext6
+</td>
+<td >
+portal扩张属性6
+</td>
+<td>portalext6</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">62</td>
+<td>&nbsp;
+portalext7
+</td>
+<td >
+portal扩张属性7
+</td>
+<td>portalext7</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">63</td>
+<td>&nbsp;
+portalext8
+</td>
+<td >
+portal扩张属性8
+</td>
+<td>portalext8</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">64</td>
+<td>&nbsp;
+portalext9
+</td>
+<td >
+portal扩张属性9
+</td>
+<td>portalext9</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">65</td>
+<td>&nbsp;
+priority
+</td>
+<td >
+优先级
+</td>
+<td>priority</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">66</td>
+<td>&nbsp;
+prodef_id
+</td>
+<td >
+流程定义ID
+</td>
+<td>prodef_id</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">67</td>
+<td>&nbsp;
+prodefname
+</td>
+<td >
+流程定义名称
+</td>
+<td>prodefname</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">68</td>
+<td>&nbsp;
+proinsstartdate
+</td>
+<td >
+流程开始日期
+</td>
+<td>proinsstartdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">69</td>
+<td>&nbsp;
+scratchpad
+</td>
+<td >
+便签
+</td>
+<td>scratchpad</td>
+<td>
+varchar(400)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">70</td>
+<td>&nbsp;
+sign
+</td>
+<td >
+手写签批
+</td>
+<td>sign</td>
+<td>
+image
+</td>
+<td>
+图片
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">71</td>
+<td>&nbsp;
+signdate
+</td>
+<td >
+签收时间
+</td>
+<td>signdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">72</td>
+<td>&nbsp;
+signtype
+</td>
+<td >
+签批类型
+</td>
+<td>signtype</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">73</td>
+<td>&nbsp;
+standingtime
+</td>
+<td >
+任务持续时间
+</td>
+<td>standingtime</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">74</td>
+<td>&nbsp;
+startdate
+</td>
+<td >
+任务开始日期
+</td>
+<td>startdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">75</td>
+<td>&nbsp;
+state
+</td>
+<td >
+任务状态
+</td>
+<td>state</td>
+<td>
+varchar(50)
+</td>
+<td>
+任务状态
+</td>
+<td></td>
+<td>
+State_Run=待办，State_End=已办，State_Suspended=挂起，State_UnRead=待阅，State_Plmnt=在办，State_AddSignSend=会签发送，State_AddSignPlmnt=会签中，State_AddSignCmplt=会签完成，State_AddSignStop=会签停止，State_Readed=已阅，State_Canceled=作废，State_Finished=办结，State_ReadEnd=阅毕，State_BeforeAddSignSend=加签发送，State_BeforeAddSignPlmnt=加签中，State_BeforeAddSignCmplt=加签完成，State_BeforeAddSignStop=加签停止，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">76</td>
+<td>&nbsp;
+sysext0
+</td>
+<td >
+系统扩张属性0
+</td>
+<td>sysext0</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">77</td>
+<td>&nbsp;
+sysext1
+</td>
+<td >
+系统扩张属性1
+</td>
+<td>sysext1</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">78</td>
+<td>&nbsp;
+sysext10
+</td>
+<td >
+系统扩张属性10
+</td>
+<td>sysext10</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">79</td>
+<td>&nbsp;
+sysext11
+</td>
+<td >
+系统扩张属性11
+</td>
+<td>sysext11</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">80</td>
+<td>&nbsp;
+sysext12
+</td>
+<td >
+系统扩张属性12
+</td>
+<td>sysext12</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">81</td>
+<td>&nbsp;
+sysext13
+</td>
+<td >
+系统扩张属性13
+</td>
+<td>sysext13</td>
+<td>
+varchar(250)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">82</td>
+<td>&nbsp;
+sysext14
+</td>
+<td >
+系统扩张属性14
+</td>
+<td>sysext14</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">83</td>
+<td>&nbsp;
+sysext15
+</td>
+<td >
+系统扩张属性15
+</td>
+<td>sysext15</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">84</td>
+<td>&nbsp;
+sysext16
+</td>
+<td >
+系统扩张属性16
+</td>
+<td>sysext16</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">85</td>
+<td>&nbsp;
+sysext17
+</td>
+<td >
+系统扩张属性17
+</td>
+<td>sysext17</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">86</td>
+<td>&nbsp;
+sysext18
+</td>
+<td >
+系统扩张属性18
+</td>
+<td>sysext18</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">87</td>
+<td>&nbsp;
+sysext19
+</td>
+<td >
+系统扩张属性19
+</td>
+<td>sysext19</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">88</td>
+<td>&nbsp;
+sysext2
+</td>
+<td >
+系统扩张属性2
+</td>
+<td>sysext2</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">89</td>
+<td>&nbsp;
+sysext20
+</td>
+<td >
+系统扩张属性20
+</td>
+<td>sysext20</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">90</td>
+<td>&nbsp;
+sysext3
+</td>
+<td >
+系统扩张属性3
+</td>
+<td>sysext3</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">91</td>
+<td>&nbsp;
+sysext4
+</td>
+<td >
+系统扩张属性4
+</td>
+<td>sysext4</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">92</td>
+<td>&nbsp;
+sysext5
+</td>
+<td >
+系统扩张属性5
+</td>
+<td>sysext5</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">93</td>
+<td>&nbsp;
+sysext6
+</td>
+<td >
+系统扩张属性6
+</td>
+<td>sysext6</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">94</td>
+<td>&nbsp;
+sysext7
+</td>
+<td >
+系统扩张属性7
+</td>
+<td>sysext7</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">95</td>
+<td>&nbsp;
+sysext8
+</td>
+<td >
+系统扩张属性8
+</td>
+<td>sysext8</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">96</td>
+<td>&nbsp;
+sysext9
+</td>
+<td >
+系统扩张属性9
+</td>
+<td>sysext9</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">97</td>
+<td>&nbsp;
+title
+</td>
+<td >
+任务标题
+</td>
+<td>title</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

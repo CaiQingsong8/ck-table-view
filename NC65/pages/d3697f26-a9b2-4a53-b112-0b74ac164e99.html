@@ -1,0 +1,474 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>qc_continuebatch 质检连续批</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- d3697f26-a9b2-4a53-b112-0b74ac164e99 -->
+<b><span style="font-size:24px">质检连续批 (qc_continuebatch)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-12-03 09:49:27 &nbsp;修改时间 ：2012-06-04 16:39:47 &nbsp;路径：\qc\METADATA\qc_continuebatch.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.qc.continuebatch.entity.ContinueBatchHeadVO
+/&nbsp;<a href="86984d29-5686-432e-a7ff-185b979b100f.html" >检验记录</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+bhasbody
+</td>
+<td >
+是否已生成表体
+</td>
+<td>bhasbody</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+bsealflag
+</td>
+<td >
+封存
+</td>
+<td>bsealflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+创建时间
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+fcontinuetype
+</td>
+<td >
+连续批类型
+</td>
+<td>fcontinuetype</td>
+<td>
+int
+</td>
+<td>
+连续批类型
+</td>
+<td></td>
+<td>
+1=采购，2=完工，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+fnextstrictlv
+</td>
+<td >
+下批严格程度
+</td>
+<td>fnextstrictlv</td>
+<td>
+int
+</td>
+<td>
+严格程度
+</td>
+<td></td>
+<td>
+0=免检，1=放宽检验，2=正常检验，3=加严检验，4=暂停，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+最后修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+最后修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+ntransferpoint
+</td>
+<td >
+转移得分
+</td>
+<td>ntransferpoint</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+pk_adjustrule
+</td>
+<td >
+宽严调整规则
+</td>
+<td>pk_adjustrule</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="4ac4943b-858a-4536-aa04-769f2feadf91.html" >宽严调整规则</a>
+</td>
+<td>宽严调整规则</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_continuebatch</b></span>
+</td>
+<td >
+<span style="color:#09C">质检连续批主键</span>
+</td>
+<td>pk_continuebatch</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+pk_marbasclass
+</td>
+<td >
+物料分类编码
+</td>
+<td>pk_marbasclass</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="c099f7d7-52a9-4b98-bee7-2e3a6c3ea263.html" >物料基本分类</a>
+</td>
+<td>物料基本分类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+pk_material
+</td>
+<td >
+物料编码
+</td>
+<td>pk_material</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="eae040f4-3c88-413d-abc9-b15774463d46.html" >物料基本信息</a>
+</td>
+<td>物料</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+质检中心
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="9019762c-3baf-4618-a763-2432b5113f5a.html" >质检中心</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+pk_stockorg
+</td>
+<td >
+库存组织
+</td>
+<td>pk_stockorg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="46c4bfba-0b40-4855-87f8-c2ac8647f039.html" >库存组织</a>
+</td>
+<td>库存组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+pk_supplier
+</td>
+<td >
+供应商
+</td>
+<td>pk_supplier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="720dcc7c-ff19-48f4-b9c5-b90906682f45.html" >供应商基本信息</a>
+</td>
+<td>供应商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+vadjustreasom
+</td>
+<td >
+调整原因
+</td>
+<td>vadjustreasom</td>
+<td>
+varchar(181)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+vcontinuecode
+</td>
+<td >
+连续批编码
+</td>
+<td>vcontinuecode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+vcontinuename
+</td>
+<td >
+连续批名称
+</td>
+<td>vcontinuename</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+vinnercode
+</td>
+<td >
+物料分类内部码
+</td>
+<td>vinnercode</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

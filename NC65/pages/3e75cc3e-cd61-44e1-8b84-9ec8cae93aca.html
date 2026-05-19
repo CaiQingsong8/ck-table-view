@@ -1,0 +1,557 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>rm_job 招聘职位</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 3e75cc3e-cd61-44e1-8b84-9ec8cae93aca -->
+<b><span style="font-size:24px">招聘职位 (rm_job)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2011-10-10 16:02:25 &nbsp;修改时间 ：2015-10-22 19:20:05 &nbsp;路径：\hrrm\METADATA\job\hrrmjob.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.rm.job.RMJobVO
+/&nbsp;AggVO：nc.vo.rm.job.AggRMJobVO
+/&nbsp;<a href="ecd976ad-7344-45e1-955c-09b0f8f2b904.html" >职位能力素质</a>
+/&nbsp;<a href="91488ec9-604e-4e8a-8e37-5e06321b12e9.html" >职位面试方案</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+code
+</td>
+<td >
+职位编码
+</td>
+<td>code</td>
+<td>
+varchar(40)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+创建时间
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+degree
+</td>
+<td >
+最低学位要求
+</td>
+<td>degree</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1001Z71000000000GP4W.html" >学位(自定义档案)</a>
+</td>
+<td>学位(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+description
+</td>
+<td >
+职位描述
+</td>
+<td>description</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+educational
+</td>
+<td >
+最低学历要求
+</td>
+<td>educational</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1001Z71000000000GP4V.html" >学历(自定义档案)</a>
+</td>
+<td>学历(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+enablestate
+</td>
+<td >
+启用状态
+</td>
+<td>enablestate</td>
+<td>
+int
+</td>
+<td>
+启用状态
+</td>
+<td></td>
+<td>
+1=未启用，2=已启用，3=已停用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+jobsource
+</td>
+<td >
+职位来源
+</td>
+<td>jobsource</td>
+<td>
+int
+</td>
+<td>
+职位来源
+</td>
+<td></td>
+<td>
+0=手工输入，1=岗位，2=岗位序列，3=职务，4=职务类别，5=基准岗位，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+maxage
+</td>
+<td >
+最高年龄要求
+</td>
+<td>maxage</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+minage
+</td>
+<td >
+最低年龄要求
+</td>
+<td>minage</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+最后修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+最后修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+name
+</td>
+<td >
+职位名称
+</td>
+<td>name</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+<span style="color:#09C">所属集团</span>
+</td>
+<td>pk_group</td>
+<td>
+char(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_job</b></span>
+</td>
+<td >
+<span style="color:#09C">职位主键</span>
+</td>
+<td>pk_job</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+pk_jobsource
+</td>
+<td >
+标准职位
+</td>
+<td>pk_jobsource</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+pk_jobtype
+</td>
+<td >
+职位类别
+</td>
+<td>pk_jobtype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="41a76e99-75e2-4fb7-a07c-0ce5bc81918b.html" >招聘职位类别</a>
+</td>
+<td>招聘职位类别</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+<span style="color:#09C">所属组织</span>
+</td>
+<td>pk_org</td>
+<td>
+char(20)
+</td>
+<td>
+<a href="985be8a4-3a36-4778-8afe-2d8ed3902659.html" >组织</a>
+</td>
+<td>业务单元(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+professional
+</td>
+<td >
+专业类别要求
+</td>
+<td>professional</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1001Z71000000000GP4X.html" >专业类别(自定义档案)</a>
+</td>
+<td>专业类别(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+qualification
+</td>
+<td >
+任职资格
+</td>
+<td>qualification</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+remark
+</td>
+<td >
+备注
+</td>
+<td>remark</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+responsibility
+</td>
+<td >
+工作职责
+</td>
+<td>responsibility</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+sex
+</td>
+<td >
+性别要求
+</td>
+<td>sex</td>
+<td>
+int
+</td>
+<td>
+性别
+</td>
+<td></td>
+<td>
+1=男，2=女，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+tech
+</td>
+<td >
+最低职称要求
+</td>
+<td>tech</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1001Z71000000000GP56.html" >专业技术职务(自定义档案)</a>
+</td>
+<td>专业技术职务(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+workyear
+</td>
+<td >
+最低工作年限
+</td>
+<td>workyear</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

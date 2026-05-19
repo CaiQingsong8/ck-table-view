@@ -1,0 +1,592 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>cm_quancostgain 量本利分析</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 3f66b4e8-29bc-482b-b8d2-d18ee18e4cc7 -->
+<b><span style="font-size:24px">量本利分析 (cm_quancostgain)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2011-06-02 09:35:13 &nbsp;修改时间 ：2012-06-05 10:35:37 &nbsp;路径：\cm\METADATA\cm_quancostgain.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.cm.report.ca1708.QuancostgainVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+analyseobjtype
+</td>
+<td >
+分析对象类型
+</td>
+<td>analyseobjtype</td>
+<td>
+int(1)
+</td>
+<td>
+分析对象类型
+</td>
+<td></td>
+<td>
+0=产品，1=成本对象，2=产品基本分类，3=产品成本分类，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+ccostobjectid
+</td>
+<td >
+成本对象
+</td>
+<td>ccostobjectid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="fc0cba3d-6ba7-487e-871d-2ea3d72c7423.html" >成本对象</a>
+</td>
+<td>成本对象</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+cmaterialid
+</td>
+<td >
+产品
+</td>
+<td>cmaterialid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="c7dc0ccd-8872-4eee-8882-160e8f49dfad.html" >物料基本信息（多版本）</a>
+</td>
+<td>物料（多版本）</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+cmeasdoc
+</td>
+<td >
+计量单位
+</td>
+<td>cmeasdoc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="8e668e99-3c0e-401a-8f55-3d192e055c3c.html" >计量单位</a>
+</td>
+<td>计量单位</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+cperiod
+</td>
+<td >
+预测期间
+</td>
+<td>cperiod</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+<span style="color:red"><b>cquancostgainid</b></span>
+</td>
+<td >
+<span style="color:#09C">量本例分析</span>
+</td>
+<td>cquancostgainid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+cspec
+</td>
+<td >
+规格
+</td>
+<td>cspec</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+ctype
+</td>
+<td >
+型号
+</td>
+<td>ctype</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+nboundoffer
+</td>
+<td >
+边际贡献
+</td>
+<td>nboundoffer</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+nchgunitcost
+</td>
+<td >
+单位变动成本
+</td>
+<td>nchgunitcost</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+ncost
+</td>
+<td >
+总成本
+</td>
+<td>ncost</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+nfixcost
+</td>
+<td >
+固定成本
+</td>
+<td>nfixcost</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+nfixupcost
+</td>
+<td >
+保本点销售量
+</td>
+<td>nfixupcost</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+ngain
+</td>
+<td >
+利润
+</td>
+<td>ngain</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+nnum
+</td>
+<td >
+产量
+</td>
+<td>nnum</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+npointsellmny
+</td>
+<td >
+保本点销售额
+</td>
+<td>npointsellmny</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+nprice
+</td>
+<td >
+价格
+</td>
+<td>nprice</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+nsellnum
+</td>
+<td >
+销售量
+</td>
+<td>nsellnum</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+pk_marbasclass
+</td>
+<td >
+产品基本分类
+</td>
+<td>pk_marbasclass</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="c099f7d7-52a9-4b98-bee7-2e3a6c3ea263.html" >物料基本分类</a>
+</td>
+<td>物料基本分类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+pk_marcostclass
+</td>
+<td >
+产品成本分类
+</td>
+<td>pk_marcostclass</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="fbb3c484-63bc-4624-9f2e-3627221f0036.html" >物料成本分类</a>
+</td>
+<td>物料成本分类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+工厂
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5144b675-b681-4509-809e-6eb311db39b4.html" >组织_业务单元_工厂</a>
+</td>
+<td>工厂</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+pk_org_v
+</td>
+<td >
+工厂版本
+</td>
+<td>pk_org_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="4f5ee63d-f4f5-4ec2-a99d-75b3cdf37c97.html" >组织_业务单元_工厂版本信息</a>
+</td>
+<td>工厂版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+vfilecode
+</td>
+<td >
+文件编码
+</td>
+<td>vfilecode</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+vfilename
+</td>
+<td >
+文件名
+</td>
+<td>vfilename</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+vorginfo
+</td>
+<td >
+工厂信息
+</td>
+<td>vorginfo</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

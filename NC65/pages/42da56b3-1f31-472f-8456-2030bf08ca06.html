@@ -1,0 +1,976 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>fbm_counterbook_b 票据台帐子表</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 42da56b3-1f31-472f-8456-2030bf08ca06 -->
+<b><span style="font-size:24px">票据台帐子表 (fbm_counterbook_b)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2011-04-13 16:02:49 &nbsp;修改时间 ：2015-10-15 10:22:10 &nbsp;路径：\fbm\METADATA\fbm_counterbook.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.fbm.report.counterbook.CounterBookBVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+actioncode
+</td>
+<td >
+动作编码
+</td>
+<td>actioncode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+actiondate
+</td>
+<td >
+操作日期
+</td>
+<td>actiondate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+actionname
+</td>
+<td >
+操作
+</td>
+<td>actionname</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+actionperson
+</td>
+<td >
+操作人
+</td>
+<td>actionperson</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+beginstatus
+</td>
+<td >
+开始状态
+</td>
+<td>beginstatus</td>
+<td>
+varchar(50)
+</td>
+<td>
+票据状态
+</td>
+<td></td>
+<td>
+error=状态错误，none=无状态，on_gather=在收票，register=已登记，on_endore=在背书，has_endore=已背书，on_discount=在贴现，has_discount=已贴现，on_collection=在办理托收，has_collection=已办理托收，has_collectionsettle=已托收结清，on_bank_keep=在银行托管，has_bank_keep=已银行托管，on_bank_back=在银行领用，on_impawn=在质押，has_impawn=已质押，on_impawn_back=在质押回收，has_disable=已作废，on_return=在退票，has_return=已退票，on_invoice=在开票，has_invoice=已开票，on_pay=在付款，has_pay=已付款，on_paybill=在付票，has_paybill=已付票，has_destroy=已核销，has_clear=已冲销，on_discount_app=在贴现申请，has_discount_app=已贴现申请，on_innerkeep_app=在保管托管申请，has_innerkeep_app=已保管托管申请，on_innerkeep=在保管托管办理，has_innerkeep=已保管托管办理，on_innerkeep_relief_app=在调剂托管申请，has_innerkeep_relief_app=已调剂托管申请，on_innerkeep_relief=在调剂托管办理，has_innerkeep_relief=已调剂托管办理，on_innerback_app=在保管领用申请，has_innerback_app=已保管领用申请，on_innerback=在保管领用办理，on_innerback_relief_app=在调剂领用申请，has_innerback_relief_app=已调剂领用申请，on_innerback_relief=在调剂领用办理，on_innertrans_app=在内部转让申请，has_innertrans_app=已内部转让申请，on_innertrans=在内部转让办理，has_innertrans=已内部转让办理，on_redeploy=在调剂，has_redeploy=已调剂，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+billtype
+</td>
+<td >
+单据类型
+</td>
+<td>billtype</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+billtypename
+</td>
+<td >
+单据类型名称
+</td>
+<td>billtypename</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+consignbank
+</td>
+<td >
+托收银行
+</td>
+<td>consignbank</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="bf5aeed4-6b35-4a2e-b750-b9aabce59e21.html" >银行档案</a>
+</td>
+<td>银行档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+consignbankacc
+</td>
+<td >
+托收银行账户
+</td>
+<td>consignbankacc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="cd1f9a1c-eb08-493f-88ff-bcd1c134dee1.html" >银行账户子户</a>
+</td>
+<td>使用权参照</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+creditunit
+</td>
+<td >
+质押贷款单位
+</td>
+<td>creditunit</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+debitunit
+</td>
+<td >
+质押借款单位
+</td>
+<td>debitunit</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="8c6510dd-3b8a-4cfc-a5c5-323d53c6006f.html" >客商</a>
+</td>
+<td>客商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+discount_account
+</td>
+<td >
+贴现银行账户
+</td>
+<td>discount_account</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="cd1f9a1c-eb08-493f-88ff-bcd1c134dee1.html" >银行账户子户</a>
+</td>
+<td>使用权参照</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+discountcharge
+</td>
+<td >
+贴现手续费
+</td>
+<td>discountcharge</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+discountinterest
+</td>
+<td >
+贴现利息
+</td>
+<td>discountinterest</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+discountyrate
+</td>
+<td >
+贴现年利率
+</td>
+<td>discountyrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+dreturndate
+</td>
+<td >
+退票日期
+</td>
+<td>dreturndate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+endorsee
+</td>
+<td >
+被背书单位
+</td>
+<td>endorsee</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="720dcc7c-ff19-48f4-b9c5-b90906682f45.html" >供应商基本信息</a>
+</td>
+<td>供应商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+endorser
+</td>
+<td >
+背书单位
+</td>
+<td>endorser</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="720dcc7c-ff19-48f4-b9c5-b90906682f45.html" >供应商基本信息</a>
+</td>
+<td>供应商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+endstatus
+</td>
+<td >
+结束状态
+</td>
+<td>endstatus</td>
+<td>
+varchar(50)
+</td>
+<td>
+票据状态
+</td>
+<td></td>
+<td>
+error=状态错误，none=无状态，on_gather=在收票，register=已登记，on_endore=在背书，has_endore=已背书，on_discount=在贴现，has_discount=已贴现，on_collection=在办理托收，has_collection=已办理托收，has_collectionsettle=已托收结清，on_bank_keep=在银行托管，has_bank_keep=已银行托管，on_bank_back=在银行领用，on_impawn=在质押，has_impawn=已质押，on_impawn_back=在质押回收，has_disable=已作废，on_return=在退票，has_return=已退票，on_invoice=在开票，has_invoice=已开票，on_pay=在付款，has_pay=已付款，on_paybill=在付票，has_paybill=已付票，has_destroy=已核销，has_clear=已冲销，on_discount_app=在贴现申请，has_discount_app=已贴现申请，on_innerkeep_app=在保管托管申请，has_innerkeep_app=已保管托管申请，on_innerkeep=在保管托管办理，has_innerkeep=已保管托管办理，on_innerkeep_relief_app=在调剂托管申请，has_innerkeep_relief_app=已调剂托管申请，on_innerkeep_relief=在调剂托管办理，has_innerkeep_relief=已调剂托管办理，on_innerback_app=在保管领用申请，has_innerback_app=已保管领用申请，on_innerback=在保管领用办理，on_innerback_relief_app=在调剂领用申请，has_innerback_relief_app=已调剂领用申请，on_innerback_relief=在调剂领用办理，on_innertrans_app=在内部转让申请，has_innertrans_app=已内部转让申请，on_innertrans=在内部转让办理，has_innertrans=已内部转让办理，on_redeploy=在调剂，has_redeploy=已调剂，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+glcmoney
+</td>
+<td >
+集团本币金额
+</td>
+<td>glcmoney</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+glcrate
+</td>
+<td >
+集团本币汇率
+</td>
+<td>glcrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+gllcmoney
+</td>
+<td >
+全局本币金额
+</td>
+<td>gllcmoney</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+gllcrate
+</td>
+<td >
+全局本币汇率
+</td>
+<td>gllcrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+holderacc
+</td>
+<td >
+持票单位银行帐号
+</td>
+<td>holderacc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="9e10ef4a-0be9-482b-880f-871e5b0504b7.html" >客商银行账户子户</a>
+</td>
+<td>客商银行账户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+holdunit
+</td>
+<td >
+持票单位
+</td>
+<td>holdunit</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>客商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+impawnmode
+</td>
+<td >
+担保方式
+</td>
+<td>impawnmode</td>
+<td>
+varchar(50)
+</td>
+<td>
+担保方式
+</td>
+<td></td>
+<td>
+CREDIT=信用，ASSURE=保证，BAIL=保证金，PLEDGE=抵押，IMPAWN=质押，MIXED=混合，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+money
+</td>
+<td >
+业务发生金额
+</td>
+<td>money</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+note
+</td>
+<td >
+备注
+</td>
+<td>note</td>
+<td>
+varchar(181)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+olcmoney
+</td>
+<td >
+组织本币金额
+</td>
+<td>olcmoney</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+olcrate
+</td>
+<td >
+组织本币汇率
+</td>
+<td>olcrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+outputunit
+</td>
+<td >
+领用单位
+</td>
+<td>outputunit</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="8c6510dd-3b8a-4cfc-a5c5-323d53c6006f.html" >客商</a>
+</td>
+<td>客商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+paybillunit
+</td>
+<td >
+付票单位
+</td>
+<td>paybillunit</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e4f48eaf-5567-4383-a370-a59cb3e8a451.html" >客户基本信息</a>
+</td>
+<td>客商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_action</b></span>
+</td>
+<td >
+<span style="color:#09C">主键</span>
+</td>
+<td>pk_action</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+pk_bill
+</td>
+<td >
+动作单据主键
+</td>
+<td>pk_bill</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+pk_discount_bank
+</td>
+<td >
+贴现银行
+</td>
+<td>pk_discount_bank</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="bf5aeed4-6b35-4a2e-b750-b9aabce59e21.html" >银行档案</a>
+</td>
+<td>银行档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+pk_register
+</td>
+<td >
+主表主键
+</td>
+<td>pk_register</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+preturntype
+</td>
+<td >
+付票退票类型
+</td>
+<td>preturntype</td>
+<td>
+varchar(50)
+</td>
+<td>
+应付票据退票类型
+</td>
+<td></td>
+<td>
+sign=付票退票，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+returnperson
+</td>
+<td >
+退票人
+</td>
+<td>returnperson</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="40d39c26-a2b6-4f16-a018-45664cac1a1f.html" >人员基本信息</a>
+</td>
+<td>人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+rreturntype
+</td>
+<td >
+收票退票类型
+</td>
+<td>rreturntype</td>
+<td>
+varchar(50)
+</td>
+<td>
+应收票据退票类型
+</td>
+<td></td>
+<td>
+gather=收票退票，endore=背书退票，disablebill=废票退票，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+securityaccount
+</td>
+<td >
+保证金账户
+</td>
+<td>securityaccount</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="cd1f9a1c-eb08-493f-88ff-bcd1c134dee1.html" >银行账户子户</a>
+</td>
+<td>使用权参照</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+securitymoney
+</td>
+<td >
+保证金金额
+</td>
+<td>securitymoney</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+securityrate
+</td>
+<td >
+保证金比例
+</td>
+<td>securityrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+serialnum
+</td>
+<td >
+序列号
+</td>
+<td>serialnum</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+storagebank
+</td>
+<td >
+托管银行
+</td>
+<td>storagebank</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="bf5aeed4-6b35-4a2e-b750-b9aabce59e21.html" >银行档案</a>
+</td>
+<td>银行档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+storageunit
+</td>
+<td >
+托管单位
+</td>
+<td>storageunit</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="8c6510dd-3b8a-4cfc-a5c5-323d53c6006f.html" >客商</a>
+</td>
+<td>客商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+vbillno
+</td>
+<td >
+单据编号
+</td>
+<td>vbillno</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

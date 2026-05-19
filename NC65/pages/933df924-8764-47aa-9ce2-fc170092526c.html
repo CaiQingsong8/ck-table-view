@@ -1,0 +1,332 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>rm_email_loginfo 解析日志</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 933df924-8764-47aa-9ce2-fc170092526c -->
+<b><span style="font-size:24px">解析日志 (rm_email_loginfo)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2015-02-13 17:59:36 &nbsp;修改时间 ：2015-10-22 19:04:52 &nbsp;路径：\hrrm\METADATA\email\anlysislog.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.rm.email.ResumeEmailLogVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+anlymethod
+</td>
+<td >
+解析方式
+</td>
+<td>anlymethod</td>
+<td>
+int
+</td>
+<td>
+解析方式
+</td>
+<td></td>
+<td>
+0=后台任务，1=手动收取，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+<span style="color:#09C">创建时间</span>
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+<span style="color:#09C">创建人</span>
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+issuccess
+</td>
+<td >
+是否成功
+</td>
+<td>issuccess</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+loginfo
+</td>
+<td >
+详细信息
+</td>
+<td>loginfo</td>
+<td>
+varchar(1024)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+logtime
+</td>
+<td >
+日志时间
+</td>
+<td>logtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+最后修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+最后修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_emailloginfo</b></span>
+</td>
+<td >
+<span style="color:#09C">邮箱日志主键</span>
+</td>
+<td>pk_emailloginfo</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+<span style="color:#09C">所属集团</span>
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+<span style="color:#09C">所属组织</span>
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="985be8a4-3a36-4778-8afe-2d8ed3902659.html" >组织</a>
+</td>
+<td>业务单元(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+pk_resumeemail
+</td>
+<td >
+收取简历邮箱主键
+</td>
+<td>pk_resumeemail</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+remark
+</td>
+<td >
+备注
+</td>
+<td>remark</td>
+<td>
+varchar(1024)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+resumename
+</td>
+<td >
+文件名
+</td>
+<td>resumename</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

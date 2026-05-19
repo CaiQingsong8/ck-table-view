@@ -1,0 +1,1056 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>gfc_combineaccount 合并账簿</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 91152810-1cd1-41cc-a269-42f3596f9843 -->
+<b><span style="font-size:24px">合并账簿 (gfc_combineaccount)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-12-09 16:09:56 &nbsp;修改时间 ：2013-05-27 19:23:46 &nbsp;路径：\gfc\METADATA\combineaccount.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.gfc.combineaccount.CombineAccountVO
+/&nbsp;<a href="be4f902b-66c3-4301-81d0-222a7429a129.html" >模板适用范围</a>
+/&nbsp;<a href="535f01d5-79a5-4599-9bb8-e18a4b47a73f.html" >合并主体</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+combincode
+</td>
+<td >
+<span style="color:#09C">编码</span>
+</td>
+<td>combincode</td>
+<td>
+varchar(40)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+combinname
+</td>
+<td >
+<span style="color:#09C">名称</span>
+</td>
+<td>combinname</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+controltype
+</td>
+<td >
+管控模式
+</td>
+<td>controltype</td>
+<td>
+int
+</td>
+<td>
+管控模式
+</td>
+<td></td>
+<td>
+1=控制，2=只控制抵销，3=不控制，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+创建时间
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+enablestate
+</td>
+<td >
+启用状态
+</td>
+<td>enablestate</td>
+<td>
+int
+</td>
+<td>
+启用状态
+</td>
+<td></td>
+<td>
+1=未启用，2=已启用，3=已停用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+enddate
+</td>
+<td >
+停用日期
+</td>
+<td>enddate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+isqcheck
+</td>
+<td >
+是否数量合并
+</td>
+<td>isqcheck</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+memo
+</td>
+<td >
+备注
+</td>
+<td>memo</td>
+<td>
+varchar(512)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+mnecode
+</td>
+<td >
+助记码
+</td>
+<td>mnecode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_combineaccount</b></span>
+</td>
+<td >
+<span style="color:#09C">对象标识</span>
+</td>
+<td>pk_combineaccount</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+pk_combinorg
+</td>
+<td >
+合并组织结构
+</td>
+<td>pk_combinorg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b729f282-f730-46f1-9c0d-5f7f24ac3eb6.html" >组织结构_账簿合并体系</a>
+</td>
+<td>账簿合并体系（多版本）</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+pk_createorg
+</td>
+<td >
+所属组织
+</td>
+<td>pk_createorg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="985be8a4-3a36-4778-8afe-2d8ed3902659.html" >组织</a>
+</td>
+<td>业务单元(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+pk_offsetschme
+</td>
+<td >
+调整抵销方案
+</td>
+<td>pk_offsetschme</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="777ed35a-acba-4f7c-9959-0d8d1a952d5a.html" >调整抵销方案</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+pk_setofbook
+</td>
+<td >
+<span style="color:#09C">账簿类型</span>
+</td>
+<td>pk_setofbook</td>
+<td>
+(20)
+</td>
+<td>
+<a href="835e9f49-5f2f-49fd-bb50-3139d0dd4435.html" >账簿</a>
+</td>
+<td>账簿</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+priodtype
+</td>
+<td >
+周期
+</td>
+<td>priodtype</td>
+<td>
+int
+</td>
+<td>
+编制周期
+</td>
+<td></td>
+<td>
+1=月，2=季度，3=半年，4=年，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+shortname
+</td>
+<td >
+简称
+</td>
+<td>shortname</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+startdate
+</td>
+<td >
+启用日期
+</td>
+<td>startdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+vdef1
+</td>
+<td >
+自定义1
+</td>
+<td>vdef1</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+vdef10
+</td>
+<td >
+自定义10
+</td>
+<td>vdef10</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+vdef11
+</td>
+<td >
+自定义11
+</td>
+<td>vdef11</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+vdef12
+</td>
+<td >
+自定义12
+</td>
+<td>vdef12</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+vdef13
+</td>
+<td >
+自定义13
+</td>
+<td>vdef13</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+vdef14
+</td>
+<td >
+自定义14
+</td>
+<td>vdef14</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+vdef15
+</td>
+<td >
+自定义15
+</td>
+<td>vdef15</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+vdef16
+</td>
+<td >
+自定义16
+</td>
+<td>vdef16</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+vdef17
+</td>
+<td >
+自定义17
+</td>
+<td>vdef17</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+vdef18
+</td>
+<td >
+自定义18
+</td>
+<td>vdef18</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+vdef19
+</td>
+<td >
+自定义19
+</td>
+<td>vdef19</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+vdef2
+</td>
+<td >
+自定义2
+</td>
+<td>vdef2</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+vdef20
+</td>
+<td >
+自定义20
+</td>
+<td>vdef20</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+vdef21
+</td>
+<td >
+自定义21
+</td>
+<td>vdef21</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+vdef22
+</td>
+<td >
+自定义22
+</td>
+<td>vdef22</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+vdef23
+</td>
+<td >
+自定义23
+</td>
+<td>vdef23</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+vdef24
+</td>
+<td >
+自定义24
+</td>
+<td>vdef24</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+vdef25
+</td>
+<td >
+自定义25
+</td>
+<td>vdef25</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+vdef26
+</td>
+<td >
+自定义26
+</td>
+<td>vdef26</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+vdef27
+</td>
+<td >
+自定义27
+</td>
+<td>vdef27</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+vdef28
+</td>
+<td >
+自定义28
+</td>
+<td>vdef28</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+vdef29
+</td>
+<td >
+自定义29
+</td>
+<td>vdef29</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+vdef3
+</td>
+<td >
+自定义3
+</td>
+<td>vdef3</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+vdef30
+</td>
+<td >
+自定义30
+</td>
+<td>vdef30</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">47</td>
+<td>&nbsp;
+vdef4
+</td>
+<td >
+自定义4
+</td>
+<td>vdef4</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">48</td>
+<td>&nbsp;
+vdef5
+</td>
+<td >
+自定义5
+</td>
+<td>vdef5</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">49</td>
+<td>&nbsp;
+vdef6
+</td>
+<td >
+自定义6
+</td>
+<td>vdef6</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">50</td>
+<td>&nbsp;
+vdef7
+</td>
+<td >
+自定义7
+</td>
+<td>vdef7</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">51</td>
+<td>&nbsp;
+vdef8
+</td>
+<td >
+自定义8
+</td>
+<td>vdef8</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">52</td>
+<td>&nbsp;
+vdef9
+</td>
+<td >
+自定义9
+</td>
+<td>vdef9</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

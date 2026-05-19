@@ -1,0 +1,676 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>to_businessinfo 内部交易信息主表</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 4c067d53-bc55-4c0c-bcb7-10e46802c632 -->
+<b><span style="font-size:24px">内部交易信息主表 (to_businessinfo)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-01-26 10:45:14 &nbsp;修改时间 ：2015-05-20 09:17:53 &nbsp;路径：\to\METADATA\businessinfo\businessinfo.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.to.businessinfo.entity.BusinessinfoHVO
+/&nbsp;AggVO：nc.vo.to.businessinfo.entity.BusinessinfoVO
+/&nbsp;<a href="870aadc2-51d1-411b-9417-bca4154fc4ab.html" >内部交易信息子表</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+bbasediscountflag
+</td>
+<td >
+按结算价乘折扣率得价格
+</td>
+<td>bbasediscountflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+breverseflag
+</td>
+<td >
+反向结算
+</td>
+<td>breverseflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+btriatradeflag
+</td>
+<td >
+三角贸易
+</td>
+<td>btriatradeflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+bunilateralflag
+</td>
+<td >
+单边结算
+</td>
+<td>bunilateralflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+cbasecurrencyid
+</td>
+<td >
+本位币
+</td>
+<td>cbasecurrencyid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b498bc9a-e5fd-4613-8da8-bdae2a05704a.html" >币种</a>
+</td>
+<td>币种档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+<span style="color:red"><b>cbusinessid</b></span>
+</td>
+<td >
+<span style="color:#09C">主表</span>
+</td>
+<td>cbusinessid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+ccurrencyid
+</td>
+<td >
+原币币种
+</td>
+<td>ccurrencyid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b498bc9a-e5fd-4613-8da8-bdae2a05704a.html" >币种</a>
+</td>
+<td>币种档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+cincountryid
+</td>
+<td >
+收货国家/地区
+</td>
+<td>cincountryid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e0f51d3e-b8c4-4abb-bd3b-cd6e6d09d0f8.html" >国家地区</a>
+</td>
+<td>国家地区</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+cinfinanceorgid
+</td>
+<td >
+调入财务组织最新版本
+</td>
+<td>cinfinanceorgid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+cinfinanceorgvid
+</td>
+<td >
+调入财务组织
+</td>
+<td>cinfinanceorgvid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="31736d3d-3626-46c5-b5d0-e10b4ed33dce.html" >组织_业务单元_财务组织版本信息</a>
+</td>
+<td>财务组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+cinstockorgid
+</td>
+<td >
+调入库存组织最新版本
+</td>
+<td>cinstockorgid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="46c4bfba-0b40-4855-87f8-c2ac8647f039.html" >组织_业务单元_库存组织</a>
+</td>
+<td>库存组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+cinstockorgvid
+</td>
+<td >
+调入库存组织
+</td>
+<td>cinstockorgvid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="34869061-84cb-4bc7-a052-12b1522620a3.html" >组织_业务单元_库存组织版本信息</a>
+</td>
+<td>库存组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+cintaxcountryid
+</td>
+<td >
+采购方报税国家/地区
+</td>
+<td>cintaxcountryid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e0f51d3e-b8c4-4abb-bd3b-cd6e6d09d0f8.html" >国家地区</a>
+</td>
+<td>国家地区</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+conwayowner
+</td>
+<td >
+在途归属计算
+</td>
+<td>conwayowner</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="34869061-84cb-4bc7-a052-12b1522620a3.html" >组织_业务单元_库存组织版本信息</a>
+</td>
+<td>库存组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+coutcountryid
+</td>
+<td >
+发货国家/地区
+</td>
+<td>coutcountryid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e0f51d3e-b8c4-4abb-bd3b-cd6e6d09d0f8.html" >国家地区</a>
+</td>
+<td>国家地区</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+coutstockorgid
+</td>
+<td >
+调出库存组织最新版本
+</td>
+<td>coutstockorgid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="46c4bfba-0b40-4855-87f8-c2ac8647f039.html" >组织_业务单元_库存组织</a>
+</td>
+<td>库存组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+coutstockorgvid
+</td>
+<td >
+调出库存组织
+</td>
+<td>coutstockorgvid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="34869061-84cb-4bc7-a052-12b1522620a3.html" >组织_业务单元_库存组织版本信息</a>
+</td>
+<td>库存组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+csettlepathid
+</td>
+<td >
+结算路径
+</td>
+<td>csettlepathid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e3b4c7da-b641-4e4f-8697-dc4305503a21.html" >结算路径主表</a>
+</td>
+<td>结算路径</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+csrcid
+</td>
+<td >
+来源单据
+</td>
+<td>csrcid</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+ctaxcountryid
+</td>
+<td >
+销售方报税国家/地区
+</td>
+<td>ctaxcountryid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e0f51d3e-b8c4-4abb-bd3b-cd6e6d09d0f8.html" >国家地区</a>
+</td>
+<td>国家地区</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+ctradewordid
+</td>
+<td >
+贸易术语
+</td>
+<td>ctradewordid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1069197c-49ce-4457-b64c-0a693859763c.html" >贸易术语</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+dsrcbilldate
+</td>
+<td >
+来源单据日期
+</td>
+<td>dsrcbilldate</td>
+<td>
+varchar(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+fbuysellflag
+</td>
+<td >
+购销类型
+</td>
+<td>fbuysellflag</td>
+<td>
+int
+</td>
+<td>
+购销类型
+</td>
+<td></td>
+<td>
+1=国内销售，2=国内采购，3=出口，4=进口，5=不区分，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+fonwayownerflag
+</td>
+<td >
+在途归属
+</td>
+<td>fonwayownerflag</td>
+<td>
+int
+</td>
+<td>
+在途归属
+</td>
+<td></td>
+<td>
+1=归调出方，2=归调入方，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+fsettletypeflag
+</td>
+<td >
+内部结算类型
+</td>
+<td>fsettletypeflag</td>
+<td>
+int
+</td>
+<td>
+内部结算场景
+</td>
+<td></td>
+<td>
+1=库存调拨，2=跨组织采购，3=跨组织销售，4=跨组织领料，5=跨组织完工入库，6=跨组织消耗汇总，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+nexchangerate
+</td>
+<td >
+汇率
+</td>
+<td>nexchangerate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+调出财务组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+pk_org_v
+</td>
+<td >
+调出财务组织版本
+</td>
+<td>pk_org_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="31736d3d-3626-46c5-b5d0-e10b4ed33dce.html" >组织_业务单元_财务组织版本信息</a>
+</td>
+<td>财务组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+vsrctrantypecode
+</td>
+<td >
+交易类型编码
+</td>
+<td>vsrctrantypecode</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素单据类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+vsrctype
+</td>
+<td >
+来源单据类型
+</td>
+<td>vsrctype</td>
+<td>
+varchar(4)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

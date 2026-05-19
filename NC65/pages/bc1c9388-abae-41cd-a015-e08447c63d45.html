@@ -1,0 +1,1392 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>er_reimruler 报销标准</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- bc1c9388-abae-41cd-a015-e08447c63d45 -->
+<b><span style="font-size:24px">报销标准 (er_reimruler)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2013-10-09 18:20:21 &nbsp;修改时间 ：2014-08-14 13:29:34 &nbsp;路径：\erm\METADATA\reimrule.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.er.reimrule.ReimRulerVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+amount
+</td>
+<td >
+金额
+</td>
+<td>amount</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+amount_name
+</td>
+<td >
+金额名称
+</td>
+<td>amount_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+controlflag
+</td>
+<td >
+控制模式
+</td>
+<td>controlflag</td>
+<td>
+int(50)
+</td>
+<td>
+控制模式
+</td>
+<td></td>
+<td>
+0=不控制，1=提示，2=控制，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+controlformula
+</td>
+<td >
+标准编辑公式
+</td>
+<td>controlformula</td>
+<td>
+varchar(150)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+controlitem
+</td>
+<td >
+控制项
+</td>
+<td>controlitem</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+controlitem_name
+</td>
+<td >
+控制项名称
+</td>
+<td>controlitem_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+def1
+</td>
+<td >
+自定义项1
+</td>
+<td>def1</td>
+<td>
+varchar(36)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+def10
+</td>
+<td >
+自定义项10
+</td>
+<td>def10</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+def10_name
+</td>
+<td >
+自定义项10名称
+</td>
+<td>def10_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+def11
+</td>
+<td >
+自定义项11
+</td>
+<td>def11</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+def11_name
+</td>
+<td >
+自定义项11名称
+</td>
+<td>def11_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+def12
+</td>
+<td >
+自定义项12
+</td>
+<td>def12</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+def12_name
+</td>
+<td >
+自定义项12名称
+</td>
+<td>def12_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+def13
+</td>
+<td >
+自定义项13
+</td>
+<td>def13</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+def13_name
+</td>
+<td >
+自定义项13名称
+</td>
+<td>def13_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+def14
+</td>
+<td >
+自定义项14
+</td>
+<td>def14</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+def14_name
+</td>
+<td >
+自定义项14名称
+</td>
+<td>def14_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+def15
+</td>
+<td >
+自定义项15
+</td>
+<td>def15</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+def15_name
+</td>
+<td >
+自定义项15名称
+</td>
+<td>def15_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+def16
+</td>
+<td >
+自定义项16
+</td>
+<td>def16</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+def16_name
+</td>
+<td >
+自定义项16名称
+</td>
+<td>def16_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+def17
+</td>
+<td >
+自定义项17
+</td>
+<td>def17</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+def17_name
+</td>
+<td >
+自定义项17名称
+</td>
+<td>def17_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+def18
+</td>
+<td >
+自定义项18
+</td>
+<td>def18</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+def18_name
+</td>
+<td >
+自定义项18名称
+</td>
+<td>def18_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+def19
+</td>
+<td >
+自定义项19
+</td>
+<td>def19</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+def19_name
+</td>
+<td >
+自定义项19名称
+</td>
+<td>def19_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+def1_name
+</td>
+<td >
+自定义项1名称
+</td>
+<td>def1_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+def2
+</td>
+<td >
+自定义项2
+</td>
+<td>def2</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+def20
+</td>
+<td >
+自定义项20
+</td>
+<td>def20</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+def20_name
+</td>
+<td >
+自定义项20名称
+</td>
+<td>def20_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+def2_name
+</td>
+<td >
+自定义项2名称
+</td>
+<td>def2_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+def3
+</td>
+<td >
+自定义项3
+</td>
+<td>def3</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+def3_name
+</td>
+<td >
+自定义项3名称
+</td>
+<td>def3_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+def4
+</td>
+<td >
+自定义项4
+</td>
+<td>def4</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+def4_name
+</td>
+<td >
+自定义项4名称
+</td>
+<td>def4_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+def5
+</td>
+<td >
+自定义项5
+</td>
+<td>def5</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e3167d31-9694-4ea1-873f-2ffafd8fbed8.html" >费用申请单</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+def5_name
+</td>
+<td >
+自定义项5名称
+</td>
+<td>def5_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+def6
+</td>
+<td >
+自定义项6
+</td>
+<td>def6</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e3167d31-9694-4ea1-873f-2ffafd8fbed8.html" >费用申请单</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+def6_name
+</td>
+<td >
+自定义项6名称
+</td>
+<td>def6_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+def7
+</td>
+<td >
+自定义项7
+</td>
+<td>def7</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e3167d31-9694-4ea1-873f-2ffafd8fbed8.html" >费用申请单</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+def7_name
+</td>
+<td >
+自定义项7名称
+</td>
+<td>def7_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+def8
+</td>
+<td >
+自定义项8
+</td>
+<td>def8</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e3167d31-9694-4ea1-873f-2ffafd8fbed8.html" >费用申请单</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+def8_name
+</td>
+<td >
+自定义项8名称
+</td>
+<td>def8_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+def9
+</td>
+<td >
+自定义项9
+</td>
+<td>def9</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+def9_name
+</td>
+<td >
+自定义项9名称
+</td>
+<td>def9_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">47</td>
+<td>&nbsp;
+defformula
+</td>
+<td >
+自定义公式
+</td>
+<td>defformula</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">48</td>
+<td>&nbsp;
+memo
+</td>
+<td >
+备注
+</td>
+<td>memo</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">49</td>
+<td>&nbsp;
+memo_name
+</td>
+<td >
+备注名称
+</td>
+<td>memo_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">50</td>
+<td>&nbsp;
+pk_billtype
+</td>
+<td >
+单据类型
+</td>
+<td>pk_billtype</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">51</td>
+<td>&nbsp;
+pk_currtype
+</td>
+<td >
+币种
+</td>
+<td>pk_currtype</td>
+<td>
+varchar(36)
+</td>
+<td>
+<a href="b498bc9a-e5fd-4613-8da8-bdae2a05704a.html" >币种</a>
+</td>
+<td>币种档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">52</td>
+<td>&nbsp;
+pk_currtype_name
+</td>
+<td >
+币种名称
+</td>
+<td>pk_currtype_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">53</td>
+<td>&nbsp;
+pk_deptid
+</td>
+<td >
+部门
+</td>
+<td>pk_deptid</td>
+<td>
+varchar(36)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td>部门</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">54</td>
+<td>&nbsp;
+pk_deptid_name
+</td>
+<td >
+部门名称
+</td>
+<td>pk_deptid_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">55</td>
+<td>&nbsp;
+pk_expensetype
+</td>
+<td >
+费用类型
+</td>
+<td>pk_expensetype</td>
+<td>
+varchar(36)
+</td>
+<td>
+<a href="592c6233-8fec-4374-bf50-1939f785569e.html" >费用类型</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">56</td>
+<td>&nbsp;
+pk_expensetype_name
+</td>
+<td >
+费用类型名称
+</td>
+<td>pk_expensetype_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">57</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(36)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">58</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(36)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">59</td>
+<td>&nbsp;
+pk_position
+</td>
+<td >
+职位
+</td>
+<td>pk_position</td>
+<td>
+varchar(36)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">60</td>
+<td>&nbsp;
+pk_position_name
+</td>
+<td >
+职位名称
+</td>
+<td>pk_position_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">61</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_reimrule</b></span>
+</td>
+<td >
+<span style="color:#09C">报销标准主键</span>
+</td>
+<td>pk_reimrule</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">62</td>
+<td>&nbsp;
+pk_reimtype
+</td>
+<td >
+报销类型
+</td>
+<td>pk_reimtype</td>
+<td>
+varchar(36)
+</td>
+<td>
+<a href="b2caa3e7-d4c3-4439-9ea7-84ff4b1cc83b.html" >报销类型</a>
+</td>
+<td>报销类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">63</td>
+<td>&nbsp;
+pk_reimtype_name
+</td>
+<td >
+报销类型名称
+</td>
+<td>pk_reimtype_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">64</td>
+<td>&nbsp;
+priority
+</td>
+<td >
+优先级
+</td>
+<td>priority</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">65</td>
+<td>&nbsp;
+showitem
+</td>
+<td >
+显示项
+</td>
+<td>showitem</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">66</td>
+<td>&nbsp;
+showitem_name
+</td>
+<td >
+显示项名称
+</td>
+<td>showitem_name</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">67</td>
+<td>&nbsp;
+validateformula
+</td>
+<td >
+验证公式
+</td>
+<td>validateformula</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

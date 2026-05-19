@@ -1,0 +1,211 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>om_levelrelation 职级职等</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 36689c6d-ea3b-49c1-9533-8cbf22e95b1e -->
+<b><span style="font-size:24px">职级职等 (om_levelrelation)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2013-10-29 10:52:20 &nbsp;修改时间 ：2013-12-26 09:59:47 &nbsp;路径：\hrjf\METADATA\post\postseries.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.om.joblevelsys.SubLevelRelationVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+defaultlevel
+</td>
+<td >
+默认职级
+</td>
+<td>defaultlevel</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+defaultrank
+</td>
+<td >
+默认职等
+</td>
+<td>defaultrank</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="718c6a17-38c5-47f0-b285-8fb0d1ff74fa.html" >职等</a>
+</td>
+<td>职等HR</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+jobrank
+</td>
+<td >
+对应职等
+</td>
+<td>jobrank</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="718c6a17-38c5-47f0-b285-8fb0d1ff74fa.html" >职等</a>
+</td>
+<td>职等HR</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+memo
+</td>
+<td >
+职级概要描述
+</td>
+<td>memo</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+pk_joblevel
+</td>
+<td >
+职级
+</td>
+<td>pk_joblevel</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="19d7419a-1f6d-4596-9b1c-cafee2fc0930.html" >职级</a>
+</td>
+<td>职级(设置职务主键)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+pk_joblevelsys
+</td>
+<td >
+职级类别
+</td>
+<td>pk_joblevelsys</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="908074f2-c1da-4093-9665-85782afe2e3c.html" >职级类别</a>
+</td>
+<td>职级体系HR</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_levelrelation</b></span>
+</td>
+<td >
+<span style="color:#09C">职级关系主键</span>
+</td>
+<td>pk_levelrelation</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+pk_postseries
+</td>
+<td >
+岗位序列
+</td>
+<td>pk_postseries</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="d0a3192d-1493-4022-a400-2a202e9a6636.html" >岗位序列</a>
+</td>
+<td>岗位序列HR</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

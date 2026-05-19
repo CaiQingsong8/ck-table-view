@@ -1,0 +1,1169 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sr_plcy_r 返利政策修订主实体</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 65c846fe-5e78-4cb8-8e1c-855872c6c5b1 -->
+<b><span style="font-size:24px">返利政策修订主实体 (sr_plcy_r)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2012-11-06 18:29:24 &nbsp;修改时间 ：2015-04-17 14:52:43 &nbsp;路径：\sr\METADATA\revise\policy_revise.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.sr.policy.revise.entity.PlcyReviseHVO
+/&nbsp;AggVO：nc.vo.sr.policy.revise.entity.PlcyReviseAggVO
+/&nbsp;<a href="e1f2283f-838b-4f7d-b297-14eb51ff2e62.html" >订单类型范围修订子实体</a>
+/&nbsp;<a href="b948cc39-8dbd-44f4-99dc-d95037a1264b.html" >结算方式范围修订子实体</a>
+/&nbsp;<a href="82b82cda-cee9-4829-96d3-a0b4462375cc.html" >计算规则明细修订实体</a>
+/&nbsp;<a href="9c5773d8-cb7b-4995-bc91-6e9045027dd4.html" >计算规则修订子实体</a>
+/&nbsp;<a href="812200cc-d5aa-425f-a893-a02ffb92f17a.html" >物料维度修订子实体</a>
+/&nbsp;<a href="9642d759-042c-4519-8999-0917784de2b9.html" >客户范围修订子实体</a>
+/&nbsp;<a href="372faf21-28dd-4bbb-b75f-dbd363efa5fe.html" >销售组织范围修订子实体</a>
+/&nbsp;<a href="d5f3f1a1-4184-4e20-a211-1d32e7ce3e3b.html" >收款单类型范围修订子实体</a>
+/&nbsp;<a href="82baa82c-63d2-451b-84a2-ae5e837ebd9a.html" >返利期间修订子实体</a>
+/&nbsp;<a href="ff06fbc0-ec72-4a17-a392-aa0efcce179a.html" >价格项范围修订子实体</a>
+/&nbsp;<a href="52717cac-5e38-49dc-9a1f-8e7464c88511.html" >促销类型范围修订子实体</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+approver
+</td>
+<td >
+审批人
+</td>
+<td>approver</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+billmaker
+</td>
+<td >
+制单人
+</td>
+<td>billmaker</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+blatestflag
+</td>
+<td >
+最新版本
+</td>
+<td>blatestflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+ccurrencyid
+</td>
+<td >
+返利政策币种
+</td>
+<td>ccurrencyid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b498bc9a-e5fd-4613-8da8-bdae2a05704a.html" >币种</a>
+</td>
+<td>币种档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+创建时间
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+creviser
+</td>
+<td >
+修订人
+</td>
+<td>creviser</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+ctargetid
+</td>
+<td >
+关联指标表
+</td>
+<td>ctargetid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a4a6c509-efd9-41b7-8811-594d8bb84292.html" >销售指标维护主实体</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+ctrantypeid
+</td>
+<td >
+返利政策类型
+</td>
+<td>ctrantypeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素交 易类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+dbegindate
+</td>
+<td >
+开始日期
+</td>
+<td>dbegindate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate_begin
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+denddate
+</td>
+<td >
+结束日期
+</td>
+<td>denddate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate_end
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+dfrtcashfromdate
+</td>
+<td >
+首期兑付日期从
+</td>
+<td>dfrtcashfromdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate_begin
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+dfrtcashtodate
+</td>
+<td >
+首期兑付日期到
+</td>
+<td>dfrtcashtodate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate_end
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+dmakedate
+</td>
+<td >
+制单日期
+</td>
+<td>dmakedate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+drevisetime
+</td>
+<td >
+修订时间
+</td>
+<td>drevisetime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+fcustclassflag
+</td>
+<td >
+客户分类方式
+</td>
+<td>fcustclassflag</td>
+<td>
+int
+</td>
+<td>
+客户指标设定方式
+</td>
+<td></td>
+<td>
+0=全部客户，1=客户基本分类，2=客户销售分类，3=客户，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+fmardimenflag
+</td>
+<td >
+物料维度设定方式
+</td>
+<td>fmardimenflag</td>
+<td>
+int
+</td>
+<td>
+物料指标设定方式
+</td>
+<td></td>
+<td>
+0=全部物料，1=产品线，2=品牌，3=物料基本分类，4=物料销售分类，5=物料，6=物料组合，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+fperiodflag
+</td>
+<td >
+返利周期
+</td>
+<td>fperiodflag</td>
+<td>
+int
+</td>
+<td>
+返利周期
+</td>
+<td></td>
+<td>
+0=月，1=季，2=半年，3=年，4=非周期，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+fpfstatusflag
+</td>
+<td >
+审批流状态
+</td>
+<td>fpfstatusflag</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+fprmtypeflag
+</td>
+<td >
+促销参与返利方式
+</td>
+<td>fprmtypeflag</td>
+<td>
+int
+</td>
+<td>
+促销参与返利方式
+</td>
+<td></td>
+<td>
+1=计量计奖，2=不计量不计奖，3=计量不计奖，4=自定义，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+fstatusflag
+</td>
+<td >
+单据状态
+</td>
+<td>fstatusflag</td>
+<td>
+int
+</td>
+<td>
+返利政策单据状态
+</td>
+<td></td>
+<td>
+0=自由，1=审批中，2=审批不通过，3=审批通过，5=关闭，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+fyearflag
+</td>
+<td >
+年度
+</td>
+<td>fyearflag</td>
+<td>
+int
+</td>
+<td>
+年度
+</td>
+<td></td>
+<td>
+2010=2010，2011=2011，2012=2012，2013=2013，2014=2014，2015=2015，2016=2016，2017=2017，2018=2018，2019=2019，2021=2021，2022=2022，2023=2023，2024=2024，2025=2025，2026=2026，2027=2027，2028=2028，2029=2029，2030=2030，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+iversion
+</td>
+<td >
+返利政策版本号
+</td>
+<td>iversion</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+返利政策销售组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="945f38b6-48ec-43e6-bb09-77ec89a3728f.html" >组织_业务单元_销售组织</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+pk_plcy
+</td>
+<td >
+返利政策主实体
+</td>
+<td>pk_plcy</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_plcy_r</b></span>
+</td>
+<td >
+<span style="color:#09C">返利政策修订主实体</span>
+</td>
+<td>pk_plcy_r</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+taudittime
+</td>
+<td >
+审批日期
+</td>
+<td>taudittime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+vcode
+</td>
+<td >
+返利政策编码
+</td>
+<td>vcode</td>
+<td>
+varchar(40)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+vdef1
+</td>
+<td >
+自定义项1
+</td>
+<td>vdef1</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+vdef10
+</td>
+<td >
+自定义项10
+</td>
+<td>vdef10</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+vdef11
+</td>
+<td >
+自定义项11
+</td>
+<td>vdef11</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+vdef12
+</td>
+<td >
+自定义项12
+</td>
+<td>vdef12</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">47</td>
+<td>&nbsp;
+vdef13
+</td>
+<td >
+自定义项13
+</td>
+<td>vdef13</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">48</td>
+<td>&nbsp;
+vdef14
+</td>
+<td >
+自定义项14
+</td>
+<td>vdef14</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">49</td>
+<td>&nbsp;
+vdef15
+</td>
+<td >
+自定义项15
+</td>
+<td>vdef15</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">50</td>
+<td>&nbsp;
+vdef16
+</td>
+<td >
+自定义项16
+</td>
+<td>vdef16</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">51</td>
+<td>&nbsp;
+vdef17
+</td>
+<td >
+自定义项17
+</td>
+<td>vdef17</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">52</td>
+<td>&nbsp;
+vdef18
+</td>
+<td >
+自定义项18
+</td>
+<td>vdef18</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">53</td>
+<td>&nbsp;
+vdef19
+</td>
+<td >
+自定义项19
+</td>
+<td>vdef19</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">54</td>
+<td>&nbsp;
+vdef2
+</td>
+<td >
+自定义项2
+</td>
+<td>vdef2</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">55</td>
+<td>&nbsp;
+vdef20
+</td>
+<td >
+自定义项20
+</td>
+<td>vdef20</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">56</td>
+<td>&nbsp;
+vdef3
+</td>
+<td >
+自定义项3
+</td>
+<td>vdef3</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">57</td>
+<td>&nbsp;
+vdef4
+</td>
+<td >
+自定义项4
+</td>
+<td>vdef4</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">58</td>
+<td>&nbsp;
+vdef5
+</td>
+<td >
+自定义项5
+</td>
+<td>vdef5</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">59</td>
+<td>&nbsp;
+vdef6
+</td>
+<td >
+自定义项6
+</td>
+<td>vdef6</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">60</td>
+<td>&nbsp;
+vdef7
+</td>
+<td >
+自定义项7
+</td>
+<td>vdef7</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">61</td>
+<td>&nbsp;
+vdef8
+</td>
+<td >
+自定义项8
+</td>
+<td>vdef8</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">62</td>
+<td>&nbsp;
+vdef9
+</td>
+<td >
+自定义项9
+</td>
+<td>vdef9</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">63</td>
+<td>&nbsp;
+vname
+</td>
+<td >
+返利政策名称
+</td>
+<td>vname</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">64</td>
+<td>&nbsp;
+vnote
+</td>
+<td >
+备注
+</td>
+<td>vnote</td>
+<td>
+varchar(181)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">65</td>
+<td>&nbsp;
+vrevisereason
+</td>
+<td >
+修订理由
+</td>
+<td>vrevisereason</td>
+<td>
+varchar(181)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">66</td>
+<td>&nbsp;
+vtrantypecode
+</td>
+<td >
+交易类型编码
+</td>
+<td>vtrantypecode</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

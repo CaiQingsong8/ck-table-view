@@ -1,0 +1,212 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ebank_srvconf_b 网银服务器配置子表</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 69c452f3-9467-4cbb-acf1-0dd9d0dc063d -->
+<b><span style="font-size:24px">网银服务器配置子表 (ebank_srvconf_b)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-01-18 13:38:55 &nbsp;修改时间 ：2013-01-22 16:29:08 &nbsp;路径：\obm\METADATA\ebankserverconfig\ebankserverconfig.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.obm.serverconfig.ServerConfigItemVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+bankname
+</td>
+<td >
+银行名称
+</td>
+<td>bankname</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+banktype
+</td>
+<td >
+银行编码
+</td>
+<td>banktype</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+netbankinftpcode
+</td>
+<td >
+<span style="color:#09C">银行接口类型</span>
+</td>
+<td>netbankinftpcode</td>
+<td>
+varchar(50)
+</td>
+<td>
+网银接口类别
+</td>
+<td></td>
+<td>
+00015=工商银行，00016=工行专业版，00017=工行推广版，00011=农行专网，00012=农行公网，00003=中国银行，00004=建设银行，00005=建行外联，00009=招商银行，00019=深圳发展银行，00006=光大银行，00018=浦发银行，00002=交通银行，00010=民生银行，00014=华夏银行，00007=兴业银行，00008=中信银行，00020=日本瑞穗-日本，00021=日本瑞穗-大连，00022=日本瑞穗-上海，00013=广东发展银行，00001=北京银行，00023=日本三菱银行，00024=中电财，00025=北京农村商业银行，00026=花旗银行，00027=上海银行，00028=深圳平安银行，00029=中国邮政储蓄银行，00030=徽商银行，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+主组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >财务组织</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+pk_org_v
+</td>
+<td >
+所属版本
+</td>
+<td>pk_org_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+pk_srvconf
+</td>
+<td >
+主表主键
+</td>
+<td>pk_srvconf</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_srvconf_b</b></span>
+</td>
+<td >
+<span style="color:#09C">网银服务器配置子表主键 </span>
+</td>
+<td>pk_srvconf_b</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

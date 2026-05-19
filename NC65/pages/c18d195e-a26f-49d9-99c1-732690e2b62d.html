@@ -1,0 +1,2753 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mm_pscorder_b 工序委外订单明细</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- c18d195e-a26f-49d9-99c1-732690e2b62d -->
+<b><span style="font-size:24px">工序委外订单明细 (mm_pscorder_b)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2014-01-16 14:17:55 &nbsp;修改时间 ：2015-08-11 10:52:35 &nbsp;路径：\mmpsc\METADATA\mm_pscorder.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.mmpsc.pscorder.entity.PscorderBodyVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+busicloser
+</td>
+<td >
+业务关闭人
+</td>
+<td>arricloser</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+busiclosetime
+</td>
+<td >
+业务关闭时间
+</td>
+<td>arriclosetime</td>
+<td>
+varchar(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+castunitid
+</td>
+<td >
+单位
+</td>
+<td>castunitid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="8e668e99-3c0e-401a-8f55-3d192e055c3c.html" >计量单位</a>
+</td>
+<td>计量单位</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+cbmaterialid
+</td>
+<td >
+加工品最新版本
+</td>
+<td>cbmaterialid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="eae040f4-3c88-413d-abc9-b15774463d46.html" >物料基本信息</a>
+</td>
+<td>物料</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+cbmaterialvid
+</td>
+<td >
+加工品
+</td>
+<td>cbmaterialvid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="c7dc0ccd-8872-4eee-8882-160e8f49dfad.html" >物料基本信息（多版本）</a>
+</td>
+<td>物料（多版本）</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+ccustomerid
+</td>
+<td >
+客户
+</td>
+<td>ccustomerid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e4f48eaf-5567-4383-a370-a59cb3e8a451.html" >客户基本信息</a>
+</td>
+<td>客户档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+cmoid
+</td>
+<td >
+生产订单
+</td>
+<td>cmoid</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+cmoprocedureid
+</td>
+<td >
+生产订单工序计划
+</td>
+<td>cmoprocedureid</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+cmoprocedurerowno
+</td>
+<td >
+生产订单工序计划行号
+</td>
+<td>cmoprocedurerowno</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+cmorowid
+</td>
+<td >
+生产订单行
+</td>
+<td>cmorowid</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+cmotrantypecode
+</td>
+<td >
+生产订单交易类型编码
+</td>
+<td>cmotrantypecode</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+cmotrantypeid
+</td>
+<td >
+生产订单交易类型
+</td>
+<td>cmotrantypeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素交 易类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+cproductorid
+</td>
+<td >
+生产厂商
+</td>
+<td>cproductorid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1002ZZ1000000000066Q.html" >生产厂商(自定义档案)</a>
+</td>
+<td>生产厂商(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+cprojectid
+</td>
+<td >
+项目
+</td>
+<td>cprojectid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2ee58f9b-781b-469f-b1d8-1816842515c3.html" >项目</a>
+</td>
+<td>项目</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+<span style="color:red"><b>cpscorderbid</b></span>
+</td>
+<td >
+<span style="color:#09C">工序委外订单明细</span>
+</td>
+<td>cpscorderbid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+crctypeid
+</td>
+<td >
+工序
+</td>
+<td>crctypeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="276c50f2-d8e8-4084-a598-550f855801fc.html" >标准工序</a>
+</td>
+<td>工序类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+cscunitid
+</td>
+<td >
+计价单位
+</td>
+<td>cscunitid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="8e668e99-3c0e-401a-8f55-3d192e055c3c.html" >计量单位</a>
+</td>
+<td>计量单位</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+ctaxcodeid
+</td>
+<td >
+税码
+</td>
+<td>ctaxcodeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f758785c-a056-4f65-a551-ac05c3ac09cd.html" >增值税税码税率</a>
+</td>
+<td>税码税率</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+cunitid
+</td>
+<td >
+主单位
+</td>
+<td>cunitid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="8e668e99-3c0e-401a-8f55-3d192e055c3c.html" >计量单位</a>
+</td>
+<td>计量单位</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+cvendorid
+</td>
+<td >
+供应商
+</td>
+<td>cvendorid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="720dcc7c-ff19-48f4-b9c5-b90906682f45.html" >供应商基本信息</a>
+</td>
+<td>供应商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+dplanarrvdatetime
+</td>
+<td >
+计划收货时间
+</td>
+<td>dplanarrvdatetime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+dplansenddatetime
+</td>
+<td >
+计划发货时间
+</td>
+<td>dplansenddatetime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+fitemstatus
+</td>
+<td >
+行状态
+</td>
+<td>fitemstatus</td>
+<td>
+int
+</td>
+<td>
+工序委外订单行状态
+</td>
+<td></td>
+<td>
+0=自由，1=审批，2=业务关闭，3=开票关闭，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+ftaxtypeflag
+</td>
+<td >
+扣税类别
+</td>
+<td>ftaxtypeflag</td>
+<td>
+int
+</td>
+<td>
+扣税类别
+</td>
+<td></td>
+<td>
+1=应税外加，0=应税内含，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+invoicloser
+</td>
+<td >
+开票关闭人
+</td>
+<td>invoicloser</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+invoiclosetime
+</td>
+<td >
+开票关闭时间
+</td>
+<td>invoiclosetime</td>
+<td>
+varchar(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+naccumarrvastnum
+</td>
+<td >
+累计收货数量
+</td>
+<td>naccumarrvastnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+naccumarrvnum
+</td>
+<td >
+累计收货主数量
+</td>
+<td>naccumarrvnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+naccumbackastnum
+</td>
+<td >
+累计退货数量
+</td>
+<td>naccumbackastnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+naccumbacknum
+</td>
+<td >
+累计退货主数量
+</td>
+<td>naccumbacknum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+naccumsendastnum
+</td>
+<td >
+累计发货数量
+</td>
+<td>naccumsendastnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+naccumsendnum
+</td>
+<td >
+累计发货主数量
+</td>
+<td>naccumsendnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+narrvastnum
+</td>
+<td >
+本次收货数量
+</td>
+<td>narrvnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+narrvbackastnum
+</td>
+<td >
+本次收货退回数量
+</td>
+<td>narrvbackastnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+narrvbacknum
+</td>
+<td >
+本次收货退回主数量
+</td>
+<td>narrvbacknum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+narrvnum
+</td>
+<td >
+本次收货主数量
+</td>
+<td>narrvnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+nastnum
+</td>
+<td >
+数量
+</td>
+<td>nastnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+ncalcostmny
+</td>
+<td >
+计成本金额
+</td>
+<td>ncalcostmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+ncaltaxmny
+</td>
+<td >
+计税金额
+</td>
+<td>ncaltaxmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+nglobalmny
+</td>
+<td >
+全局本币无税金额
+</td>
+<td>nglobalmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+nglobaltaxmny
+</td>
+<td >
+全局本币价税合计
+</td>
+<td>nglobaltaxmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+ngroupmny
+</td>
+<td >
+集团本币无税金额
+</td>
+<td>ngroupmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+ngrouptaxmny
+</td>
+<td >
+集团本币价税合计
+</td>
+<td>ngrouptaxmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+nitemdiscountrate
+</td>
+<td >
+折扣率
+</td>
+<td>nitemdiscountrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+nmny
+</td>
+<td >
+本币无税金额
+</td>
+<td>nmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+nnetprice
+</td>
+<td >
+主本币无税净价
+</td>
+<td>nnetprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">47</td>
+<td>&nbsp;
+nnosubtax
+</td>
+<td >
+不可抵扣税额
+</td>
+<td>nnosubtax</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">48</td>
+<td>&nbsp;
+nnosubtaxrate
+</td>
+<td >
+不可抵扣税率
+</td>
+<td>nnosubtaxrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">49</td>
+<td>&nbsp;
+nnum
+</td>
+<td >
+主数量
+</td>
+<td>nnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">50</td>
+<td>&nbsp;
+norigmny
+</td>
+<td >
+无税金额
+</td>
+<td>norigmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">51</td>
+<td>&nbsp;
+norignetprice
+</td>
+<td >
+主无税净价
+</td>
+<td>norignetprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">52</td>
+<td>&nbsp;
+norigprice
+</td>
+<td >
+主无税单价
+</td>
+<td>norigprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">53</td>
+<td>&nbsp;
+norigtax
+</td>
+<td >
+原币税额
+</td>
+<td>norigtax</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">54</td>
+<td>&nbsp;
+norigtaxmny
+</td>
+<td >
+价税合计
+</td>
+<td>norigtaxmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">55</td>
+<td>&nbsp;
+norigtaxnetprice
+</td>
+<td >
+主含税净价
+</td>
+<td>norigtaxnetprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">56</td>
+<td>&nbsp;
+norigtaxprice
+</td>
+<td >
+主含税单价
+</td>
+<td>norigtaxprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">57</td>
+<td>&nbsp;
+nprice
+</td>
+<td >
+主本币无税单价
+</td>
+<td>nprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">58</td>
+<td>&nbsp;
+nqtnetprice
+</td>
+<td >
+本币无税净价
+</td>
+<td>nqtnetprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">59</td>
+<td>&nbsp;
+nqtorignetprice
+</td>
+<td >
+无税净价
+</td>
+<td>nqtorignetprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">60</td>
+<td>&nbsp;
+nqtorigprice
+</td>
+<td >
+无税单价
+</td>
+<td>nqtorigprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">61</td>
+<td>&nbsp;
+nqtorigtaxnetprc
+</td>
+<td >
+含税净价
+</td>
+<td>nqtorigtaxnetprc</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">62</td>
+<td>&nbsp;
+nqtorigtaxprice
+</td>
+<td >
+含税单价
+</td>
+<td>nqtorigtaxprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">63</td>
+<td>&nbsp;
+nqtprice
+</td>
+<td >
+本币无税单价
+</td>
+<td>nqtprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">64</td>
+<td>&nbsp;
+nqttaxnetprice
+</td>
+<td >
+本币含税净价
+</td>
+<td>nqttaxnetprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">65</td>
+<td>&nbsp;
+nqttaxprice
+</td>
+<td >
+本币含税单价
+</td>
+<td>nqttaxprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">66</td>
+<td>&nbsp;
+nscnum
+</td>
+<td >
+计价数量
+</td>
+<td>nscnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">67</td>
+<td>&nbsp;
+nsendastnum
+</td>
+<td >
+本次发货数量
+</td>
+<td>nsendnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">68</td>
+<td>&nbsp;
+nsendbackastnum
+</td>
+<td >
+本次发货退回数量
+</td>
+<td>nsendbackastnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">69</td>
+<td>&nbsp;
+nsendbacknum
+</td>
+<td >
+本次发货退回主数量
+</td>
+<td>nsendbacknum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">70</td>
+<td>&nbsp;
+nsendnum
+</td>
+<td >
+本次发货主数量
+</td>
+<td>nsendnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">71</td>
+<td>&nbsp;
+ntax
+</td>
+<td >
+税额
+</td>
+<td>ntax</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">72</td>
+<td>&nbsp;
+ntaxmny
+</td>
+<td >
+本币价税合计
+</td>
+<td>ntaxmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">73</td>
+<td>&nbsp;
+ntaxnetprice
+</td>
+<td >
+主本币含税净价
+</td>
+<td>ntaxnetprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">74</td>
+<td>&nbsp;
+ntaxprice
+</td>
+<td >
+主本币含税单价
+</td>
+<td>ntaxprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">75</td>
+<td>&nbsp;
+ntaxrate
+</td>
+<td >
+税率
+</td>
+<td>ntaxrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">76</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">77</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+采购组织最新版本
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5d69ee35-57d0-4f7b-b454-deff4fc73689.html" >组织_业务单元_采购组织</a>
+</td>
+<td>采购组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">78</td>
+<td>&nbsp;
+pk_org_v
+</td>
+<td >
+采购组织
+</td>
+<td>pk_org_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="eda9f476-357f-4ff7-ac09-6766bc29de29.html" >组织_业务单元_采购组织版本信息</a>
+</td>
+<td>采购组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">79</td>
+<td>&nbsp;
+tbsourcebillts
+</td>
+<td >
+来源时间戳
+</td>
+<td>tbsourcebillts</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">80</td>
+<td>&nbsp;
+tbsourcerowts
+</td>
+<td >
+来源行时间戳
+</td>
+<td>tbsourcerowts</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">81</td>
+<td>&nbsp;
+vbdef1
+</td>
+<td >
+自定义项1
+</td>
+<td>vbdef1</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">82</td>
+<td>&nbsp;
+vbdef10
+</td>
+<td >
+自定义项10
+</td>
+<td>vbdef10</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">83</td>
+<td>&nbsp;
+vbdef11
+</td>
+<td >
+自定义项11
+</td>
+<td>vbdef11</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">84</td>
+<td>&nbsp;
+vbdef12
+</td>
+<td >
+自定义项12
+</td>
+<td>vbdef12</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">85</td>
+<td>&nbsp;
+vbdef13
+</td>
+<td >
+自定义项13
+</td>
+<td>vbdef13</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">86</td>
+<td>&nbsp;
+vbdef14
+</td>
+<td >
+自定义项14
+</td>
+<td>vbdef14</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">87</td>
+<td>&nbsp;
+vbdef15
+</td>
+<td >
+自定义项15
+</td>
+<td>vbdef15</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">88</td>
+<td>&nbsp;
+vbdef16
+</td>
+<td >
+自定义项16
+</td>
+<td>vbdef16</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">89</td>
+<td>&nbsp;
+vbdef17
+</td>
+<td >
+自定义项17
+</td>
+<td>vbdef17</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">90</td>
+<td>&nbsp;
+vbdef18
+</td>
+<td >
+自定义项18
+</td>
+<td>vbdef18</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">91</td>
+<td>&nbsp;
+vbdef19
+</td>
+<td >
+自定义项19
+</td>
+<td>vbdef19</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">92</td>
+<td>&nbsp;
+vbdef2
+</td>
+<td >
+自定义项2
+</td>
+<td>vbdef2</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">93</td>
+<td>&nbsp;
+vbdef20
+</td>
+<td >
+自定义项20
+</td>
+<td>vbdef20</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">94</td>
+<td>&nbsp;
+vbdef3
+</td>
+<td >
+自定义项3
+</td>
+<td>vbdef3</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">95</td>
+<td>&nbsp;
+vbdef4
+</td>
+<td >
+自定义项4
+</td>
+<td>vbdef4</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">96</td>
+<td>&nbsp;
+vbdef5
+</td>
+<td >
+自定义项5
+</td>
+<td>vbdef5</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">97</td>
+<td>&nbsp;
+vbdef6
+</td>
+<td >
+自定义项6
+</td>
+<td>vbdef6</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">98</td>
+<td>&nbsp;
+vbdef7
+</td>
+<td >
+自定义项7
+</td>
+<td>vbdef7</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">99</td>
+<td>&nbsp;
+vbdef8
+</td>
+<td >
+自定义项8
+</td>
+<td>vbdef8</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">100</td>
+<td>&nbsp;
+vbdef9
+</td>
+<td >
+自定义项9
+</td>
+<td>vbdef9</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">101</td>
+<td>&nbsp;
+vbnote
+</td>
+<td >
+备注
+</td>
+<td>vbnote</td>
+<td>
+varchar(181)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">102</td>
+<td>&nbsp;
+vchangerate
+</td>
+<td >
+换算率
+</td>
+<td>vchangerate</td>
+<td>
+varchar(60)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">103</td>
+<td>&nbsp;
+vfirstbid
+</td>
+<td >
+源头单据明细
+</td>
+<td>vfirstbid</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">104</td>
+<td>&nbsp;
+vfirstcode
+</td>
+<td >
+源头单据号
+</td>
+<td>vfirstcode</td>
+<td>
+varchar(40)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">105</td>
+<td>&nbsp;
+vfirstid
+</td>
+<td >
+源头单据
+</td>
+<td>vfirstid</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">106</td>
+<td>&nbsp;
+vfirstrowno
+</td>
+<td >
+源头单据行号
+</td>
+<td>vfirstrowno</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">107</td>
+<td>&nbsp;
+vfirsttrantype
+</td>
+<td >
+源头交易类型
+</td>
+<td>vfirsttrantype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素交 易类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">108</td>
+<td>&nbsp;
+vfirsttrantypecode
+</td>
+<td >
+源头交易类型编码
+</td>
+<td>vfirsttrantypecode</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">109</td>
+<td>&nbsp;
+vfirsttype
+</td>
+<td >
+源头单据类型
+</td>
+<td>vfirsttype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素单据类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">110</td>
+<td>&nbsp;
+vfree1
+</td>
+<td >
+自由辅助属性1
+</td>
+<td>vfree1</td>
+<td>
+varchar(101)
+</td>
+<td>
+自由项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">111</td>
+<td>&nbsp;
+vfree10
+</td>
+<td >
+自由辅助属性10
+</td>
+<td>vfree10</td>
+<td>
+varchar(101)
+</td>
+<td>
+自由项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">112</td>
+<td>&nbsp;
+vfree2
+</td>
+<td >
+自由辅助属性2
+</td>
+<td>vfree2</td>
+<td>
+varchar(101)
+</td>
+<td>
+自由项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">113</td>
+<td>&nbsp;
+vfree3
+</td>
+<td >
+自由辅助属性3
+</td>
+<td>vfree3</td>
+<td>
+varchar(101)
+</td>
+<td>
+自由项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">114</td>
+<td>&nbsp;
+vfree4
+</td>
+<td >
+自由辅助属性4
+</td>
+<td>vfree4</td>
+<td>
+varchar(101)
+</td>
+<td>
+自由项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">115</td>
+<td>&nbsp;
+vfree5
+</td>
+<td >
+自由辅助属性5
+</td>
+<td>vfree5</td>
+<td>
+varchar(101)
+</td>
+<td>
+自由项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">116</td>
+<td>&nbsp;
+vfree6
+</td>
+<td >
+自由辅助属性6
+</td>
+<td>vfree6</td>
+<td>
+varchar(101)
+</td>
+<td>
+自由项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">117</td>
+<td>&nbsp;
+vfree7
+</td>
+<td >
+自由辅助属性7
+</td>
+<td>vfree7</td>
+<td>
+varchar(101)
+</td>
+<td>
+自由项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">118</td>
+<td>&nbsp;
+vfree8
+</td>
+<td >
+自由辅助属性8
+</td>
+<td>vfree8</td>
+<td>
+varchar(101)
+</td>
+<td>
+自由项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">119</td>
+<td>&nbsp;
+vfree9
+</td>
+<td >
+自由辅助属性9
+</td>
+<td>vfree9</td>
+<td>
+varchar(101)
+</td>
+<td>
+自由项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">120</td>
+<td>&nbsp;
+vmobillcode
+</td>
+<td >
+生产订单号
+</td>
+<td>vmobillcode</td>
+<td>
+varchar(40)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">121</td>
+<td>&nbsp;
+vmobilltype
+</td>
+<td >
+生产订单单据类型
+</td>
+<td>vmobilltype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素单据类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">122</td>
+<td>&nbsp;
+vmorowno
+</td>
+<td >
+生产订单行号
+</td>
+<td>vmorowno</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">123</td>
+<td>&nbsp;
+vrccode
+</td>
+<td >
+工序号
+</td>
+<td>vrccode</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">124</td>
+<td>&nbsp;
+vreceiveaddress
+</td>
+<td >
+收货地址
+</td>
+<td>vreceiveaddress</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">125</td>
+<td>&nbsp;
+vreceiver
+</td>
+<td >
+收货人
+</td>
+<td>vreceiver</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="40d39c26-a2b6-4f16-a018-45664cac1a1f.html" >人员基本信息</a>
+</td>
+<td>人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">126</td>
+<td>&nbsp;
+vrowno
+</td>
+<td >
+行号
+</td>
+<td>vrowno</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">127</td>
+<td>&nbsp;
+vscchangerate
+</td>
+<td >
+计价换算率
+</td>
+<td>vscchangerate</td>
+<td>
+varchar(60)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">128</td>
+<td>&nbsp;
+vsender
+</td>
+<td >
+发货人
+</td>
+<td>vsender</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="40d39c26-a2b6-4f16-a018-45664cac1a1f.html" >人员基本信息</a>
+</td>
+<td>人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">129</td>
+<td>&nbsp;
+vsrcbid
+</td>
+<td >
+来源单据明细
+</td>
+<td>vsrcbid</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">130</td>
+<td>&nbsp;
+vsrccode
+</td>
+<td >
+来源单据号
+</td>
+<td>vsrccode</td>
+<td>
+varchar(40)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">131</td>
+<td>&nbsp;
+vsrcid
+</td>
+<td >
+来源单据
+</td>
+<td>vsrcid</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">132</td>
+<td>&nbsp;
+vsrcrowno
+</td>
+<td >
+来源单据行号
+</td>
+<td>vsrcrowno</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">133</td>
+<td>&nbsp;
+vsrctrantype
+</td>
+<td >
+来源交易类型
+</td>
+<td>vsrctrantype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素交 易类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">134</td>
+<td>&nbsp;
+vsrctrantypecode
+</td>
+<td >
+来源交易类型编码
+</td>
+<td>vsrctrantypecode</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">135</td>
+<td>&nbsp;
+vsrctype
+</td>
+<td >
+来源单据类型
+</td>
+<td>vsrctype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素单据类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

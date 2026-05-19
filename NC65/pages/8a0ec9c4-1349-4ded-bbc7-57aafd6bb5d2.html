@@ -1,0 +1,1602 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>srmsm_supplierext_h 供应商扩展信息</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 8a0ec9c4-1349-4ded-bbc7-57aafd6bb5d2 -->
+<b><span style="font-size:24px">供应商扩展信息 (srmsm_supplierext_h)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2013-07-29 14:03:43 &nbsp;修改时间 ：2015-11-19 13:35:36 &nbsp;路径：\srmsm\METADATA\srmbdext\srmsm_supplierext.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.bd.supplierext.entity.SupplierExtHVO
+/&nbsp;AggVO：nc.vo.bd.supplierext.entity.SupplierExtVO
+/&nbsp;<a href="40ae2791-fa4e-408e-93b4-62f7ceb929e2.html" >供货能力分类</a>
+/&nbsp;<a href="45da5290-bc96-42f9-a8ee-d5b2d03577df.html" >资料</a>
+/&nbsp;<a href="f4634f85-6ee0-4fdf-ab95-7986e9d5ca07.html" >产品</a>
+/&nbsp;<a href="4068d265-78d9-4d61-a297-7c69423da65f.html" >资质</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+bisblack
+</td>
+<td >
+黑名单
+</td>
+<td>bisblack</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+bisfirstlogin
+</td>
+<td >
+第一次登陆
+</td>
+<td>bisfirstlogin</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+bisread
+</td>
+<td >
+已读
+</td>
+<td>bisread</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+cblackoperator
+</td>
+<td >
+放入黑名单人
+</td>
+<td>cblackoperator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+creqpsnid
+</td>
+<td >
+邀请人
+</td>
+<td>creqpsnid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="40d39c26-a2b6-4f16-a018-45664cac1a1f.html" >人员基本信息</a>
+</td>
+<td>人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+csupgrade
+</td>
+<td >
+供应商等级
+</td>
+<td>csupgrade</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="0515a49d-70c9-48fa-a939-e999305589f8.html" >等级信息</a>
+</td>
+<td>供应商等级</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+csupgradesysid
+</td>
+<td >
+供应商等级体系
+</td>
+<td>csupgradesysid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="969a3535-0f3f-440b-b305-be78eb0fcfc1.html" >供应商等级体系设置</a>
+</td>
+<td>供应商等级体系设置</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+csupplierid
+</td>
+<td >
+供应商
+</td>
+<td>csupplierid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="720dcc7c-ff19-48f4-b9c5-b90906682f45.html" >供应商基本信息</a>
+</td>
+<td>供应商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+dblackdate
+</td>
+<td >
+进入黑名单日期
+</td>
+<td>dblackdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+deffectenddate
+</td>
+<td >
+合格有效期至
+</td>
+<td>deffectenddate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate_end
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+dpaydate
+</td>
+<td >
+交货期
+</td>
+<td>dpaydate</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+dreqdate
+</td>
+<td >
+邀请日期
+</td>
+<td>dreqdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+factoryproty
+</td>
+<td >
+厂房性质
+</td>
+<td>factoryproty</td>
+<td>
+int
+</td>
+<td>
+厂房性质
+</td>
+<td></td>
+<td>
+1=租赁，2=自用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+fbankcreditgrade
+</td>
+<td >
+银行资信等级
+</td>
+<td>fbankcreditgrade</td>
+<td>
+int
+</td>
+<td>
+银行资信等级
+</td>
+<td></td>
+<td>
+1=A，2=2A，3=3A，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+fentprop
+</td>
+<td >
+企业性质
+</td>
+<td>fentprop</td>
+<td>
+int
+</td>
+<td>
+企业性质
+</td>
+<td></td>
+<td>
+1=上市公司，2=非上市公司，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+fisminorder
+</td>
+<td >
+是否有最小订购批量
+</td>
+<td>fisminorder</td>
+<td>
+int
+</td>
+<td>
+是否有最小订购批量
+</td>
+<td></td>
+<td>
+1=是，2=否，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+fofferbill
+</td>
+<td >
+提供哪种发票
+</td>
+<td>fofferbill</td>
+<td>
+int
+</td>
+<td>
+提供哪种发票
+</td>
+<td></td>
+<td>
+1=普通发票，2=增值税发票，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+fpayway
+</td>
+<td >
+产品交付方式
+</td>
+<td>fpayway</td>
+<td>
+int
+</td>
+<td>
+产品交付方式
+</td>
+<td></td>
+<td>
+1=送货上门，2=自提，3=其他，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+ideadline
+</td>
+<td >
+付款期限(天)
+</td>
+<td>ideadline</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+iemployeenum
+</td>
+<td >
+员工人数
+</td>
+<td>iemployeenum</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+ilabnum
+</td>
+<td >
+相关产品的实验室数量
+</td>
+<td>ilabnum</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+inwarenum
+</td>
+<td >
+室内仓库数量
+</td>
+<td>inwarenum</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+iofficenum
+</td>
+<td >
+相关产品的办公室数量
+</td>
+<td>iofficenum</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+ioutwarenum
+</td>
+<td >
+室外仓库数量
+</td>
+<td>ioutwarenum</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+iwarenum
+</td>
+<td >
+相关产品的仓库数量
+</td>
+<td>iwarenum</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+iworkshopnum
+</td>
+<td >
+相关产品的车间数量
+</td>
+<td>iworkshopnum</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+nbizareanum
+</td>
+<td >
+经营场所面积(平方米)
+</td>
+<td>nbizareanum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+ncompanyarea
+</td>
+<td >
+公司总面积(平方米)
+</td>
+<td>ncompanyarea</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+ninwarearea
+</td>
+<td >
+室内仓库面积(平方米)
+</td>
+<td>ninwarearea</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+nlabarea
+</td>
+<td >
+相关产品的实验室面积(平方米)
+</td>
+<td>nlabarea</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+nminordernum
+</td>
+<td >
+最小订购量
+</td>
+<td>nminordernum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+nofficearea
+</td>
+<td >
+相关产品的办公室面积(平方米)
+</td>
+<td>nofficearea</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+noutwarearea
+</td>
+<td >
+室外仓库面积(平方米)
+</td>
+<td>noutwarearea</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+nsalexportrate
+</td>
+<td >
+内销/出口比例
+</td>
+<td>nsalexportrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+nstorenum
+</td>
+<td >
+库存量
+</td>
+<td>nstorenum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+nwarearea
+</td>
+<td >
+相关产品的仓库面积(平方米)
+</td>
+<td>nwarearea</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+nworkshoparea
+</td>
+<td >
+相关产品的车间面积(平方米)
+</td>
+<td>nworkshoparea</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+pk_blacklistapply
+</td>
+<td >
+黑名单申请单
+</td>
+<td>pk_blacklistapply</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="92fe7d66-4bd1-4b0c-85a4-396a4de8340a.html" >供应商黑名单申请</a>
+</td>
+<td>供应商黑名单申请</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+所属集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+所属业务单元
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="985be8a4-3a36-4778-8afe-2d8ed3902659.html" >组织</a>
+</td>
+<td>全局+集团+业务单元</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_supplier</b></span>
+</td>
+<td >
+<span style="color:#09C">供应商扩展主键</span>
+</td>
+<td>pk_supplier</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+vaddress
+</td>
+<td >
+地址(库存量)
+</td>
+<td>vaddress</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">47</td>
+<td>&nbsp;
+vaimcustomer
+</td>
+<td >
+目标客户群
+</td>
+<td>vaimcustomer</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">48</td>
+<td>&nbsp;
+vbizprod
+</td>
+<td >
+经营产品
+</td>
+<td>vbizprod</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">49</td>
+<td>&nbsp;
+vbizstatus
+</td>
+<td >
+经营状况
+</td>
+<td>vbizstatus</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">50</td>
+<td>&nbsp;
+vdef1
+</td>
+<td >
+自定义项1
+</td>
+<td>vdef1</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">51</td>
+<td>&nbsp;
+vdef10
+</td>
+<td >
+自定义项10
+</td>
+<td>vdef10</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">52</td>
+<td>&nbsp;
+vdef11
+</td>
+<td >
+自定义项11
+</td>
+<td>vdef11</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">53</td>
+<td>&nbsp;
+vdef12
+</td>
+<td >
+自定义项12
+</td>
+<td>vdef12</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">54</td>
+<td>&nbsp;
+vdef13
+</td>
+<td >
+自定义项13
+</td>
+<td>vdef13</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">55</td>
+<td>&nbsp;
+vdef14
+</td>
+<td >
+自定义项14
+</td>
+<td>vdef14</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">56</td>
+<td>&nbsp;
+vdef15
+</td>
+<td >
+自定义项15
+</td>
+<td>vdef15</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">57</td>
+<td>&nbsp;
+vdef16
+</td>
+<td >
+自定义项16
+</td>
+<td>vdef16</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">58</td>
+<td>&nbsp;
+vdef17
+</td>
+<td >
+自定义项17
+</td>
+<td>vdef17</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">59</td>
+<td>&nbsp;
+vdef18
+</td>
+<td >
+自定义项18
+</td>
+<td>vdef18</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">60</td>
+<td>&nbsp;
+vdef19
+</td>
+<td >
+自定义项19
+</td>
+<td>vdef19</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">61</td>
+<td>&nbsp;
+vdef2
+</td>
+<td >
+自定义项2
+</td>
+<td>vdef2</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">62</td>
+<td>&nbsp;
+vdef20
+</td>
+<td >
+自定义项20
+</td>
+<td>vdef20</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">63</td>
+<td>&nbsp;
+vdef3
+</td>
+<td >
+自定义项3
+</td>
+<td>vdef3</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">64</td>
+<td>&nbsp;
+vdef4
+</td>
+<td >
+自定义项4
+</td>
+<td>vdef4</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">65</td>
+<td>&nbsp;
+vdef5
+</td>
+<td >
+自定义项5
+</td>
+<td>vdef5</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">66</td>
+<td>&nbsp;
+vdef6
+</td>
+<td >
+自定义项6
+</td>
+<td>vdef6</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">67</td>
+<td>&nbsp;
+vdef7
+</td>
+<td >
+自定义项7
+</td>
+<td>vdef7</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">68</td>
+<td>&nbsp;
+vdef8
+</td>
+<td >
+自定义项8
+</td>
+<td>vdef8</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">69</td>
+<td>&nbsp;
+vdef9
+</td>
+<td >
+自定义项9
+</td>
+<td>vdef9</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">70</td>
+<td>&nbsp;
+veclogofilepk
+</td>
+<td >
+门户Logo文件
+</td>
+<td>veclogofilepk</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">71</td>
+<td>&nbsp;
+vexportcustomer
+</td>
+<td >
+出口主要客户/地区
+</td>
+<td>vexportcustomer</td>
+<td>
+varchar(200)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">72</td>
+<td>&nbsp;
+vextappraise
+</td>
+<td >
+外部评价
+</td>
+<td>vextappraise</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">73</td>
+<td>&nbsp;
+vmemo
+</td>
+<td >
+备注
+</td>
+<td>vmemo</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">74</td>
+<td>&nbsp;
+vpaytype
+</td>
+<td >
+付款方式
+</td>
+<td>vpaytype</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">75</td>
+<td>&nbsp;
+vpicktype
+</td>
+<td >
+提货方式
+</td>
+<td>vpicktype</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">76</td>
+<td>&nbsp;
+vprodequality
+</td>
+<td >
+产品质量
+</td>
+<td>vprodequality</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">77</td>
+<td>&nbsp;
+vsalepercent
+</td>
+<td >
+内销主要客户/占销售额百分比
+</td>
+<td>vsalepercent</td>
+<td>
+varchar(200)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">78</td>
+<td>&nbsp;
+vsaletype
+</td>
+<td >
+销售网络及方式
+</td>
+<td>vsaletype</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">79</td>
+<td>&nbsp;
+vservicenet
+</td>
+<td >
+服务网络
+</td>
+<td>vservicenet</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">80</td>
+<td>&nbsp;
+vsuppability
+</td>
+<td >
+供货能力
+</td>
+<td>vsuppability</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">81</td>
+<td>&nbsp;
+vsuppcyc
+</td>
+<td >
+正常供货周期
+</td>
+<td>vsuppcyc</td>
+<td>
+varchar(1000)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

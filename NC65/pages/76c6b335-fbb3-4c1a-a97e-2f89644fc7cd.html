@@ -1,0 +1,692 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>dcm_chnlsendbill_b 渠道报送表子实体</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 76c6b335-fbb3-4c1a-a97e-2f89644fc7cd -->
+<b><span style="font-size:24px">渠道报送表子实体 (dcm_chnlsendbill_b)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2012-06-19 16:59:44 &nbsp;修改时间 ：2015-08-25 14:48:42 &nbsp;路径：\cmdg\METADATA\channelsendbill\channelsendbill.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.dcm.channelsendbill.entity.ChannelSendBillBVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+caimchanltypeid
+</td>
+<td >
+目的渠道类型
+</td>
+<td>caimchanltypeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="6d90c539-bdcd-4eb1-a4f0-855f328fecb1.html" >渠道类型</a>
+</td>
+<td>渠道类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+caimchnlnodeid
+</td>
+<td >
+目的渠道节点
+</td>
+<td>caimchnlnodeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7724c6e0-78ef-47e8-a50c-fea9ced335eb.html" >分销渠道节点主实体</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+cmarbasclassid
+</td>
+<td >
+物料基本分类
+</td>
+<td>cmarbasclassid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="c099f7d7-52a9-4b98-bee7-2e3a6c3ea263.html" >物料基本分类</a>
+</td>
+<td>物料基本分类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+cmaterialid
+</td>
+<td >
+物料
+</td>
+<td>cmaterialid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="eae040f4-3c88-413d-abc9-b15774463d46.html" >物料基本信息</a>
+</td>
+<td>物料</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+crowno
+</td>
+<td >
+行号
+</td>
+<td>crowno</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+csupplychnlnodeid
+</td>
+<td >
+供货渠道节点
+</td>
+<td>csupplychnlnodeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7724c6e0-78ef-47e8-a50c-fea9ced335eb.html" >分销渠道节点主实体</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+cunitid
+</td>
+<td >
+单位
+</td>
+<td>cunitid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="8e668e99-3c0e-401a-8f55-3d192e055c3c.html" >计量单位</a>
+</td>
+<td>计量单位</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+fresultupdateflag
+</td>
+<td >
+结果更新方式
+</td>
+<td>fresultupdateflag</td>
+<td>
+int
+</td>
+<td>
+结果更新方式
+</td>
+<td></td>
+<td>
+0=插入，1=更新，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+ncheckinmny
+</td>
+<td >
+校正入库金额
+</td>
+<td>ncheckinmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+ncheckinnum
+</td>
+<td >
+校正入库数量
+</td>
+<td>ncheckinnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+ncheckinprice
+</td>
+<td >
+校正入库单价
+</td>
+<td>ncheckinprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+ncheckoutmny
+</td>
+<td >
+校正出库金额
+</td>
+<td>ncheckoutmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+ncheckoutnum
+</td>
+<td >
+校正出库数量
+</td>
+<td>ncheckoutnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+ncheckoutprice
+</td>
+<td >
+校正出库单价
+</td>
+<td>ncheckoutprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+nchecksumnum
+</td>
+<td >
+校正结存数量
+</td>
+<td>nchecksumnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+ninmny
+</td>
+<td >
+入库金额
+</td>
+<td>ninmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+ninnum
+</td>
+<td >
+入库数量
+</td>
+<td>ninnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+ninprice
+</td>
+<td >
+入库单价
+</td>
+<td>ninprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+norigcheckinmny
+</td>
+<td >
+校正原始入库金额
+</td>
+<td>norigcheckinmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+norigcheckinnum
+</td>
+<td >
+校正原始入库数量
+</td>
+<td>norigcheckinnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+norigcheckinprice
+</td>
+<td >
+校正原始入库单价
+</td>
+<td>norigcheckinprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+norigcheckoutmny
+</td>
+<td >
+校正原始出库金额
+</td>
+<td>norigcheckoutmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+norigcheckoutnum
+</td>
+<td >
+校正原始出库数量
+</td>
+<td>norigcheckoutnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+norigcheckoutprice
+</td>
+<td >
+校正原始出库单价
+</td>
+<td>norigcheckoutprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+norigchecksumnum
+</td>
+<td >
+校正原始结存数量
+</td>
+<td>norigchecksumnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+noutmny
+</td>
+<td >
+出库金额
+</td>
+<td>noutmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+noutnum
+</td>
+<td >
+出库数量
+</td>
+<td>noutnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+noutprice
+</td>
+<td >
+出库单价
+</td>
+<td>noutprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+nsumnum
+</td>
+<td >
+结存数量
+</td>
+<td>nsumnum</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_chanlsend_b</b></span>
+</td>
+<td >
+<span style="color:#09C">渠道报送表子实体</span>
+</td>
+<td>pk_chanlsend_b</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+销售组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="945f38b6-48ec-43e6-bb09-77ec89a3728f.html" >组织_业务单元_销售组织</a>
+</td>
+<td>销售组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

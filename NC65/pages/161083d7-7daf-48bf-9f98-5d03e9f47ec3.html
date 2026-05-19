@@ -1,0 +1,273 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>iufo_hbaccountprop 合并科目金额属性</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 161083d7-7daf-48bf-9f98-5d03e9f47ec3 -->
+<b><span style="font-size:24px">合并科目金额属性 (iufo_hbaccountprop)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-07-13 11:49:25 &nbsp;修改时间 ：2011-08-11 18:38:22 &nbsp;路径：\ufoc\METADATA\hbaccount\hbaccountprop.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.hbbb.account.HBAccountPropVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+accountname
+</td>
+<td >
+科目名称
+</td>
+<td>accountname</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+amounttype
+</td>
+<td >
+金额性质
+</td>
+<td>amounttype</td>
+<td>
+int
+</td>
+<td>
+金额性质类型
+</td>
+<td></td>
+<td>
+1=年初余额，2=期初余额，3=期末余额，4=净发生，5=累计净发生，6=本期借方发生，7=本期贷方发生，8=借方累计发生，9=贷方累计发生，0=无，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+code
+</td>
+<td >
+编码
+</td>
+<td>code</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+direction
+</td>
+<td >
+方向
+</td>
+<td>direction</td>
+<td>
+int
+</td>
+<td>
+科目方向
+</td>
+<td></td>
+<td>
+0=借方，1=贷方，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+innercode
+</td>
+<td >
+内部码
+</td>
+<td>innercode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+isquantity
+</td>
+<td >
+数量核算
+</td>
+<td>isquantity</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+isuapaccount
+</td>
+<td >
+核算科目
+</td>
+<td>isuapaccount</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+name
+</td>
+<td >
+科目属性名称
+</td>
+<td>name</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+pk_accchart
+</td>
+<td >
+对应合并科目表主键
+</td>
+<td>pk_accchart</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="c77ffa60-bf2f-4d2d-904a-ca5fea305af8.html" >合并科目表</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+pk_account
+</td>
+<td >
+<span style="color:#09C">对应科目主键</span>
+</td>
+<td>pk_account</td>
+<td>
+(20)
+</td>
+<td>
+<a href="769a4976-83fa-41ff-8371-c3c1c8baeeca.html" >合并科目</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_accprop</b></span>
+</td>
+<td >
+<span style="color:#09C">主键</span>
+</td>
+<td>pk_accprop</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>adp_transres 传输资源</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 3f2c167c-92b1-4606-839d-2417ad0f95b1 -->
+<b><span style="font-size:24px">传输资源 (adp_transres)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2012-03-14 15:38:04 &nbsp;修改时间 ：2014-04-07 16:23:18 &nbsp;路径：\riaadp\METADATA\transresmng.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.uap.distribution.restrans.TransResourceVO
+/&nbsp;AggVO：nc.vo.uap.distribution.restrans.AggTransResourceVO
+/&nbsp;<a href="3608ddaf-05f4-49b2-9574-0ffd038f12d4.html" >业务资源包</a>
+/&nbsp;<a href="c2b8f7a6-dfc3-4cb4-a4f4-0d136a14326a.html" >回执包</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+ackstatus
+</td>
+<td >
+接收确认状态
+</td>
+<td>ackstatus</td>
+<td>
+int
+</td>
+<td>
+资源接收确认状态
+</td>
+<td></td>
+<td>
+1=未确认，2=已确认，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+createtime
+</td>
+<td >
+生成时间
+</td>
+<td>createtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+creationtype
+</td>
+<td >
+<span style="color:#09C">生成方式</span>
+</td>
+<td>creationtype</td>
+<td>
+int
+</td>
+<td>
+传输资源生成方式
+</td>
+<td></td>
+<td>
+1=发送，2=接收，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+opuserid
+</td>
+<td >
+操作用户ID
+</td>
+<td>opuserid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+procinfo
+</td>
+<td >
+处理回执
+</td>
+<td>procinfo</td>
+<td>
+varchar(400)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+procresult
+</td>
+<td >
+处理状态
+</td>
+<td>procresult</td>
+<td>
+int
+</td>
+<td>
+处理结果
+</td>
+<td></td>
+<td>
+-1=接收完成，0=成功，1=失败，-2=正在处理，-3=依赖等待，-4=处理中断，10=发送完成，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+proctime
+</td>
+<td >
+处理时间
+</td>
+<td>proctime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+receiverid
+</td>
+<td >
+<span style="color:#09C">接收方系统编号</span>
+</td>
+<td>receiverid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b960d066-6c1f-48c8-8375-5d2a684fa6d6.html" >分布系统目录</a>
+</td>
+<td>分布系统目录</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+restypeid
+</td>
+<td >
+<span style="color:#09C">资源类型</span>
+</td>
+<td>restypeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="afec2230-3b1f-4a26-b0cb-c318e13930a6.html" >传输资源注册信息</a>
+</td>
+<td>传输资源包分类注册信息</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+senderid
+</td>
+<td >
+<span style="color:#09C">发送方系统编号</span>
+</td>
+<td>senderid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b960d066-6c1f-48c8-8375-5d2a684fa6d6.html" >分布系统目录</a>
+</td>
+<td>分布系统目录</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+sendstatus
+</td>
+<td >
+发送状态
+</td>
+<td>sendstatus</td>
+<td>
+int
+</td>
+<td>
+资源发送状态
+</td>
+<td></td>
+<td>
+0=无发送数据，1=初始，3=发送成功，4=发送失败，5=发送中止，21=数据准备，22=数据保存，23=数据发送，30=数据中断，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+storestatus
+</td>
+<td >
+数据存储状态
+</td>
+<td>storestatus</td>
+<td>
+int
+</td>
+<td>
+数据存储状态
+</td>
+<td></td>
+<td>
+1=初始化，2=完整保存，3=已删除，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+storestatuschgtime
+</td>
+<td >
+存储状态改变时间
+</td>
+<td>storestatuschgtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+taskexecid
+</td>
+<td >
+任务执行编号
+</td>
+<td>taskexecid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e783f6c4-2bf1-457e-b3a5-f7458d752d0c.html" >传输任务执行</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+taskexectime
+</td>
+<td >
+任务执行时间
+</td>
+<td>taskexectime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+transactivitycode
+</td>
+<td >
+传输活动编码
+</td>
+<td>transactivitycode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+<span style="color:red"><b>transresid</b></span>
+</td>
+<td >
+<span style="color:#09C">编号</span>
+</td>
+<td>transresid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+transresourcecode
+</td>
+<td >
+<span style="color:#09C">资源编码</span>
+</td>
+<td>transresourcecode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+transtaskid
+</td>
+<td >
+传输任务
+</td>
+<td>transtaskid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="ca300c7a-8e9d-4fb3-a8db-459a3910069c.html" >自动传输任务</a>
+</td>
+<td>传输任务</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

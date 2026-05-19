@@ -1,0 +1,313 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>adp_pkgloginfo 包管理日志信息</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- b89f5395-d79d-47b5-99a9-5ea921f6458e -->
+<b><span style="font-size:24px">包管理日志信息 (adp_pkgloginfo)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-03-09 15:41:32 &nbsp;修改时间 ：2015-07-27 13:31:35 &nbsp;路径：\uapbs\METADATA\pkgloginfo.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.uap.distribution.ADPPkgLogVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+actiontype
+</td>
+<td >
+动作
+</td>
+<td>actiontype</td>
+<td>
+int
+</td>
+<td>
+包动作类型
+</td>
+<td></td>
+<td>
+4=发送，5=接收，6=处理，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+groupid
+</td>
+<td >
+集团
+</td>
+<td>groupid</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+is_success
+</td>
+<td >
+是否成功
+</td>
+<td>is_success</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+logcontent
+</td>
+<td >
+内容
+</td>
+<td>logcontent</td>
+<td>
+varchar(2000)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+<span style="color:red"><b>logid</b></span>
+</td>
+<td >
+<span style="color:#09C">logid</span>
+</td>
+<td>logid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+occurtime
+</td>
+<td >
+发生时间
+</td>
+<td>occurtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+packname
+</td>
+<td >
+传输包名
+</td>
+<td>packname</td>
+<td>
+varchar(500)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+pkgmanageid
+</td>
+<td >
+传输编号
+</td>
+<td>pkgmanageid</td>
+<td>
+char(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+receiver
+</td>
+<td >
+接收方
+</td>
+<td>receiver</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b960d066-6c1f-48c8-8375-5d2a684fa6d6.html" >分布系统目录</a>
+</td>
+<td>分布系统目录</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+replyer
+</td>
+<td >
+应答方
+</td>
+<td>replyer</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b960d066-6c1f-48c8-8375-5d2a684fa6d6.html" >分布系统目录</a>
+</td>
+<td>接收方注册信息</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+sender
+</td>
+<td >
+发送方
+</td>
+<td>sender</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b960d066-6c1f-48c8-8375-5d2a684fa6d6.html" >分布系统目录</a>
+</td>
+<td>接收方注册信息</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+sendtype
+</td>
+<td >
+传输类型
+</td>
+<td>sendtype</td>
+<td>
+int
+</td>
+<td>
+包传输类型
+</td>
+<td></td>
+<td>
+1=手动，2=自动，3=未知，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+userid
+</td>
+<td >
+用户
+</td>
+<td>userid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

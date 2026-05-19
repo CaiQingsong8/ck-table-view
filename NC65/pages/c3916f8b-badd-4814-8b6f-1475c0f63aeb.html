@@ -1,0 +1,2151 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tbm_timedata 机器考勤数据</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- c3916f8b-badd-4814-8b6f-1475c0f63aeb -->
+<b><span style="font-size:24px">机器考勤数据 (tbm_timedata)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-08-25 15:58:00 &nbsp;修改时间 ：2013-06-04 16:09:37 &nbsp;路径：\hrta\METADATA\dataprocess\dataprocess.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.ta.dataprocess.TimeDataVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+calendar
+</td>
+<td >
+日历
+</td>
+<td>calendar</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+<span style="color:#09C">创建时间</span>
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+<span style="color:#09C">创建人</span>
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+dirty_flag
+</td>
+<td >
+未生成标志
+</td>
+<td>dirty_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+fourabsentlen
+</td>
+<td >
+时段四旷工时长
+</td>
+<td>fourabsentlen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+fourbegintime
+</td>
+<td >
+时段四开始时刻
+</td>
+<td>fourbegintime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+fourearlylen
+</td>
+<td >
+时段四早退时长
+</td>
+<td>fourearlylen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+fourendtime
+</td>
+<td >
+时段四结束时刻
+</td>
+<td>fourendtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+fourisabsent
+</td>
+<td >
+时段四是否旷工
+</td>
+<td>fourisabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+fourisearly
+</td>
+<td >
+时段四是否早退
+</td>
+<td>fourisearly</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+fourisearlyabsent
+</td>
+<td >
+时段四是否早退引起旷工
+</td>
+<td>fourisearlyabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+fourislate
+</td>
+<td >
+时段四是否迟到
+</td>
+<td>fourislate</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+fourislateabsent
+</td>
+<td >
+时段四是否迟到引起旷工
+</td>
+<td>fourislateabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+fourlatelen
+</td>
+<td >
+时段四迟到时长
+</td>
+<td>fourlatelen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+fournightlen
+</td>
+<td >
+时段四夜班时长
+</td>
+<td>fournightlen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+fouruselactationholidaylen
+</td>
+<td >
+时段四哺乳假已休实际时长
+</td>
+<td>fouruselactationholidaylen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+fourworklen
+</td>
+<td >
+时段四工作时长
+</td>
+<td>fourworklen</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+fourworklen_hol
+</td>
+<td >
+时段四假日内工作时长
+</td>
+<td>fourworklen_hol</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+importsignflag
+</td>
+<td >
+刷签卡标志
+</td>
+<td>importsignflag</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+ismidoutabnormal
+</td>
+<td >
+中途外出是否异常
+</td>
+<td>ismidoutabnormal</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+ismidwayout
+</td>
+<td >
+是否中途外出
+</td>
+<td>ismidwayout</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+midwayoutcount
+</td>
+<td >
+中途外出次数
+</td>
+<td>midwayoutcount</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+midwayouttime
+</td>
+<td >
+中途外出时长
+</td>
+<td>midwayouttime</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+nightlength
+</td>
+<td >
+夜班内实际出勤时长
+</td>
+<td>nightlength</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+nightlength_cur
+</td>
+<td >
+当日夜班内实际出勤时长
+</td>
+<td>nightlength_cur</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+nightlength_next
+</td>
+<td >
+后一日夜班内实际出勤时长
+</td>
+<td>nightlength_next</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+nightlength_previous
+</td>
+<td >
+前一日夜班内实际出勤时长
+</td>
+<td>nightlength_previous</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+oneabsentlen
+</td>
+<td >
+时段一旷工时长
+</td>
+<td>oneabsentlen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+onebegintime
+</td>
+<td >
+时段一开始时刻
+</td>
+<td>onebegintime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+oneearlylen
+</td>
+<td >
+时段一早退时长
+</td>
+<td>oneearlylen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+oneendtime
+</td>
+<td >
+时段一结束时刻
+</td>
+<td>oneendtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+oneisabsent
+</td>
+<td >
+时段一是否旷工
+</td>
+<td>oneisabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+oneisearly
+</td>
+<td >
+时段一是否早退
+</td>
+<td>oneisearly</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+oneisearlyabsent
+</td>
+<td >
+时段一是否早退引起旷工
+</td>
+<td>oneisearlyabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+oneislate
+</td>
+<td >
+时段一是否迟到
+</td>
+<td>oneislate</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+oneislateabsent
+</td>
+<td >
+时段一是否迟到引起旷工
+</td>
+<td>oneislateabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+onelatelen
+</td>
+<td >
+时段一迟到时长
+</td>
+<td>onelatelen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+onenightlen
+</td>
+<td >
+时段一夜班时长
+</td>
+<td>onenightlen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+oneuselactationholidaylen
+</td>
+<td >
+时段一哺乳假已休实际时长
+</td>
+<td>oneuselactationholidaylen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+oneworklen
+</td>
+<td >
+时段一工作时长
+</td>
+<td>oneworklen</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+oneworklen_hol
+</td>
+<td >
+时段一假日内工作时长
+</td>
+<td>oneworklen_hol</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+pk_dept_v
+</td>
+<td >
+部门
+</td>
+<td>pk_dept_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="66ed0cf6-e260-4f39-8fbb-172260efd677.html" >组织_部门版本信息</a>
+</td>
+<td>部门版本(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+pk_fourbeginmachine
+</td>
+<td >
+时段四上班刷卡机
+</td>
+<td>pk_fourbeginmachine</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a62dc125-7195-48f7-aee5-294ada837c67.html" >考勤机</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+pk_fourbeginplace
+</td>
+<td >
+时段四上班地点
+</td>
+<td>pk_fourbeginplace</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1002Z71000000001VHVC.html" >考勤地点(自定义档案)</a>
+</td>
+<td>考勤地点(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">47</td>
+<td>&nbsp;
+pk_fourendmachine
+</td>
+<td >
+时段四下班刷卡机
+</td>
+<td>pk_fourendmachine</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a62dc125-7195-48f7-aee5-294ada837c67.html" >考勤机</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">48</td>
+<td>&nbsp;
+pk_fourendplace
+</td>
+<td >
+时段四下班地点
+</td>
+<td>pk_fourendplace</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1002Z71000000001VHVC.html" >考勤地点(自定义档案)</a>
+</td>
+<td>考勤地点(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">49</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+<span style="color:#09C">所属集团</span>
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">50</td>
+<td>&nbsp;
+pk_onebeginmachine
+</td>
+<td >
+时段一上班刷卡机
+</td>
+<td>pk_onebeginmachine</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a62dc125-7195-48f7-aee5-294ada837c67.html" >考勤机</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">51</td>
+<td>&nbsp;
+pk_onebeginplace
+</td>
+<td >
+时段一上班地点
+</td>
+<td>pk_onebeginplace</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1002Z71000000001VHVC.html" >考勤地点(自定义档案)</a>
+</td>
+<td>考勤地点(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">52</td>
+<td>&nbsp;
+pk_oneendmachine
+</td>
+<td >
+时段一下班刷卡机
+</td>
+<td>pk_oneendmachine</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a62dc125-7195-48f7-aee5-294ada837c67.html" >考勤机</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">53</td>
+<td>&nbsp;
+pk_oneendplace
+</td>
+<td >
+时段一下班地点
+</td>
+<td>pk_oneendplace</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1002Z71000000001VHVC.html" >考勤地点(自定义档案)</a>
+</td>
+<td>考勤地点(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">54</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+<span style="color:#09C">所属组织</span>
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="18f0e8e6-8c9f-49a7-a6f8-3ce250854e1d.html" >人力资源组织</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">55</td>
+<td>&nbsp;
+pk_org_v
+</td>
+<td >
+组织
+</td>
+<td>pk_org_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="fa902409-20fe-4c49-89ee-85ee9312174b.html" >组织_业务单元_行政组织版本信息</a>
+</td>
+<td>行政组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">56</td>
+<td>&nbsp;
+pk_psndoc
+</td>
+<td >
+<span style="color:#09C">人员基本档案主键</span>
+</td>
+<td>pk_psndoc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="218971f0-e5dc-408b-9a32-56529dddd4db.html" >人员基本信息</a>
+</td>
+<td>HR人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">57</td>
+<td>&nbsp;
+pk_psnjob
+</td>
+<td >
+工作记录
+</td>
+<td>pk_psnjob</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7156d223-4531-4337-b192-492ab40098f1.html" >工作记录</a>
+</td>
+<td>人员工作记录</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">58</td>
+<td>&nbsp;
+pk_shift
+</td>
+<td >
+班次
+</td>
+<td>pk_shift</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="8cc504ed-4371-43c6-81a0-8758684b436f.html" >班次</a>
+</td>
+<td>班次(业务单元)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">59</td>
+<td>&nbsp;
+pk_threebeginmachine
+</td>
+<td >
+时段三上班刷卡机
+</td>
+<td>pk_threebeginmachine</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a62dc125-7195-48f7-aee5-294ada837c67.html" >考勤机</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">60</td>
+<td>&nbsp;
+pk_threebeginplace
+</td>
+<td >
+时段三上班地点
+</td>
+<td>pk_threebeginplace</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1002Z71000000001VHVC.html" >考勤地点(自定义档案)</a>
+</td>
+<td>考勤地点(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">61</td>
+<td>&nbsp;
+pk_threeendmachine
+</td>
+<td >
+时段三下班刷卡机
+</td>
+<td>pk_threeendmachine</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a62dc125-7195-48f7-aee5-294ada837c67.html" >考勤机</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">62</td>
+<td>&nbsp;
+pk_threeendplace
+</td>
+<td >
+时段三下班地点
+</td>
+<td>pk_threeendplace</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1002Z71000000001VHVC.html" >考勤地点(自定义档案)</a>
+</td>
+<td>考勤地点(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">63</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_timedata</b></span>
+</td>
+<td >
+<span style="color:#09C">考勤主键</span>
+</td>
+<td>pk_timedata</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">64</td>
+<td>&nbsp;
+pk_twobeginmachine
+</td>
+<td >
+时段二上班刷卡机
+</td>
+<td>pk_twobeginmachine</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a62dc125-7195-48f7-aee5-294ada837c67.html" >考勤机</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">65</td>
+<td>&nbsp;
+pk_twobeginplace
+</td>
+<td >
+时段二上班地点
+</td>
+<td>pk_twobeginplace</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1002Z71000000001VHVC.html" >考勤地点(自定义档案)</a>
+</td>
+<td>考勤地点(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">66</td>
+<td>&nbsp;
+pk_twoendmachine
+</td>
+<td >
+时段二下班刷卡机
+</td>
+<td>pk_twoendmachine</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a62dc125-7195-48f7-aee5-294ada837c67.html" >考勤机</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">67</td>
+<td>&nbsp;
+pk_twoendplace
+</td>
+<td >
+时段二下班地点
+</td>
+<td>pk_twoendplace</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1002Z71000000001VHVC.html" >考勤地点(自定义档案)</a>
+</td>
+<td>考勤地点(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">68</td>
+<td>&nbsp;
+placeabnormal
+</td>
+<td >
+刷卡地异常
+</td>
+<td>placeabnormal</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">69</td>
+<td>&nbsp;
+tbmstatus
+</td>
+<td >
+出勤状态
+</td>
+<td>tbmstatus</td>
+<td>
+varchar(128)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">70</td>
+<td>&nbsp;
+threeabsentlen
+</td>
+<td >
+时段三旷工时长
+</td>
+<td>threeabsentlen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">71</td>
+<td>&nbsp;
+threebegintime
+</td>
+<td >
+时段三开始时刻
+</td>
+<td>threebegintime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">72</td>
+<td>&nbsp;
+threeearlylen
+</td>
+<td >
+时段三早退时长
+</td>
+<td>threeearlylen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">73</td>
+<td>&nbsp;
+threeendtime
+</td>
+<td >
+时段三结束时刻
+</td>
+<td>threeendtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">74</td>
+<td>&nbsp;
+threeisabsent
+</td>
+<td >
+时段三是否旷工
+</td>
+<td>threeisabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">75</td>
+<td>&nbsp;
+threeisearly
+</td>
+<td >
+时段三是否早退
+</td>
+<td>threeisearly</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">76</td>
+<td>&nbsp;
+threeisearlyabsent
+</td>
+<td >
+时段三是否早退引起旷工
+</td>
+<td>threeisearlyabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">77</td>
+<td>&nbsp;
+threeislate
+</td>
+<td >
+时段三是否迟到
+</td>
+<td>threeislate</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">78</td>
+<td>&nbsp;
+threeislateabsent
+</td>
+<td >
+时段三是否迟到引起旷工
+</td>
+<td>threeislateabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">79</td>
+<td>&nbsp;
+threelatelen
+</td>
+<td >
+时段三迟到时长
+</td>
+<td>threelatelen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">80</td>
+<td>&nbsp;
+threenightlen
+</td>
+<td >
+时段三夜班时长
+</td>
+<td>threenightlen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">81</td>
+<td>&nbsp;
+threeuselactationholidaylen
+</td>
+<td >
+时段三哺乳假已休实际时长
+</td>
+<td>threeuselactationholidaylen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">82</td>
+<td>&nbsp;
+threeworklen
+</td>
+<td >
+时段三工作时长
+</td>
+<td>threeworklen</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">83</td>
+<td>&nbsp;
+threeworklen_hol
+</td>
+<td >
+时段三假日内工作时长
+</td>
+<td>threeworklen_hol</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">84</td>
+<td>&nbsp;
+twoabsentlen
+</td>
+<td >
+时段二旷工时长
+</td>
+<td>twoabsentlen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">85</td>
+<td>&nbsp;
+twobegintime
+</td>
+<td >
+时段二开始时刻
+</td>
+<td>twobegintime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">86</td>
+<td>&nbsp;
+twoearlylen
+</td>
+<td >
+时段二早退时长
+</td>
+<td>twoearlylen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">87</td>
+<td>&nbsp;
+twoendtime
+</td>
+<td >
+时段二结束时刻
+</td>
+<td>twoendtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">88</td>
+<td>&nbsp;
+twoisabsent
+</td>
+<td >
+时段二是否旷工
+</td>
+<td>twoisabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">89</td>
+<td>&nbsp;
+twoisearly
+</td>
+<td >
+时段二是否早退
+</td>
+<td>twoisearly</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">90</td>
+<td>&nbsp;
+twoisearlyabsent
+</td>
+<td >
+时段二是否早退引起旷工
+</td>
+<td>twoisearlyabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">91</td>
+<td>&nbsp;
+twoislate
+</td>
+<td >
+时段二是否迟到
+</td>
+<td>twoislate</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">92</td>
+<td>&nbsp;
+twoislateabsent
+</td>
+<td >
+时段二是否迟到引起旷工
+</td>
+<td>twoislateabsent</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">93</td>
+<td>&nbsp;
+twolatelen
+</td>
+<td >
+时段二迟到时长
+</td>
+<td>twolatelen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">94</td>
+<td>&nbsp;
+twonightlen
+</td>
+<td >
+时段二夜班时长
+</td>
+<td>twonightlen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">95</td>
+<td>&nbsp;
+twouselactationholidaylen
+</td>
+<td >
+时段二哺乳假已休实际时长
+</td>
+<td>twouselactationholidaylen</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">96</td>
+<td>&nbsp;
+twoworklen
+</td>
+<td >
+时段二工作时长
+</td>
+<td>twoworklen</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">97</td>
+<td>&nbsp;
+twoworklen_hol
+</td>
+<td >
+时段二假日内工作时长
+</td>
+<td>twoworklen_hol</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">98</td>
+<td>&nbsp;
+worklength
+</td>
+<td >
+实际出勤时长
+</td>
+<td>worklength</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">99</td>
+<td>&nbsp;
+worklength_cur
+</td>
+<td >
+当日出勤时长
+</td>
+<td>worklength_cur</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">100</td>
+<td>&nbsp;
+worklength_cur_hol
+</td>
+<td >
+当日假日内实际出勤时长
+</td>
+<td>worklength_cur_hol</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">101</td>
+<td>&nbsp;
+worklength_hol
+</td>
+<td >
+假日内实际出勤时长
+</td>
+<td>worklength_hol</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">102</td>
+<td>&nbsp;
+worklength_next
+</td>
+<td >
+后一日出勤时长
+</td>
+<td>worklength_next</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">103</td>
+<td>&nbsp;
+worklength_next_hol
+</td>
+<td >
+后一日假日内实际出勤时长
+</td>
+<td>worklength_next_hol</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">104</td>
+<td>&nbsp;
+worklength_previous
+</td>
+<td >
+前一日出勤时长
+</td>
+<td>worklength_previous</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">105</td>
+<td>&nbsp;
+worklength_previous_hol
+</td>
+<td >
+前一日假日内实际出勤时长
+</td>
+<td>worklength_previous_hol</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

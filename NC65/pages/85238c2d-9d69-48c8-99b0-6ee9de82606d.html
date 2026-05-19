@@ -1,0 +1,493 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>rm_psndoc_job 应聘职位</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 85238c2d-9d69-48c8-99b0-6ee9de82606d -->
+<b><span style="font-size:24px">应聘职位 (rm_psndoc_job)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2011-10-11 14:37:05 &nbsp;修改时间 ：2015-11-15 14:52:40 &nbsp;路径：\hrrm\METADATA\hrrmpsndoc.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.rm.psndoc.RMPsnJobVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+applystatus
+</td>
+<td >
+应聘状态
+</td>
+<td>applystatus</td>
+<td>
+int
+</td>
+<td>
+应聘状态
+</td>
+<td></td>
+<td>
+0=初始态，1=应聘登记，2=初选通过，3=面试中，4=录用中，5=报到中，6=已入职，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+applystatusdate
+</td>
+<td >
+状态日期
+</td>
+<td>applystatusdate</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+ispsnlib
+</td>
+<td >
+是否人才库
+</td>
+<td>ispsnlib</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+isuse
+</td>
+<td >
+是否有效
+</td>
+<td>isuse</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+pk_active
+</td>
+<td >
+招聘活动
+</td>
+<td>pk_active</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="0db679df-afc5-42ae-ab62-a3a9fdb9aca6.html" >招聘活动</a>
+</td>
+<td>招聘活动</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+pk_channel
+</td>
+<td >
+应聘渠道
+</td>
+<td>pk_channel</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1fa196f4-e3d5-4803-820a-4c97559f6511.html" >招聘渠道</a>
+</td>
+<td>招聘渠道</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+所属集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+pk_jobsource
+</td>
+<td >
+标准职位
+</td>
+<td>pk_jobsource</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+所属组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f3fed5ea-72f2-4a0a-ad43-d30b1c22c86c.html" >组织_业务单元_人力资源组织</a>
+</td>
+<td>人力资源组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+pk_psndoc
+</td>
+<td >
+人员基本档案主键
+</td>
+<td>pk_psndoc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="05654a1a-6469-4744-963a-fa0a06e0b01f.html" >应聘人员信息</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_psndoc_job</b></span>
+</td>
+<td >
+<span style="color:#09C">应聘职位主键</span>
+</td>
+<td>pk_psndoc_job</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+pk_reg_dept
+</td>
+<td >
+应聘部门
+</td>
+<td>pk_reg_dept</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="58115861-ce2b-44e8-b881-80119db7bf84.html" >HR部门</a>
+</td>
+<td>部门HR(委托)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+pk_reg_job
+</td>
+<td >
+应聘职位
+</td>
+<td>pk_reg_job</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1f993e1e-e198-41ef-9716-946e0c9103e6.html" >职位发布</a>
+</td>
+<td>发布职位</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+pk_reg_org
+</td>
+<td >
+<span style="color:#09C">应聘组织</span>
+</td>
+<td>pk_reg_org</td>
+<td>
+(20)
+</td>
+<td>
+<a href="a0ec952c-e4e5-416a-b3e0-d402725f76be.html" >组织_业务单元_行政组织</a>
+</td>
+<td>行政组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+pk_webinfo
+</td>
+<td >
+招聘网站
+</td>
+<td>pk_webinfo</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="ffa88975-8442-4559-a94d-b562d8c1f0f7.html" >招聘网站</a>
+</td>
+<td>招聘网站</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+recommendation
+</td>
+<td >
+推荐意见
+</td>
+<td>recommendation</td>
+<td>
+varchar(200)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+recommender
+</td>
+<td >
+推荐人
+</td>
+<td>recommender</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="218971f0-e5dc-408b-9a32-56529dddd4db.html" >人员基本信息</a>
+</td>
+<td>HR人员(集团树)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+recommenderphone
+</td>
+<td >
+推荐人联系方式
+</td>
+<td>recommenderphone</td>
+<td>
+varchar(128)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+recordnum
+</td>
+<td >
+记录序号
+</td>
+<td>recordnum</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+reg_date
+</td>
+<td >
+应聘日期
+</td>
+<td>reg_date</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+source
+</td>
+<td >
+应聘来源
+</td>
+<td>source</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+sourcetype
+</td>
+<td >
+简历来源
+</td>
+<td>sourcetype</td>
+<td>
+int
+</td>
+<td>
+简历来源
+</td>
+<td></td>
+<td>
+0=手工增加，1=应聘管理转入，2=初选通过转入，3=面试管理转入，4=录用管理转入，5=报到管理转入，6=人才库转入，7=应聘者平台--社招，8=内聘，9=人才推荐，10=招聘网站，11=应聘者平台--校招，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

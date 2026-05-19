@@ -1,0 +1,213 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sr_plcy_calrule 计算规则子实体</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- dbd46ddf-6959-461c-ae2e-a1b036ec7fd3 -->
+<b><span style="font-size:24px">计算规则子实体 (sr_plcy_calrule)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2012-08-21 19:48:53 &nbsp;修改时间 ：2015-03-05 09:43:20 &nbsp;路径：\sr\METADATA\policy\policy.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.sr.policy.entity.PlcyCalruleVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+cachievetargetid
+</td>
+<td >
+达标指标项
+</td>
+<td>cachievetargetid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="11f18c64-1733-4cfc-8b4f-8af935b3ee4c.html" >指标项</a>
+</td>
+<td>指标项</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+carsubtypeid
+</td>
+<td >
+费用单类型
+</td>
+<td>carsubtypeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素交 易类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+cpricingtargetid
+</td>
+<td >
+定价指标项
+</td>
+<td>cpricingtargetid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="11f18c64-1733-4cfc-8b4f-8af935b3ee4c.html" >指标项</a>
+</td>
+<td>指标项</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+fcalmodeflag
+</td>
+<td >
+返利计算模式
+</td>
+<td>fcalmodeflag</td>
+<td>
+int
+</td>
+<td>
+计算模式
+</td>
+<td></td>
+<td>
+0=返利依据*返利价格，1=返利值计算公式，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+fprgrsmodeflag
+</td>
+<td >
+累进方式
+</td>
+<td>fprgrsmodeflag</td>
+<td>
+int
+</td>
+<td>
+累进模式
+</td>
+<td></td>
+<td>
+0=全额累进，1=超额累进，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_plcy_calrule</b></span>
+</td>
+<td >
+<span style="color:#09C">计算规则子实体</span>
+</td>
+<td>pk_plcy_calrule</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+vjudgeformula
+</td>
+<td >
+返利依据
+</td>
+<td>vjudgeformula</td>
+<td>
+varchar(500)
+</td>
+<td>
+<a href="0ac3f560-1eff-40c5-862e-469f5d1b75dc.html" >返利取数函数</a>
+</td>
+<td>返利依据</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

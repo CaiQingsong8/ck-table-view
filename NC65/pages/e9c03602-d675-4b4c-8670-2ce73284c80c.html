@@ -1,0 +1,627 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>hr_dataio_intface 数据接口格式</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- e9c03602-d675-4b4c-8670-2ce73284c80c -->
+<b><span style="font-size:24px">数据接口格式 (hr_dataio_intface)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2009-12-25 08:53:33 &nbsp;修改时间 ：2015-10-16 10:26:42 &nbsp;路径：\hrpub\METADATA\datainterface\datainterface.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.hr.datainterface.HrIntfaceVO
+/&nbsp;AggVO：nc.vo.hr.datainterface.AggHrIntfaceVO
+/&nbsp;<a href="56262cb4-5b95-4af8-ae21-77369504bd9c.html" >数据接口子表</a>
+/&nbsp;<a href="bcf90841-5035-41a9-8080-8658ae0de655.html" >标志行设置</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+classid
+</td>
+<td >
+薪资方案
+</td>
+<td>classid</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+cperiod
+</td>
+<td >
+薪资月度
+</td>
+<td>cperiod</td>
+<td>
+char(2)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+cyear
+</td>
+<td >
+薪资年度
+</td>
+<td>cyear</td>
+<td>
+char(4)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+date1
+</td>
+<td >
+扩展3
+</td>
+<td>date1</td>
+<td>
+char(10)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+date2
+</td>
+<td >
+扩展4
+</td>
+<td>date2</td>
+<td>
+char(10)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+idefault
+</td>
+<td >
+默认接口
+</td>
+<td>idefault</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+ifiletype
+</td>
+<td >
+外部文件类型
+</td>
+<td>ifiletype</td>
+<td>
+int
+</td>
+<td>
+文件类型
+</td>
+<td></td>
+<td>
+1=文本文件，2=EXCEL文件，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+iheadadjustbody
+</td>
+<td >
+表头表体一致
+</td>
+<td>iheadadjustbody</td>
+<td>
+int
+</td>
+<td>
+是否
+</td>
+<td></td>
+<td>
+0=否，1=是，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+iifcaret
+</td>
+<td >
+需要补位符
+</td>
+<td>iifcaret</td>
+<td>
+int
+</td>
+<td>
+是否
+</td>
+<td></td>
+<td>
+0=否，1=是，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+iifdot
+</td>
+<td >
+需要小数点
+</td>
+<td>iifdot</td>
+<td>
+int
+</td>
+<td>
+是否
+</td>
+<td></td>
+<td>
+0=否，1=是，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+iifkilobit
+</td>
+<td >
+需要千位分隔符
+</td>
+<td>iifkilobit</td>
+<td>
+int
+</td>
+<td>
+是否
+</td>
+<td></td>
+<td>
+0=否，1=是，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+iifseparator
+</td>
+<td >
+需要项目分隔符
+</td>
+<td>iifseparator</td>
+<td>
+int
+</td>
+<td>
+是否
+</td>
+<td></td>
+<td>
+0=否，1=是，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+iiftop
+</td>
+<td >
+有标志行
+</td>
+<td>iiftop</td>
+<td>
+int
+</td>
+<td>
+是否
+</td>
+<td></td>
+<td>
+0=否，1=是，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+iiftype
+</td>
+<td >
+接口类型
+</td>
+<td>iiftype</td>
+<td>
+int
+</td>
+<td>
+接口类型
+</td>
+<td></td>
+<td>
+0=薪资数据，1=银行报盘，2=社保数据，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+iouthead
+</td>
+<td >
+输出表头
+</td>
+<td>iouthead</td>
+<td>
+int
+</td>
+<td>
+是否
+</td>
+<td></td>
+<td>
+0=否，1=是，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+iseparator
+</td>
+<td >
+项目分隔符
+</td>
+<td>iseparator</td>
+<td>
+int
+</td>
+<td>
+项目分割符
+</td>
+<td></td>
+<td>
+0=逗号，1=分号，2=竖线，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+operatorid
+</td>
+<td >
+操作员
+</td>
+<td>operatorid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+pk_bankdoc
+</td>
+<td >
+报送银行
+</td>
+<td>pk_bankdoc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1d3d003d-0e8c-4283-9580-0ef81c93ba58.html" >银行类别</a>
+</td>
+<td>银行类别</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_dataio_intface</b></span>
+</td>
+<td >
+<span style="color:#09C">接口设置表主键</span>
+</td>
+<td>pk_dataio_intface</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+所属集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+所属组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f3fed5ea-72f2-4a0a-ad43-d30b1c22c86c.html" >组织_业务单元_人力资源组织</a>
+</td>
+<td>人力资源组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+toplinenum
+</td>
+<td >
+标志行输出
+</td>
+<td>toplinenum</td>
+<td>
+int
+</td>
+<td>
+标志行
+</td>
+<td></td>
+<td>
+1=单行，3=多行，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+toplineposition
+</td>
+<td >
+标志行位置
+</td>
+<td>toplineposition</td>
+<td>
+int
+</td>
+<td>
+标志行位置
+</td>
+<td></td>
+<td>
+1=首行，4=尾行，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+vcol
+</td>
+<td >
+关联项目
+</td>
+<td>vcol</td>
+<td>
+varchar(50)
+</td>
+<td>
+关联项目
+</td>
+<td></td>
+<td>
+code=人员编码，id=身份证号码，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+vfilename
+</td>
+<td >
+外部文件名称
+</td>
+<td>vfilename</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+vifname
+</td>
+<td >
+接口名称
+</td>
+<td>vifname</td>
+<td>
+varchar(1024)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+vmemo
+</td>
+<td >
+备注
+</td>
+<td>vmemo</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+vtable
+</td>
+<td >
+关联表
+</td>
+<td>vtable</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

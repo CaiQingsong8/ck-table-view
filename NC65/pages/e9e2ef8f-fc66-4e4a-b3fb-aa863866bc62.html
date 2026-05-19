@@ -1,0 +1,3206 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>cmp_detail 结算信息明细</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- e9e2ef8f-fc66-4e4a-b3fb-aa863866bc62 -->
+<b><span style="font-size:24px">结算信息明细 (cmp_detail)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2009-06-08 15:10:30 &nbsp;修改时间 ：2015-09-08 14:37:45 &nbsp;路径：\cmp\METADATA\settle\settle.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.cmp.settlement.SettlementBodyVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+accountnum
+</td>
+<td >
+本方银行账号
+</td>
+<td>accountnum</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+accounttype
+</td>
+<td >
+对方账户性质
+</td>
+<td>accounttype</td>
+<td>
+int
+</td>
+<td>
+账户性质
+</td>
+<td></td>
+<td>
+0=公司，1=个人，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+agentreceivelocal
+</td>
+<td >
+托收本币金额
+</td>
+<td>agentreceivelocal</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+agentreceiveprimal
+</td>
+<td >
+托收原币金额
+</td>
+<td>agentreceiveprimal</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+bankmsg
+</td>
+<td >
+银行返回信息
+</td>
+<td>bankmsg</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+bankrelated_code
+</td>
+<td >
+对账标识码
+</td>
+<td>bankrelated_code</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+billcode
+</td>
+<td >
+单据编号
+</td>
+<td>billcode</td>
+<td>
+varchar(80)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+billdate
+</td>
+<td >
+单据日期
+</td>
+<td>billdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+billtime
+</td>
+<td >
+单据时间
+</td>
+<td>billtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+busilineno
+</td>
+<td >
+业务单据行号
+</td>
+<td>busilineno</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+changebalance
+</td>
+<td >
+汇兑差额
+</td>
+<td>changebalance</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+changerate
+</td>
+<td >
+实付套汇汇率
+</td>
+<td>changerate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+checkcount
+</td>
+<td >
+对帐次数
+</td>
+<td>checkcount</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+checkdate
+</td>
+<td >
+对账日期
+</td>
+<td>checkdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+code
+</td>
+<td >
+数字签名
+</td>
+<td>code</td>
+<td>
+varchar(1024)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+commitdate
+</td>
+<td >
+提交日期
+</td>
+<td>commitdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+commpayer
+</td>
+<td >
+承付人
+</td>
+<td>commpayer</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+commpaystatus
+</td>
+<td >
+承付状态
+</td>
+<td>commpaystatus</td>
+<td>
+int
+</td>
+<td>
+承付状态
+</td>
+<td></td>
+<td>
+0=待承付，1=承付中，2=已承付，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+commpaytime
+</td>
+<td >
+承付时间
+</td>
+<td>commpaytime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+commpaytype
+</td>
+<td >
+承付类型
+</td>
+<td>commpaytype</td>
+<td>
+int
+</td>
+<td>
+承付类型
+</td>
+<td></td>
+<td>
+0=全额承付，1=全额拒付，2=部分承付，3=强制全额承付，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+创建时间
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+def1
+</td>
+<td >
+自定义项1
+</td>
+<td>def1</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+def10
+</td>
+<td >
+自定义项10
+</td>
+<td>def10</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+def11
+</td>
+<td >
+自定义项11
+</td>
+<td>def11</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+def12
+</td>
+<td >
+自定义项12
+</td>
+<td>def12</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+def13
+</td>
+<td >
+自定义项13
+</td>
+<td>def13</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+def14
+</td>
+<td >
+自定义项14
+</td>
+<td>def14</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+def15
+</td>
+<td >
+自定义项15
+</td>
+<td>def15</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+def16
+</td>
+<td >
+自定义项16
+</td>
+<td>def16</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+def17
+</td>
+<td >
+自定义项17
+</td>
+<td>def17</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+def18
+</td>
+<td >
+自定义项18
+</td>
+<td>def18</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+def19
+</td>
+<td >
+自定义项19
+</td>
+<td>def19</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+def2
+</td>
+<td >
+自定义项2
+</td>
+<td>def2</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+def20
+</td>
+<td >
+自定义项20
+</td>
+<td>def20</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+def3
+</td>
+<td >
+自定义项3
+</td>
+<td>def3</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+def4
+</td>
+<td >
+自定义项4
+</td>
+<td>def4</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+def5
+</td>
+<td >
+自定义项5
+</td>
+<td>def5</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+def6
+</td>
+<td >
+自定义项6
+</td>
+<td>def6</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+def7
+</td>
+<td >
+自定义项7
+</td>
+<td>def7</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+def8
+</td>
+<td >
+自定义项8
+</td>
+<td>def8</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+def9
+</td>
+<td >
+自定义项9
+</td>
+<td>def9</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+direction
+</td>
+<td >
+方向
+</td>
+<td>direction</td>
+<td>
+int
+</td>
+<td>
+方向
+</td>
+<td></td>
+<td>
+0=收，1=付，2=划账，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+editedflag
+</td>
+<td >
+结算人员修改标志
+</td>
+<td>editedflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+execdate
+</td>
+<td >
+转账成功日期
+</td>
+<td>execdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+exectime
+</td>
+<td >
+转账成功时间
+</td>
+<td>exectime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">47</td>
+<td>&nbsp;
+expectate_date
+</td>
+<td >
+期望支付日期
+</td>
+<td>expectate_date</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">48</td>
+<td>&nbsp;
+failurereason
+</td>
+<td >
+失败原因
+</td>
+<td>failurereason</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">49</td>
+<td>&nbsp;
+fundformcode
+</td>
+<td >
+资金形态
+</td>
+<td>fundformcode</td>
+<td>
+int
+</td>
+<td>
+资金形态
+</td>
+<td></td>
+<td>
+0=库存现金，1=银行存款，2=应付票据，3=应收票据，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">50</td>
+<td>&nbsp;
+fundsflag
+</td>
+<td >
+资金流向
+</td>
+<td>fundsflag</td>
+<td>
+int(50)
+</td>
+<td>
+资金流向
+</td>
+<td></td>
+<td>
+0=流入，1=流出，2=转账，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">51</td>
+<td>&nbsp;
+fundtype
+</td>
+<td >
+货币形态
+</td>
+<td>fundtype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1003ZZ10000000000669.html" >资金类型(自定义档案)</a>
+</td>
+<td>资金类型(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">52</td>
+<td>&nbsp;
+globalagentreceivelocal
+</td>
+<td >
+全局托收本币金额
+</td>
+<td>globalcommreceivelocal</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">53</td>
+<td>&nbsp;
+globalpaylocal
+</td>
+<td >
+全局付款本币金额
+</td>
+<td>globalpaylocal</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">54</td>
+<td>&nbsp;
+globalpaylocal_last
+</td>
+<td >
+实付全局本币金额
+</td>
+<td>globalpaylocal_last</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">55</td>
+<td>&nbsp;
+globalpayrate_last
+</td>
+<td >
+实付全局本币汇率
+</td>
+<td>globalpayrate_last</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">56</td>
+<td>&nbsp;
+globalrate
+</td>
+<td >
+全局汇率
+</td>
+<td>globalrate</td>
+<td>
+decimal(15,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">57</td>
+<td>&nbsp;
+globalreceivelocal
+</td>
+<td >
+全局实收本币金额
+</td>
+<td>globalreceivelocal</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">58</td>
+<td>&nbsp;
+groupagentreceivelocal
+</td>
+<td >
+集团托收本币金额
+</td>
+<td>groupcommreceivelocal</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">59</td>
+<td>&nbsp;
+grouppaylocal
+</td>
+<td >
+集团付款本币金额
+</td>
+<td>grouppaylocal</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">60</td>
+<td>&nbsp;
+grouppaylocal_last
+</td>
+<td >
+实付集团本币
+</td>
+<td>grouppaylocal_last</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">61</td>
+<td>&nbsp;
+grouppayrate_last
+</td>
+<td >
+实付集团本币汇率
+</td>
+<td>grouppayrate_last</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">62</td>
+<td>&nbsp;
+grouprate
+</td>
+<td >
+集团汇率
+</td>
+<td>grouprate</td>
+<td>
+decimal(15,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">63</td>
+<td>&nbsp;
+groupreceivelocal
+</td>
+<td >
+集团实收本币金额
+</td>
+<td>groupreceivelocal</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">64</td>
+<td>&nbsp;
+handworkedupdate
+</td>
+<td >
+手工更新标志
+</td>
+<td>handworkedupdate</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">65</td>
+<td>&nbsp;
+isacccord
+</td>
+<td >
+是否记账记录
+</td>
+<td>isacccord</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">66</td>
+<td>&nbsp;
+isauthpass
+</td>
+<td >
+是否验证通过
+</td>
+<td>isauthpass</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">67</td>
+<td>&nbsp;
+isbillrecord
+</td>
+<td >
+是否单据记录
+</td>
+<td>isbillrecord</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">68</td>
+<td>&nbsp;
+isnetbankpay
+</td>
+<td >
+是否网银支付
+</td>
+<td>isnetbankpay</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">69</td>
+<td>&nbsp;
+isrefused
+</td>
+<td >
+是否被拒付
+</td>
+<td>isrefused</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">70</td>
+<td>&nbsp;
+issamebank
+</td>
+<td >
+同行标志
+</td>
+<td>issamebank</td>
+<td>
+varchar(50)
+</td>
+<td>
+同行标识
+</td>
+<td></td>
+<td>
+0=否，1=是，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">71</td>
+<td>&nbsp;
+issamecity
+</td>
+<td >
+同城标志
+</td>
+<td>issamecity</td>
+<td>
+varchar(50)
+</td>
+<td>
+同城标识
+</td>
+<td></td>
+<td>
+0=否，1=是，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">72</td>
+<td>&nbsp;
+lastest_paydate
+</td>
+<td >
+最迟支付日期
+</td>
+<td>lastest_paydate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">73</td>
+<td>&nbsp;
+localrate
+</td>
+<td >
+本币汇率
+</td>
+<td>localrate</td>
+<td>
+decimal(15,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">74</td>
+<td>&nbsp;
+memo
+</td>
+<td >
+摘要
+</td>
+<td>memo</td>
+<td>
+varchar(181)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">75</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">76</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">77</td>
+<td>&nbsp;
+modifyflag
+</td>
+<td >
+手工修改标志
+</td>
+<td>modifyflag</td>
+<td>
+varchar(64)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">78</td>
+<td>&nbsp;
+notedirection
+</td>
+<td >
+票据方向
+</td>
+<td>notedirection</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">79</td>
+<td>&nbsp;
+notenumber
+</td>
+<td >
+票据号
+</td>
+<td>notenumber</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">80</td>
+<td>&nbsp;
+oppaccname
+</td>
+<td >
+对方账户户名
+</td>
+<td>oppaccname</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">81</td>
+<td>&nbsp;
+oppaccount
+</td>
+<td >
+对方账号
+</td>
+<td>oppaccount</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">82</td>
+<td>&nbsp;
+oppbank
+</td>
+<td >
+对方银行名称
+</td>
+<td>oppbank</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">83</td>
+<td>&nbsp;
+orgbusidate
+</td>
+<td >
+组织业务日期
+</td>
+<td>orgbusidate</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">84</td>
+<td>&nbsp;
+orgbusitime
+</td>
+<td >
+组织业务时间
+</td>
+<td>orgbusitime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">85</td>
+<td>&nbsp;
+orgsettledate
+</td>
+<td >
+组织结算日期
+</td>
+<td>orgsettledate</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">86</td>
+<td>&nbsp;
+orgsettletime
+</td>
+<td >
+组织结算时间
+</td>
+<td>orgsettletime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">87</td>
+<td>&nbsp;
+orgsigndate
+</td>
+<td >
+组织签字日期
+</td>
+<td>orgsigndate</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">88</td>
+<td>&nbsp;
+orgsigntime
+</td>
+<td >
+组织签字时间
+</td>
+<td>orgsigntime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">89</td>
+<td>&nbsp;
+pay
+</td>
+<td >
+付款原币金额
+</td>
+<td>pay</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">90</td>
+<td>&nbsp;
+pay_last
+</td>
+<td >
+实付原币金额
+</td>
+<td>pay_last</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">91</td>
+<td>&nbsp;
+pay_type
+</td>
+<td >
+汇款速度
+</td>
+<td>pay_type</td>
+<td>
+varchar(50)
+</td>
+<td>
+汇款速度
+</td>
+<td></td>
+<td>
+0=普通，1=快速，2=快速加急，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">92</td>
+<td>&nbsp;
+paybillcode
+</td>
+<td >
+结算号
+</td>
+<td>paybillcode</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">93</td>
+<td>&nbsp;
+paydate
+</td>
+<td >
+支付日期
+</td>
+<td>paydate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">94</td>
+<td>&nbsp;
+paylocal
+</td>
+<td >
+付款组织本币金额
+</td>
+<td>paylocal</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">95</td>
+<td>&nbsp;
+paylocal_last
+</td>
+<td >
+实付本币金额
+</td>
+<td>paylocal_last</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">96</td>
+<td>&nbsp;
+paylocalrate_last
+</td>
+<td >
+实付组织本币汇率
+</td>
+<td>paylocalrate_last</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">97</td>
+<td>&nbsp;
+payreason
+</td>
+<td >
+支付原因
+</td>
+<td>payreason</td>
+<td>
+varchar(181)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">98</td>
+<td>&nbsp;
+pk_account
+</td>
+<td >
+本方账户
+</td>
+<td>pk_account</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="cd1f9a1c-eb08-493f-88ff-bcd1c134dee1.html" >银行账户子户</a>
+</td>
+<td>使用权参照</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">99</td>
+<td>&nbsp;
+pk_agentsettleacc
+</td>
+<td >
+代理结算账户
+</td>
+<td>pk_agentsettleacc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="cd1f9a1c-eb08-493f-88ff-bcd1c134dee1.html" >银行账户子户</a>
+</td>
+<td>使用权参照</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">100</td>
+<td>&nbsp;
+pk_balatype
+</td>
+<td >
+结算方式
+</td>
+<td>pk_balatype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7016ec17-4116-4b3c-abf1-37e3b5d815ef.html" >结算方式</a>
+</td>
+<td>结算方式</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">101</td>
+<td>&nbsp;
+pk_bank
+</td>
+<td >
+本方银行主键
+</td>
+<td>pk_bank</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="bf5aeed4-6b35-4a2e-b750-b9aabce59e21.html" >银行档案</a>
+</td>
+<td>银行档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">102</td>
+<td>&nbsp;
+pk_bill
+</td>
+<td >
+业务页签表头id
+</td>
+<td>pk_bill</td>
+<td>
+varchar(40)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">103</td>
+<td>&nbsp;
+pk_billbalatype
+</td>
+<td >
+约定结算方式
+</td>
+<td>pk_billbalatype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7016ec17-4116-4b3c-abf1-37e3b5d815ef.html" >结算方式</a>
+</td>
+<td>结算方式</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">104</td>
+<td>&nbsp;
+pk_billdetail
+</td>
+<td >
+业务页签表体行id
+</td>
+<td>pk_billdetail</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">105</td>
+<td>&nbsp;
+pk_billtype
+</td>
+<td >
+来源单据类型
+</td>
+<td>pk_billtype</td>
+<td>
+varchar(12)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">106</td>
+<td>&nbsp;
+pk_billtypeid
+</td>
+<td >
+单据类型实体的主属性
+</td>
+<td>pk_billtypeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素单据类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">107</td>
+<td>&nbsp;
+pk_busiorg
+</td>
+<td >
+业务组织
+</td>
+<td>pk_busiorg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="985be8a4-3a36-4778-8afe-2d8ed3902659.html" >组织</a>
+</td>
+<td>组织（包含全局）(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">108</td>
+<td>&nbsp;
+pk_busiorg_v
+</td>
+<td >
+业务组织版本
+</td>
+<td>pk_busiorg_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="da7bba89-9a59-42d6-a262-c13ef459dbd9.html" >组织_版本信息</a>
+</td>
+<td>业务单元版本(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">109</td>
+<td>&nbsp;
+pk_busitype
+</td>
+<td >
+业务类型
+</td>
+<td>pk_busitype</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">110</td>
+<td>&nbsp;
+pk_cashaccount
+</td>
+<td >
+现金账户
+</td>
+<td>pk_cashaccount</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="d5d5b39d-2c93-4686-be49-e08a0a5f5afd.html" >现金账户</a>
+</td>
+<td>现金账户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">111</td>
+<td>&nbsp;
+pk_cashflow
+</td>
+<td >
+现金流量项目
+</td>
+<td>pk_cashflow</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="08d4138b-a7b5-42fd-94bc-bb6eb7ac0fdc.html" >现金流量项目</a>
+</td>
+<td>现金流量项目</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">112</td>
+<td>&nbsp;
+pk_costsubj
+</td>
+<td >
+收支项目
+</td>
+<td>pk_costsubj</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="283d91a4-a8f4-4763-ac44-aae7401fa09a.html" >收支项目</a>
+</td>
+<td>收支项目</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">113</td>
+<td>&nbsp;
+pk_cubasdoc
+</td>
+<td >
+客商档案
+</td>
+<td>pk_cubasdoc</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">114</td>
+<td>&nbsp;
+pk_currtype
+</td>
+<td >
+币种
+</td>
+<td>pk_currtype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b498bc9a-e5fd-4613-8da8-bdae2a05704a.html" >币种</a>
+</td>
+<td>币种档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">115</td>
+<td>&nbsp;
+pk_currtype_last
+</td>
+<td >
+实付币种
+</td>
+<td>pk_currtype_last</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b498bc9a-e5fd-4613-8da8-bdae2a05704a.html" >币种</a>
+</td>
+<td>币种档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">116</td>
+<td>&nbsp;
+pk_deptdoc
+</td>
+<td >
+部门
+</td>
+<td>pk_deptdoc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td>部门</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">117</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_detail</b></span>
+</td>
+<td >
+<span style="color:#09C">结算明细主键</span>
+</td>
+<td>pk_detail</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">118</td>
+<td>&nbsp;
+pk_fiorg
+</td>
+<td >
+财务的组织
+</td>
+<td>pk_fiorg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">119</td>
+<td>&nbsp;
+pk_ftsbill
+</td>
+<td >
+资金单据主键
+</td>
+<td>pk_ftsbill</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">120</td>
+<td>&nbsp;
+pk_ftsbilldetail
+</td>
+<td >
+资金单据表体主键
+</td>
+<td>pk_ftsbilldetail</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">121</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+所属集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">122</td>
+<td>&nbsp;
+pk_inneraccount
+</td>
+<td >
+内部结算账户
+</td>
+<td>pk_inneraccount</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="eee6ed75-8561-438d-8b43-427edca43716.html" >内部账户</a>
+</td>
+<td>内部账户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">123</td>
+<td>&nbsp;
+pk_innerorg
+</td>
+<td >
+内部单位
+</td>
+<td>pk_innerorg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">124</td>
+<td>&nbsp;
+pk_invbasdoc
+</td>
+<td >
+物料基本信息
+</td>
+<td>pk_invbasdoc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="c7dc0ccd-8872-4eee-8882-160e8f49dfad.html" >物料基本信息（多版本）</a>
+</td>
+<td>物料（多版本）</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">125</td>
+<td>&nbsp;
+pk_invcl
+</td>
+<td >
+物料基本分类
+</td>
+<td>pk_invcl</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="c099f7d7-52a9-4b98-bee7-2e3a6c3ea263.html" >物料基本分类</a>
+</td>
+<td>物料基本分类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">126</td>
+<td>&nbsp;
+pk_job
+</td>
+<td >
+项目
+</td>
+<td>pk_job</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2ee58f9b-781b-469f-b1d8-1816842515c3.html" >项目</a>
+</td>
+<td>项目</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">127</td>
+<td>&nbsp;
+pk_jobphase
+</td>
+<td >
+项目阶段
+</td>
+<td>pk_jobphase</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e0cc2c7c-4274-4844-a55d-08ad5d1ff81c.html" >项目任务</a>
+</td>
+<td>项目工作分解结构(WBS)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">128</td>
+<td>&nbsp;
+pk_notenumber
+</td>
+<td >
+票据号主键
+</td>
+<td>pk_notenumber</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">129</td>
+<td>&nbsp;
+pk_notetype
+</td>
+<td >
+票据类型
+</td>
+<td>pk_notetype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="74c98540-4879-4584-a4c9-0f8b6e20b96a.html" >票据类型</a>
+</td>
+<td>票据类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">130</td>
+<td>&nbsp;
+pk_oppaccount
+</td>
+<td >
+对方账号PK
+</td>
+<td>pk_oppaccount</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="cd1f9a1c-eb08-493f-88ff-bcd1c134dee1.html" >银行账户子户</a>
+</td>
+<td>使用权参照</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">131</td>
+<td>&nbsp;
+pk_oppbank
+</td>
+<td >
+对方银行
+</td>
+<td>pk_oppbank</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="bf5aeed4-6b35-4a2e-b750-b9aabce59e21.html" >银行档案</a>
+</td>
+<td>银行档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">132</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+财务组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="985be8a4-3a36-4778-8afe-2d8ed3902659.html" >组织</a>
+</td>
+<td>业务单元</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">133</td>
+<td>&nbsp;
+pk_org_v
+</td>
+<td >
+财务组织版本
+</td>
+<td>pk_org_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="31736d3d-3626-46c5-b5d0-e10b4ed33dce.html" >组织_业务单元_财务组织版本信息</a>
+</td>
+<td>财务组织版本(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">134</td>
+<td>&nbsp;
+pk_paybill
+</td>
+<td >
+支付单ID
+</td>
+<td>pk_paybill</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">135</td>
+<td>&nbsp;
+pk_paytype
+</td>
+<td >
+约定支付方式
+</td>
+<td>pk_paytype</td>
+<td>
+varchar(50)
+</td>
+<td>
+支付方式
+</td>
+<td></td>
+<td>
+cashpay=现金支付，directpay=直接支付，notepay=票据支付，backpay=回拨支付，proxypay=代理汇兑，grouppay=集团支付，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">136</td>
+<td>&nbsp;
+pk_payuser
+</td>
+<td >
+支付人
+</td>
+<td>pk_payuser</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">137</td>
+<td>&nbsp;
+pk_pcorg
+</td>
+<td >
+利润中心
+</td>
+<td>pk_pcorg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5461ada1-ef2a-419a-af14-656cf0641d34.html" >组织_业务单元_利润中心</a>
+</td>
+<td>利润中心</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">138</td>
+<td>&nbsp;
+pk_pcorg_v
+</td>
+<td >
+利润中心版本
+</td>
+<td>pk_pcorg_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">139</td>
+<td>&nbsp;
+pk_plansubj
+</td>
+<td >
+资金计划项目
+</td>
+<td>pk_plansubj</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="edc7fbfe-4111-440e-93e0-a88664969dd4.html" >资金计划项目</a>
+</td>
+<td>资金计划项目</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">140</td>
+<td>&nbsp;
+pk_psndoc
+</td>
+<td >
+人员档案
+</td>
+<td>pk_psndoc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="40d39c26-a2b6-4f16-a018-45664cac1a1f.html" >人员基本信息</a>
+</td>
+<td>人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">141</td>
+<td>&nbsp;
+pk_receivetype
+</td>
+<td >
+约定收款方式
+</td>
+<td>pk_receivetype</td>
+<td>
+varchar(50)
+</td>
+<td>
+收款方式
+</td>
+<td></td>
+<td>
+direct=直接收款，cash=现金收款，note=票据收款，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">142</td>
+<td>&nbsp;
+pk_rescenter
+</td>
+<td >
+责任中心
+</td>
+<td>pk_rescenter</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">143</td>
+<td>&nbsp;
+pk_suggestnotetype
+</td>
+<td >
+约定票据类型
+</td>
+<td>pk_suggestnotetype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="74c98540-4879-4584-a4c9-0f8b6e20b96a.html" >票据类型</a>
+</td>
+<td>票据类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">144</td>
+<td>&nbsp;
+pk_trader
+</td>
+<td >
+对方
+</td>
+<td>pk_trader</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">145</td>
+<td>&nbsp;
+processtype
+</td>
+<td >
+网银处理方式
+</td>
+<td>processtype</td>
+<td>
+int
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">146</td>
+<td>&nbsp;
+receive
+</td>
+<td >
+收款原币金额
+</td>
+<td>receive</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">147</td>
+<td>&nbsp;
+receivelocal
+</td>
+<td >
+收款本币金额
+</td>
+<td>receivelocal</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">148</td>
+<td>&nbsp;
+refusereason
+</td>
+<td >
+退回原因
+</td>
+<td>refusereason</td>
+<td>
+varchar(181)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">149</td>
+<td>&nbsp;
+settlelineno
+</td>
+<td >
+结算单行号
+</td>
+<td>settlelineno</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">150</td>
+<td>&nbsp;
+settlestatus
+</td>
+<td >
+结算状态
+</td>
+<td>settlestatus</td>
+<td>
+int
+</td>
+<td>
+结算状态
+</td>
+<td></td>
+<td>
+0=未结算，1=支付中，2=支付失败，3=收款中，4=收款失败，5=结算成功，6=部分成功，7=结算红冲，9=手工结算，10=划账中，11=划账失败，12=待变更，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">151</td>
+<td>&nbsp;
+signdate
+</td>
+<td >
+签字确认日期
+</td>
+<td>signdate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">152</td>
+<td>&nbsp;
+systemcode
+</td>
+<td >
+来源系统
+</td>
+<td>systemcode</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="d6574f67-35cb-4ecb-8049-4ea5a132fa86.html" >来源系统</a>
+</td>
+<td>来源系统</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">153</td>
+<td>&nbsp;
+tallydate
+</td>
+<td >
+结算日期
+</td>
+<td>tallydate</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">154</td>
+<td>&nbsp;
+tallystatus
+</td>
+<td >
+记账状态
+</td>
+<td>tallystatus</td>
+<td>
+int
+</td>
+<td>
+记账类型
+</td>
+<td></td>
+<td>
+0=未记账，1=保存状态，2=签字状态，4=结算状态，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">155</td>
+<td>&nbsp;
+tradername
+</td>
+<td >
+对方对象名称
+</td>
+<td>tradername</td>
+<td>
+varchar(181)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">156</td>
+<td>&nbsp;
+tradertype
+</td>
+<td >
+对方类型
+</td>
+<td>tradertype</td>
+<td>
+int
+</td>
+<td>
+对方类型
+</td>
+<td></td>
+<td>
+0=客户，1=供应商，2=部门，3=个人，4=散户，99=无，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">157</td>
+<td>&nbsp;
+transtype
+</td>
+<td >
+交易种类
+</td>
+<td>transtype</td>
+<td>
+int(50)
+</td>
+<td>
+交易种类
+</td>
+<td></td>
+<td>
+0=内部，1=外部，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

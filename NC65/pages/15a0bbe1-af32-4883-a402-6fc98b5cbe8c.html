@@ -1,0 +1,213 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mapub_materialpullprice 物料取价</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 15a0bbe1-af32-4883-a402-6fc98b5cbe8c -->
+<b><span style="font-size:24px">物料取价 (mapub_materialpullprice)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2014-12-01 09:34:31 &nbsp;修改时间 ：2015-03-19 10:05:43 &nbsp;路径：\mapub\METADATA\mapub_materialpullprice.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.mapub.materialpricebase.entity.MaterialPullPriceHeadVO
+/&nbsp;AggVO：nc.vo.mapub.materialpricebase.entity.MaterialPullPriceAggVO
+/&nbsp;<a href="9b90ebde-19ff-4317-bf5f-d7b40891c6c9.html" >物料取价明细</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+cbegindate
+</td>
+<td >
+平均采购入库开始期间
+</td>
+<td>cbegindate</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7b07b508-6f3b-4314-a1dc-cdbcf39afded.html" >会计月份</a>
+</td>
+<td>会计期间档案2</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+cenddate
+</td>
+<td >
+平均采购入库截止期间
+</td>
+<td>cenddate</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7b07b508-6f3b-4314-a1dc-cdbcf39afded.html" >会计月份</a>
+</td>
+<td>会计期间档案2</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+<span style="color:red"><b>cmaterialpullpriceid</b></span>
+</td>
+<td >
+<span style="color:#09C">物料取价</span>
+</td>
+<td>cmaterialpullpriceid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+costtype
+</td>
+<td >
+成本类型
+</td>
+<td>costtype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="06c07a8f-8c18-4d59-ae6c-958abe743062.html" >成本类型</a>
+</td>
+<td>成本类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+cperiod
+</td>
+<td >
+最新结存价会计期间
+</td>
+<td>cperiod1</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7b07b508-6f3b-4314-a1dc-cdbcf39afded.html" >会计月份</a>
+</td>
+<td>会计期间档案2</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+cperiodscheme
+</td>
+<td >
+会计期间方案
+</td>
+<td>cperiod</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="44187a94-e78b-4770-8b2a-9fe8db022b12.html" >会计期间方案</a>
+</td>
+<td>会计期间方案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+业务单元
+</td>
+<td>pk_org</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

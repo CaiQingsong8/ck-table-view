@@ -1,0 +1,246 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>org_view 组织结构视图</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- d822f33c-e12c-4d80-af45-0f728bcbcd18 -->
+<b><span style="font-size:24px">组织结构视图 (org_view)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-07-27 10:33:45 &nbsp;修改时间 ：2014-07-28 09:57:09 &nbsp;路径：\riaorg\METADATA\uap\org\orgview\orgview.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.org.orgview.OrgViewVO
+/&nbsp;<a href="a1affb0b-df59-4b77-8372-21187aa60a12.html" >组织视图_资产统计体系</a>
+/&nbsp;<a href="f4a449ab-5f02-49f6-9b5e-03018cfbd378.html" >组织视图-简单视图</a>
+/&nbsp;<a href="25b4b522-fa16-43d8-a24e-4ed5a4aedf22.html" >组织视图_账簿合并体系</a>
+/&nbsp;<a href="1cd7bd6f-121d-4923-b394-450b9c04267f.html" >组织视图-预算组织体系</a>
+/&nbsp;<a href="7ba22bd5-992f-4fb9-8e65-d3a2fae7951b.html" >组织视图-成本域视图</a>
+/&nbsp;<a href="8746985b-d451-4055-b579-496fd1d5ddd1.html" >组织视图-财务组织视图</a>
+/&nbsp;<a href="94e189c1-fcb6-479d-a274-cb3a4fe84499.html" >组织视图_财务统计体系</a>
+/&nbsp;<a href="c7825bdb-c287-4b34-9ae3-8809ff6b6e7b.html" >组织视图-责任组织结构</a>
+/&nbsp;<a href="93afc6d6-b8d8-484e-982d-e5cde88f57ea.html" >结构视图－行政视图</a>
+/&nbsp;<a href="35d301fc-4ef5-4573-a948-5bb2efb36eb0.html" >组织视图-采购计划体系</a>
+/&nbsp;<a href="dfcdb4f4-8bd5-4168-9698-29db38a00a23.html" >组织视图_报表合并体系</a>
+/&nbsp;<a href="45d9c1e5-f870-4f2f-88cf-96193dc2c0f2.html" >组织视图-报表管理体系</a>
+/&nbsp;<a href="8e1de11c-b4fb-43ba-bb04-17aea5fe499f.html" >组织视图-库存统计体系</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+创建时间
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+history_v
+</td>
+<td >
+<span style="color:#09C">历史版本号</span>
+</td>
+<td>history_v</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+orgview_type
+</td>
+<td >
+业务视图类型
+</td>
+<td>orgview_type</td>
+<td>
+int
+</td>
+<td>
+组织结构视图类型
+</td>
+<td></td>
+<td>
+0=行政组织视图，1=财务组织视图，2=销售组织视图，3=库存组织视图，4=资金组织视图，5=成本域视图，6=信用控制域视图，7=分销补货体系，8=报表管理体系，9=责任组织结构，10=资金管理体系，11=库存统计体系，12=人力资源视图，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+所属集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+所属组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="985be8a4-3a36-4778-8afe-2d8ed3902659.html" >组织</a>
+</td>
+<td>业务单元(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_orgview</b></span>
+</td>
+<td >
+<span style="color:#09C">主键</span>
+</td>
+<td>pk_orgview</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+systemcode
+</td>
+<td >
+体系标志位
+</td>
+<td>systemcode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+viewscope
+</td>
+<td >
+视图范围
+</td>
+<td>viewscope</td>
+<td>
+int
+</td>
+<td>
+组织机构视图范围
+</td>
+<td></td>
+<td>
+0=全局范围，2=集团范围，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

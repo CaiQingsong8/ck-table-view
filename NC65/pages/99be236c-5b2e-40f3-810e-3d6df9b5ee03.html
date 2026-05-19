@@ -1,0 +1,873 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>to_businessinfo_bb 内部交易信息子子表</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 99be236c-5b2e-40f3-810e-3d6df9b5ee03 -->
+<b><span style="font-size:24px">内部交易信息子子表 (to_businessinfo_bb)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-01-26 10:56:17 &nbsp;修改时间 ：2015-05-20 09:17:53 &nbsp;路径：\to\METADATA\businessinfo\businessinfo.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.to.businessinfo.entity.BusinessinfoBBVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+bmodifypriceflag
+</td>
+<td >
+询价后价格是否可改
+</td>
+<td>bmodifypriceflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+btriatradeflag
+</td>
+<td >
+三角贸易
+</td>
+<td>btriatradeflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+<span style="color:red"><b>cbusiness_bbid</b></span>
+</td>
+<td >
+<span style="color:#09C">内部交易信息子子表</span>
+</td>
+<td>cbusiness_bbid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+cbusinessid
+</td>
+<td >
+内部交易信息主表
+</td>
+<td>cbusinessid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+ccurrencyid
+</td>
+<td >
+本币
+</td>
+<td>ccurrencyid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b498bc9a-e5fd-4613-8da8-bdae2a05704a.html" >币种</a>
+</td>
+<td>币种档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+cdowncostregionid
+</td>
+<td >
+下游成本域
+</td>
+<td>cdowncostregionid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2b177ab7-a3a9-4cc4-bda7-5f99ec99efaf.html" >组织_成本域</a>
+</td>
+<td>成本域</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+cdownfinanceorgid
+</td>
+<td >
+下游财务组织最新版本
+</td>
+<td>cdownfinanceorgid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+cdownfinanceorgvid
+</td>
+<td >
+下游财务组织
+</td>
+<td>cdownfinanceorgvid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="31736d3d-3626-46c5-b5d0-e10b4ed33dce.html" >组织_业务单元_财务组织版本信息</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+cincountryid
+</td>
+<td >
+收货国家/地区
+</td>
+<td>cincountryid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e0f51d3e-b8c4-4abb-bd3b-cd6e6d09d0f8.html" >国家地区</a>
+</td>
+<td>国家地区</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+cintaxcountryid
+</td>
+<td >
+采购方报税国家/地区
+</td>
+<td>cintaxcountryid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e0f51d3e-b8c4-4abb-bd3b-cd6e6d09d0f8.html" >国家地区</a>
+</td>
+<td>国家地区</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+corigcurrencyid
+</td>
+<td >
+币种
+</td>
+<td>corigcurrencyid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b498bc9a-e5fd-4613-8da8-bdae2a05704a.html" >币种</a>
+</td>
+<td>币种档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+coutcountryid
+</td>
+<td >
+发货国家/地区
+</td>
+<td>coutcountryid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e0f51d3e-b8c4-4abb-bd3b-cd6e6d09d0f8.html" >国家地区</a>
+</td>
+<td>国家地区</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+cpathrowno
+</td>
+<td >
+行号
+</td>
+<td>cpathrowno</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+csettlepath_bid
+</td>
+<td >
+结算路径子表
+</td>
+<td>csettlepath_bid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="9b9cbb94-621f-4310-b631-340e552cd812.html" >结算路径子表</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+ctaxcodeid
+</td>
+<td >
+税码
+</td>
+<td>ctaxcodeid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f758785c-a056-4f65-a551-ac05c3ac09cd.html" >增值税税码税率</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+ctaxcountryid
+</td>
+<td >
+销售方报税国家/地区
+</td>
+<td>ctaxcountryid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e0f51d3e-b8c4-4abb-bd3b-cd6e6d09d0f8.html" >国家地区</a>
+</td>
+<td>国家地区</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+cupcostregionid
+</td>
+<td >
+上游成本域
+</td>
+<td>cupcostregionid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2b177ab7-a3a9-4cc4-bda7-5f99ec99efaf.html" >组织_成本域</a>
+</td>
+<td>成本域</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+cupfinanceorgid
+</td>
+<td >
+上游财务组织最新版本
+</td>
+<td>cupfinanceorgid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+cupfinanceorgvid
+</td>
+<td >
+上游财务组织
+</td>
+<td>cupfinanceorgvid</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="31736d3d-3626-46c5-b5d0-e10b4ed33dce.html" >组织_业务单元_财务组织版本信息</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+fbuysellflag
+</td>
+<td >
+购销类型
+</td>
+<td>fbuysellflag</td>
+<td>
+int
+</td>
+<td>
+购销类型
+</td>
+<td></td>
+<td>
+1=国内销售，2=国内采购，3=出口，4=进口，5=不区分，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+ftaxtypeflag
+</td>
+<td >
+扣税类别
+</td>
+<td>ftaxtypeflag</td>
+<td>
+int
+</td>
+<td>
+扣税类别
+</td>
+<td></td>
+<td>
+1=应税外加，0=应税内含，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+naskqtorigprice
+</td>
+<td >
+询价无税价
+</td>
+<td>naskqtorigprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+naskqtorigtaxprice
+</td>
+<td >
+询价含税价
+</td>
+<td>naskqtorigtaxprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+ncaltaxmny
+</td>
+<td >
+计税金额
+</td>
+<td>ncaltaxmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+ndiscountrate
+</td>
+<td >
+折扣率
+</td>
+<td>ndiscountrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+nexchangerate
+</td>
+<td >
+汇率
+</td>
+<td>nexchangerate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+nmny
+</td>
+<td >
+本币无税金额
+</td>
+<td>nmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+norigprice
+</td>
+<td >
+主无税单价
+</td>
+<td>norigprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+norigtaxprice
+</td>
+<td >
+主含税单价
+</td>
+<td>norigtaxprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+nprice
+</td>
+<td >
+主本币无税单价
+</td>
+<td>nprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+nqtorigmny
+</td>
+<td >
+无税金额
+</td>
+<td>nqtorigmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+nqtorigprice
+</td>
+<td >
+无税单价
+</td>
+<td>nqtorigprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+nqtorigtaxmny
+</td>
+<td >
+价税合计
+</td>
+<td>nqtorigtaxmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+nqtorigtaxprice
+</td>
+<td >
+含税单价
+</td>
+<td>nqtorigtaxprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+nqtprice
+</td>
+<td >
+本币无税单价
+</td>
+<td>nqtprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+nqttaxprice
+</td>
+<td >
+本币含税单价
+</td>
+<td>nqttaxprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+ntax
+</td>
+<td >
+本币税额
+</td>
+<td>ntax</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+ntaxmny
+</td>
+<td >
+本币价税合计
+</td>
+<td>ntaxmny</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+ntaxprice
+</td>
+<td >
+主本币含税单价
+</td>
+<td>ntaxprice</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+ntaxrate
+</td>
+<td >
+税率
+</td>
+<td>ntaxrate</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+所属集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

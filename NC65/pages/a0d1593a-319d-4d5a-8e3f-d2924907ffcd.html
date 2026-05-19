@@ -1,0 +1,3911 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ewm_wo 工单</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- a0d1593a-319d-4d5a-8e3f-d2924907ffcd -->
+<b><span style="font-size:24px">工单 (ewm_wo)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2009-06-05 15:47:54 &nbsp;修改时间 ：2015-02-10 14:31:17 &nbsp;路径：\ewm\METADATA\workorder.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.ewm.workorder.WorkOrderHeadVO
+/&nbsp;AggVO：nc.vo.ewm.workorder.AggWorkOrderVO
+/&nbsp;<a href="90f98c82-4597-40dc-9dab-b6cae13d9ea7.html" >实际物料</a>
+/&nbsp;<a href="eea5f08d-26a5-4041-9229-9436ffe657f6.html" >实际人员</a>
+/&nbsp;<a href="f153b3e1-024e-4d5f-acc2-c34dffccacbd.html" >实际工具</a>
+/&nbsp;<a href="05b2da6c-c006-40ff-b3cf-2cbad907e8cf.html" >实际其它费用</a>
+/&nbsp;<a href="8457025c-4bcc-40cc-9a72-483e16667364.html" >子工单</a>
+/&nbsp;<a href="9dc136a9-c191-45c4-81bc-be41318d48a9.html" >状态历史</a>
+/&nbsp;<a href="a497bd28-212c-49f2-979a-3b7c0a2d2e19.html" >工单日志</a>
+/&nbsp;<a href="73d3fdac-8783-40a7-823b-e104f4218763.html" >更换备件处理</a>
+/&nbsp;<a href="15d7cd01-3bb6-4c03-be05-cf9f3280f045.html" >工作许可</a>
+/&nbsp;<a href="9ae49504-0a51-4445-be23-13495e3d8e1b.html" >计划物料</a>
+/&nbsp;<a href="b76e9ec5-6bd7-47e7-900d-b6fd64a9c2c8.html" >计划人员</a>
+/&nbsp;<a href="11a478ff-d93b-454f-8b38-48f3ecda8b67.html" >计划工具</a>
+/&nbsp;<a href="28cff07b-4cac-45de-ab48-02917c9a9fb5.html" >计划其它费用</a>
+/&nbsp;<a href="6d5d9fcd-fbd9-4263-b659-96e88d230b1c.html" >危险预控</a>
+/&nbsp;<a href="453bc79b-96ef-4574-8f64-14fb3ec2a903.html" >工单结构</a>
+/&nbsp;<a href="a63cd162-4079-46c8-b5e3-d2b81f1f8f6e.html" >作业方案</a>
+/&nbsp;<a href="9afd42c9-76b9-41be-a43d-de1611d87cf5.html" >作业对象</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+ac_lbr_mny_global
+</td>
+<td >
+实际人工成本全局
+</td>
+<td>ac_lbr_mny_global</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+ac_lbr_mny_group
+</td>
+<td >
+实际人工成本集团
+</td>
+<td>ac_lbr_mny_group</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+ac_lbr_mny_org
+</td>
+<td >
+实际人工成本
+</td>
+<td>ac_lbr_mny_org</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+ac_mtr_mny_global
+</td>
+<td >
+实际物料成本全局
+</td>
+<td>ac_mtr_mny_global</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+ac_mtr_mny_group
+</td>
+<td >
+实际物料成本集团
+</td>
+<td>ac_mtr_mny_group</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+ac_mtr_mny_org
+</td>
+<td >
+实际物料成本
+</td>
+<td>ac_mtr_mny_org</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+ac_oth_mny_global
+</td>
+<td >
+实际其他成本全局
+</td>
+<td>ac_oth_mny_global</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+ac_oth_mny_group
+</td>
+<td >
+实际其他成本集团
+</td>
+<td>ac_oth_mny_group</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+ac_oth_mny_org
+</td>
+<td >
+实际其他成本
+</td>
+<td>ac_oth_mny_org</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+ac_tol_mny_global
+</td>
+<td >
+实际工具成本全局
+</td>
+<td>ac_tol_mny_global</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+ac_tol_mny_group
+</td>
+<td >
+实际工具成本集团
+</td>
+<td>ac_tol_mny_group</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+ac_tol_mny_org
+</td>
+<td >
+实际工具成本
+</td>
+<td>ac_tol_mny_org</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+ac_ttl_mny_global
+</td>
+<td >
+实际总成本全局
+</td>
+<td>ac_ttl_mny_global</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+ac_ttl_mny_group
+</td>
+<td >
+实际总成本集团
+</td>
+<td>ac_ttl_mny_group</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+ac_ttl_mny_org
+</td>
+<td >
+实际总成本
+</td>
+<td>ac_ttl_mny_org</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+actu_end_time
+</td>
+<td >
+实际结束时间
+</td>
+<td>actu_end_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+actu_endhalt_time
+</td>
+<td >
+实际结束停机时间
+</td>
+<td>actu_endhalt_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+actu_start_time
+</td>
+<td >
+实际开始时间
+</td>
+<td>actu_start_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+actu_sthalt_time
+</td>
+<td >
+实际开始停机时间
+</td>
+<td>actu_sthalt_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+auditor
+</td>
+<td >
+审核人
+</td>
+<td>auditor</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+audittime
+</td>
+<td >
+审核时间
+</td>
+<td>audittime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+bill_code
+</td>
+<td >
+工单号
+</td>
+<td>bill_code</td>
+<td>
+varchar(40)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+bill_status
+</td>
+<td >
+单据状态
+</td>
+<td>bill_status</td>
+<td>
+int
+</td>
+<td>
+单据状态
+</td>
+<td></td>
+<td>
+0=自由态，1=未审核，2=审核中，3=审核通过，4=审核未通过，5=已确认，6=关闭，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+bill_type
+</td>
+<td >
+单据类型
+</td>
+<td>bill_type</td>
+<td>
+varchar(4)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+billmaker
+</td>
+<td >
+制单人
+</td>
+<td>billmaker</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+billmaketime
+</td>
+<td >
+制单时间
+</td>
+<td>billmaketime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+busi_type
+</td>
+<td >
+业务类型
+</td>
+<td>busi_type</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="7717f1a3-b777-454e-abb5-ef8705a0f0c2.html" >业务流程</a>
+</td>
+<td>业务流程</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+capitalize_date
+</td>
+<td >
+资本化日期
+</td>
+<td>capitalize_date</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+check_opinion
+</td>
+<td >
+审核意见
+</td>
+<td>check_opinion</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+check_plan_cost
+</td>
+<td >
+检查维修计划成本
+</td>
+<td>check_plan_cost</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+consign_flag
+</td>
+<td >
+委外
+</td>
+<td>consign_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+consign_reason
+</td>
+<td >
+委外原因
+</td>
+<td>consign_reason</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+coordinate
+</td>
+<td >
+位置点坐标
+</td>
+<td>coordinate</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+coordinate_desc
+</td>
+<td >
+位置点坐标名称
+</td>
+<td>coordinate_desc</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+创建时间
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+def1
+</td>
+<td >
+自定义项1
+</td>
+<td>def1</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+def10
+</td>
+<td >
+自定义项10
+</td>
+<td>def10</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+def11
+</td>
+<td >
+自定义项11
+</td>
+<td>def11</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+def12
+</td>
+<td >
+自定义项12
+</td>
+<td>def12</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+def13
+</td>
+<td >
+自定义项13
+</td>
+<td>def13</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+def14
+</td>
+<td >
+自定义项14
+</td>
+<td>def14</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+def15
+</td>
+<td >
+自定义项15
+</td>
+<td>def15</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+def16
+</td>
+<td >
+自定义项16
+</td>
+<td>def16</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+def17
+</td>
+<td >
+自定义项17
+</td>
+<td>def17</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+def18
+</td>
+<td >
+自定义项18
+</td>
+<td>def18</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">47</td>
+<td>&nbsp;
+def19
+</td>
+<td >
+自定义项19
+</td>
+<td>def19</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">48</td>
+<td>&nbsp;
+def2
+</td>
+<td >
+自定义项2
+</td>
+<td>def2</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">49</td>
+<td>&nbsp;
+def20
+</td>
+<td >
+自定义项20
+</td>
+<td>def20</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">50</td>
+<td>&nbsp;
+def21
+</td>
+<td >
+自定义项21
+</td>
+<td>def21</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">51</td>
+<td>&nbsp;
+def22
+</td>
+<td >
+自定义项22
+</td>
+<td>def22</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">52</td>
+<td>&nbsp;
+def23
+</td>
+<td >
+自定义项23
+</td>
+<td>def23</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">53</td>
+<td>&nbsp;
+def24
+</td>
+<td >
+自定义项24
+</td>
+<td>def24</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">54</td>
+<td>&nbsp;
+def25
+</td>
+<td >
+自定义项25
+</td>
+<td>def25</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">55</td>
+<td>&nbsp;
+def26
+</td>
+<td >
+自定义项26
+</td>
+<td>def26</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">56</td>
+<td>&nbsp;
+def27
+</td>
+<td >
+自定义项27
+</td>
+<td>def27</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">57</td>
+<td>&nbsp;
+def28
+</td>
+<td >
+自定义项28
+</td>
+<td>def28</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">58</td>
+<td>&nbsp;
+def29
+</td>
+<td >
+自定义项29
+</td>
+<td>def29</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">59</td>
+<td>&nbsp;
+def3
+</td>
+<td >
+自定义项3
+</td>
+<td>def3</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">60</td>
+<td>&nbsp;
+def30
+</td>
+<td >
+自定义项30
+</td>
+<td>def30</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">61</td>
+<td>&nbsp;
+def4
+</td>
+<td >
+自定义项4
+</td>
+<td>def4</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">62</td>
+<td>&nbsp;
+def5
+</td>
+<td >
+自定义项5
+</td>
+<td>def5</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">63</td>
+<td>&nbsp;
+def6
+</td>
+<td >
+自定义项6
+</td>
+<td>def6</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">64</td>
+<td>&nbsp;
+def7
+</td>
+<td >
+自定义项7
+</td>
+<td>def7</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">65</td>
+<td>&nbsp;
+def8
+</td>
+<td >
+自定义项8
+</td>
+<td>def8</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">66</td>
+<td>&nbsp;
+def9
+</td>
+<td >
+自定义项9
+</td>
+<td>def9</td>
+<td>
+varchar(101)
+</td>
+<td>
+自定义项
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">67</td>
+<td>&nbsp;
+failure_detail
+</td>
+<td >
+故障详细说明
+</td>
+<td>failure_detail</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">68</td>
+<td>&nbsp;
+failure_flag
+</td>
+<td >
+已生成故障记录
+</td>
+<td>failure_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">69</td>
+<td>&nbsp;
+failure_influence
+</td>
+<td >
+故障影响
+</td>
+<td>failure_influence</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">70</td>
+<td>&nbsp;
+failure_reason_desc
+</td>
+<td >
+故障原因说明
+</td>
+<td>failure_reason_desc</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">71</td>
+<td>&nbsp;
+failure_reason_name
+</td>
+<td >
+故障原因
+</td>
+<td>failure_reason_name</td>
+<td>
+varchar(500)
+</td>
+<td>
+<a href="b9569f07-4f50-448d-8a55-58eb34b271d7.html" >故障原因</a>
+</td>
+<td>故障原因</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">72</td>
+<td>&nbsp;
+failure_time
+</td>
+<td >
+故障异常时间
+</td>
+<td>failure_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">73</td>
+<td>&nbsp;
+gen_failure_flag
+</td>
+<td >
+生成故障记录
+</td>
+<td>gen_failure_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">74</td>
+<td>&nbsp;
+haschild_flag
+</td>
+<td >
+有子工单
+</td>
+<td>haschild_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">75</td>
+<td>&nbsp;
+haslatter_flag
+</td>
+<td >
+后续工作
+</td>
+<td>haslatter_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">76</td>
+<td>&nbsp;
+innercode
+</td>
+<td >
+内码
+</td>
+<td>innercode</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">77</td>
+<td>&nbsp;
+left_problem
+</td>
+<td >
+遗留问题
+</td>
+<td>left_problem</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">78</td>
+<td>&nbsp;
+memo
+</td>
+<td >
+备注
+</td>
+<td>memo</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">79</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+最后修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">80</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+最后修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">81</td>
+<td>&nbsp;
+opinion
+</td>
+<td >
+验收意见
+</td>
+<td>opinion</td>
+<td>
+varchar(300)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">82</td>
+<td>&nbsp;
+payable_flag
+</td>
+<td >
+已生成应付
+</td>
+<td>payable_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">83</td>
+<td>&nbsp;
+payout_flag
+</td>
+<td >
+已生成对外应付
+</td>
+<td>payout_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">84</td>
+<td>&nbsp;
+pk_ancestor_wo
+</td>
+<td >
+祖先工单
+</td>
+<td>pk_ancestor_wo</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">85</td>
+<td>&nbsp;
+pk_chkfactor
+</td>
+<td >
+应付核算要素
+</td>
+<td>pk_chkfactor</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5b31b33c-3217-466a-9e25-c2ce5e4a9105.html" >核算要素</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">86</td>
+<td>&nbsp;
+pk_chkfactor_apmt
+</td>
+<td >
+维修应付核算要素
+</td>
+<td>pk_chkfactor_apmt</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5b31b33c-3217-466a-9e25-c2ce5e4a9105.html" >核算要素</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">87</td>
+<td>&nbsp;
+pk_chkfactor_armt
+</td>
+<td >
+维修应收核算要素
+</td>
+<td>pk_chkfactor_armt</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5b31b33c-3217-466a-9e25-c2ce5e4a9105.html" >核算要素</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">88</td>
+<td>&nbsp;
+pk_currtype
+</td>
+<td >
+币种
+</td>
+<td>pk_currtype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b498bc9a-e5fd-4613-8da8-bdae2a05704a.html" >币种</a>
+</td>
+<td>币种档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">89</td>
+<td>&nbsp;
+pk_customer
+</td>
+<td >
+内部客户
+</td>
+<td>pk_customer</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e4f48eaf-5567-4383-a370-a59cb3e8a451.html" >客户基本信息</a>
+</td>
+<td>客户档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">90</td>
+<td>&nbsp;
+pk_director
+</td>
+<td >
+工单主管人
+</td>
+<td>pk_director</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="40d39c26-a2b6-4f16-a018-45664cac1a1f.html" >人员基本信息</a>
+</td>
+<td>人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">91</td>
+<td>&nbsp;
+pk_equip
+</td>
+<td >
+设备
+</td>
+<td>pk_equip</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="205bdc55-d709-46f2-bd42-ec896ca51c28.html" >设备卡片</a>
+</td>
+<td>设备档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">92</td>
+<td>&nbsp;
+pk_equip_capital
+</td>
+<td >
+资本化设备
+</td>
+<td>pk_equip_capital</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="205bdc55-d709-46f2-bd42-ec896ca51c28.html" >设备卡片</a>
+</td>
+<td>设备档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">93</td>
+<td>&nbsp;
+pk_executor
+</td>
+<td >
+工单执行人
+</td>
+<td>pk_executor</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="40d39c26-a2b6-4f16-a018-45664cac1a1f.html" >人员基本信息</a>
+</td>
+<td>人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">94</td>
+<td>&nbsp;
+pk_failure_detect
+</td>
+<td >
+发现途径
+</td>
+<td>pk_failure_detect</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e60cd849-575b-41a2-99f8-813309b1cc36.html" >故障发现途径</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">95</td>
+<td>&nbsp;
+pk_failure_reason
+</td>
+<td >
+故障原因主键
+</td>
+<td>pk_failure_reason</td>
+<td>
+varchar(500)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">96</td>
+<td>&nbsp;
+pk_failure_symptom
+</td>
+<td >
+故障现象
+</td>
+<td>pk_failure_symptom</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5e815d43-fec0-4cdb-9a0e-504cda468217.html" >故障现象</a>
+</td>
+<td>故障现象</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">97</td>
+<td>&nbsp;
+pk_failure_type
+</td>
+<td >
+故障类别
+</td>
+<td>pk_failure_type</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2f8fffe2-8d11-4704-bbde-ee16499ef951.html" >故障树</a>
+</td>
+<td>故障树</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">98</td>
+<td>&nbsp;
+pk_fiorg
+</td>
+<td >
+固定资产财务组织
+</td>
+<td>pk_fiorg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">99</td>
+<td>&nbsp;
+pk_fiorg_ap
+</td>
+<td >
+应付财务组织最新版本
+</td>
+<td>pk_fiorg_ap</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">100</td>
+<td>&nbsp;
+pk_fiorg_ap_v
+</td>
+<td >
+应付财务组织
+</td>
+<td>pk_fiorg_ap_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="31736d3d-3626-46c5-b5d0-e10b4ed33dce.html" >组织_业务单元_财务组织版本信息</a>
+</td>
+<td>财务组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">101</td>
+<td>&nbsp;
+pk_fiorg_apmt
+</td>
+<td >
+维修应付财务组织最新版本
+</td>
+<td>pk_fiorg_apmt</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">102</td>
+<td>&nbsp;
+pk_fiorg_apmt_v
+</td>
+<td >
+维修应付财务组织
+</td>
+<td>pk_fiorg_apmt_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="31736d3d-3626-46c5-b5d0-e10b4ed33dce.html" >组织_业务单元_财务组织版本信息</a>
+</td>
+<td>财务组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">103</td>
+<td>&nbsp;
+pk_fiorg_armt
+</td>
+<td >
+维修应收财务组织最新版本
+</td>
+<td>pk_fiorg_armt</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">104</td>
+<td>&nbsp;
+pk_fiorg_armt_v
+</td>
+<td >
+维修应收财务组织
+</td>
+<td>pk_fiorg_armt_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="31736d3d-3626-46c5-b5d0-e10b4ed33dce.html" >组织_业务单元_财务组织版本信息</a>
+</td>
+<td>财务组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">105</td>
+<td>&nbsp;
+pk_fiorg_ic
+</td>
+<td >
+领料财务组织最新版本
+</td>
+<td>pk_fiorg_ic</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2cfe13c5-9757-4ae8-9327-f5c2d34bcb46.html" >组织_业务单元_财务组织</a>
+</td>
+<td>财务组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">106</td>
+<td>&nbsp;
+pk_fiorg_ic_v
+</td>
+<td >
+领料财务组织
+</td>
+<td>pk_fiorg_ic_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="31736d3d-3626-46c5-b5d0-e10b4ed33dce.html" >组织_业务单元_财务组织版本信息</a>
+</td>
+<td>财务组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">107</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">108</td>
+<td>&nbsp;
+pk_inspection_road
+</td>
+<td >
+检修路线
+</td>
+<td>pk_inspection_road</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="85a7a282-43e5-4b96-890c-d1634a6e2e26.html" >检修路线</a>
+</td>
+<td>检修路线</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">109</td>
+<td>&nbsp;
+pk_location
+</td>
+<td >
+位置
+</td>
+<td>pk_location</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e618020b-0a93-4b41-8e35-cc861286edc7.html" >位置</a>
+</td>
+<td>位置</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">110</td>
+<td>&nbsp;
+pk_manager
+</td>
+<td >
+设备管理人
+</td>
+<td>pk_manager</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="40d39c26-a2b6-4f16-a018-45664cac1a1f.html" >人员基本信息</a>
+</td>
+<td>人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">111</td>
+<td>&nbsp;
+pk_mandept
+</td>
+<td >
+设备管理部门
+</td>
+<td>pk_mandept</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td>部门</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">112</td>
+<td>&nbsp;
+pk_mtcon
+</td>
+<td >
+维修合同
+</td>
+<td>pk_mtcon</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="913af9d2-ccec-4c4a-a6d9-17e2fd5ea7dc.html" >维修合同</a>
+</td>
+<td>维修合同</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">113</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+维修组织最新版本
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="61abab19-5402-484b-813a-c569ab748954.html" >组织_业务单元_维修组织</a>
+</td>
+<td>维修组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">114</td>
+<td>&nbsp;
+pk_org_v
+</td>
+<td >
+维修组织
+</td>
+<td>pk_org_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b8861744-eeed-4bf4-b361-1445bd9ee267.html" >组织_业务单元_维修组织版本信息</a>
+</td>
+<td>维修组织版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">115</td>
+<td>&nbsp;
+pk_ownerorg
+</td>
+<td >
+设备管理组织
+</td>
+<td>pk_ownerorg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="22bd6938-f5e0-444d-b2b9-029c8c7a4c9b.html" >组织_业务单元_资产组织</a>
+</td>
+<td>资产组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">116</td>
+<td>&nbsp;
+pk_parent_wo
+</td>
+<td >
+父工单
+</td>
+<td>pk_parent_wo</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a0d1593a-319d-4d5a-8e3f-d2924907ffcd.html" >工单</a>
+</td>
+<td>工单</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">117</td>
+<td>&nbsp;
+pk_priority
+</td>
+<td >
+优先级
+</td>
+<td>pk_priority</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3a91b4fc-7e24-46f2-9354-3ada5c5ff264.html" >工单优先级</a>
+</td>
+<td>工单优先级</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">118</td>
+<td>&nbsp;
+pk_profitcen_ap
+</td>
+<td >
+应付利润中心最新版本
+</td>
+<td>pk_profitcen_ap</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5461ada1-ef2a-419a-af14-656cf0641d34.html" >组织_业务单元_利润中心</a>
+</td>
+<td>利润中心</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">119</td>
+<td>&nbsp;
+pk_profitcen_ap_v
+</td>
+<td >
+应付利润中心
+</td>
+<td>pk_profitcen_ap_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="0b9ea16e-7650-47dc-9912-fd0bd351f124.html" >组织_业务单元_利润中心版本信息</a>
+</td>
+<td>利润中心版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">120</td>
+<td>&nbsp;
+pk_profitcen_apmt
+</td>
+<td >
+维修应付利润中心最新版本
+</td>
+<td>pk_profitcen_apmt</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5461ada1-ef2a-419a-af14-656cf0641d34.html" >组织_业务单元_利润中心</a>
+</td>
+<td>利润中心</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">121</td>
+<td>&nbsp;
+pk_profitcen_apmt_v
+</td>
+<td >
+维修应付利润中心
+</td>
+<td>pk_profitcen_apmt_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="0b9ea16e-7650-47dc-9912-fd0bd351f124.html" >组织_业务单元_利润中心版本信息</a>
+</td>
+<td>利润中心版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">122</td>
+<td>&nbsp;
+pk_profitcen_armt
+</td>
+<td >
+维修应收利润中心最新版本
+</td>
+<td>pk_profitcen_armt</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5461ada1-ef2a-419a-af14-656cf0641d34.html" >组织_业务单元_利润中心</a>
+</td>
+<td>利润中心</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">123</td>
+<td>&nbsp;
+pk_profitcen_armt_v
+</td>
+<td >
+维修应收利润中心
+</td>
+<td>pk_profitcen_armt_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="0b9ea16e-7650-47dc-9912-fd0bd351f124.html" >组织_业务单元_利润中心版本信息</a>
+</td>
+<td>利润中心版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">124</td>
+<td>&nbsp;
+pk_project
+</td>
+<td >
+项目
+</td>
+<td>pk_project</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="2ee58f9b-781b-469f-b1d8-1816842515c3.html" >项目</a>
+</td>
+<td>项目</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">125</td>
+<td>&nbsp;
+pk_projecttask
+</td>
+<td >
+项目任务
+</td>
+<td>pk_projecttask</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e0cc2c7c-4274-4844-a55d-08ad5d1ff81c.html" >项目任务</a>
+</td>
+<td>项目工作分解结构(WBS)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">126</td>
+<td>&nbsp;
+pk_provider
+</td>
+<td >
+供应商
+</td>
+<td>pk_provider</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="720dcc7c-ff19-48f4-b9c5-b90906682f45.html" >供应商基本信息</a>
+</td>
+<td>供应商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">127</td>
+<td>&nbsp;
+pk_psn_group
+</td>
+<td >
+工作班组
+</td>
+<td>pk_psn_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="dd381d47-4b9c-434a-893f-1c4764aff734.html" >班组</a>
+</td>
+<td>班组</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">128</td>
+<td>&nbsp;
+pk_repair_plan
+</td>
+<td >
+维修计划表头
+</td>
+<td>pk_repair_plan</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3f49bd2c-caef-40d5-943e-96be20681d09.html" >维修计划</a>
+</td>
+<td>维修计划表头</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">129</td>
+<td>&nbsp;
+pk_repair_plan_b
+</td>
+<td >
+维修计划
+</td>
+<td>pk_repair_plan_b</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b247eb21-83fc-417a-8126-9a31658114c7.html" >维修计划明细</a>
+</td>
+<td>维修计划</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">130</td>
+<td>&nbsp;
+pk_reportedby
+</td>
+<td >
+申请人
+</td>
+<td>pk_reportedby</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="40d39c26-a2b6-4f16-a018-45664cac1a1f.html" >人员基本信息</a>
+</td>
+<td>人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">131</td>
+<td>&nbsp;
+pk_safety_job
+</td>
+<td >
+安全工作包
+</td>
+<td>pk_safety_job</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="9669e86f-6e06-4b9b-9bed-bb7a211a19f2.html" >安全工作包</a>
+</td>
+<td>安全工作包</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">132</td>
+<td>&nbsp;
+pk_service_step
+</td>
+<td >
+维修措施
+</td>
+<td>pk_service_step</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="ac512190-c598-4d2d-bd7d-c2fc507c172d.html" >维修措施</a>
+</td>
+<td>维修措施</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">133</td>
+<td>&nbsp;
+pk_specialty
+</td>
+<td >
+负责专业
+</td>
+<td>pk_specialty</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="cc737624-0c30-4131-9749-4687a5f6bef4.html" >专业</a>
+</td>
+<td>专业</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">134</td>
+<td>&nbsp;
+pk_std_job
+</td>
+<td >
+标准工作包
+</td>
+<td>pk_std_job</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="934345f9-c2d3-43a5-b2d4-ba12cad164bc.html" >标准工作包</a>
+</td>
+<td>标准工作包</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">135</td>
+<td>&nbsp;
+pk_supplier
+</td>
+<td >
+内部供应商
+</td>
+<td>pk_supplier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="720dcc7c-ff19-48f4-b9c5-b90906682f45.html" >供应商基本信息</a>
+</td>
+<td>供应商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">136</td>
+<td>&nbsp;
+pk_transitype
+</td>
+<td >
+交易类型
+</td>
+<td>pk_transitype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素交 易类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">137</td>
+<td>&nbsp;
+pk_usedept
+</td>
+<td >
+设备使用部门
+</td>
+<td>pk_usedept</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td>部门</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">138</td>
+<td>&nbsp;
+pk_usedorg
+</td>
+<td >
+设备使用管理组织
+</td>
+<td>pk_usedorg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="22bd6938-f5e0-444d-b2b9-029c8c7a4c9b.html" >组织_业务单元_资产组织</a>
+</td>
+<td>资产组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">139</td>
+<td>&nbsp;
+pk_usedunit
+</td>
+<td >
+设备使用权
+</td>
+<td>pk_usedunit</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="985be8a4-3a36-4778-8afe-2d8ed3902659.html" >组织</a>
+</td>
+<td>业务单元</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">140</td>
+<td>&nbsp;
+pk_user
+</td>
+<td >
+设备责任人
+</td>
+<td>pk_user</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="40d39c26-a2b6-4f16-a018-45664cac1a1f.html" >人员基本信息</a>
+</td>
+<td>人员</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">141</td>
+<td>&nbsp;
+pk_warcontract
+</td>
+<td >
+保修合同主表
+</td>
+<td>pk_warcontract</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f8979781-45cf-4612-a5c6-598e6296a773.html" >保修合同</a>
+</td>
+<td>保修合同主表</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">142</td>
+<td>&nbsp;
+pk_warcontract_b
+</td>
+<td >
+保修合同
+</td>
+<td>pk_warcontract_b</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="ec0d176c-22b0-487e-8d32-2f49b787a71a.html" >合同基本</a>
+</td>
+<td>保修合同</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">143</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_wo</b></span>
+</td>
+<td >
+<span style="color:#09C">工单</span>
+</td>
+<td>pk_wo</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">144</td>
+<td>&nbsp;
+pk_wo_dept
+</td>
+<td >
+负责部门最新版本
+</td>
+<td>pk_wo_dept</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b26fa3cb-4087-4027-a3b6-c83ab2a086a9.html" >组织_部门</a>
+</td>
+<td>部门</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">145</td>
+<td>&nbsp;
+pk_wo_dept_v
+</td>
+<td >
+负责部门
+</td>
+<td>pk_wo_dept_v</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="66ed0cf6-e260-4f39-8fbb-172260efd677.html" >组织_部门版本信息</a>
+</td>
+<td>部门版本</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">146</td>
+<td>&nbsp;
+pk_wo_status
+</td>
+<td >
+工单状态
+</td>
+<td>pk_wo_status</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="9ba9918d-0522-47db-a27a-144668956880.html" >工单状态</a>
+</td>
+<td>工单状态</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">147</td>
+<td>&nbsp;
+pk_workcenter
+</td>
+<td >
+主工作中心
+</td>
+<td>pk_workcenter</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="366dd04c-b391-416c-adf5-1040b6c0d2be.html" >工作中心</a>
+</td>
+<td>UAP-工作中心</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">148</td>
+<td>&nbsp;
+pk_worktype
+</td>
+<td >
+工作类型
+</td>
+<td>pk_worktype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="894d1e7c-83f2-476b-8fb3-0020083ad867.html" >工作类型</a>
+</td>
+<td>工作类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">149</td>
+<td>&nbsp;
+pl_lbr_mny_global
+</td>
+<td >
+计划人工成本全局
+</td>
+<td>pl_lbr_mny_global</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">150</td>
+<td>&nbsp;
+pl_lbr_mny_group
+</td>
+<td >
+计划人工成本集团
+</td>
+<td>pl_lbr_mny_group</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">151</td>
+<td>&nbsp;
+pl_lbr_mny_org
+</td>
+<td >
+计划人工成本
+</td>
+<td>pl_lbr_mny_org</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">152</td>
+<td>&nbsp;
+pl_mtr_mny_global
+</td>
+<td >
+计划物料成本全局
+</td>
+<td>pl_mtr_mny_global</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">153</td>
+<td>&nbsp;
+pl_mtr_mny_group
+</td>
+<td >
+计划物料成本集团
+</td>
+<td>pl_mtr_mny_group</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">154</td>
+<td>&nbsp;
+pl_mtr_mny_org
+</td>
+<td >
+计划物料成本
+</td>
+<td>pl_mtr_mny_org</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">155</td>
+<td>&nbsp;
+pl_oth_mny_global
+</td>
+<td >
+计划其他成本全局
+</td>
+<td>pl_oth_mny_global</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">156</td>
+<td>&nbsp;
+pl_oth_mny_group
+</td>
+<td >
+计划其他成本集团
+</td>
+<td>pl_oth_mny_group</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">157</td>
+<td>&nbsp;
+pl_oth_mny_org
+</td>
+<td >
+计划其他成本
+</td>
+<td>pl_oth_mny_org</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">158</td>
+<td>&nbsp;
+pl_tol_mny_global
+</td>
+<td >
+计划工具成本全局
+</td>
+<td>pl_tol_mny_global</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">159</td>
+<td>&nbsp;
+pl_tol_mny_group
+</td>
+<td >
+计划工具成本集团
+</td>
+<td>pl_tol_mny_group</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">160</td>
+<td>&nbsp;
+pl_tol_mny_org
+</td>
+<td >
+计划工具成本
+</td>
+<td>pl_tol_mny_org</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">161</td>
+<td>&nbsp;
+pl_ttl_mny_global
+</td>
+<td >
+计划总成本全局
+</td>
+<td>pl_ttl_mny_global</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">162</td>
+<td>&nbsp;
+pl_ttl_mny_group
+</td>
+<td >
+计划总成本集团
+</td>
+<td>pl_ttl_mny_group</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">163</td>
+<td>&nbsp;
+pl_ttl_mny_org
+</td>
+<td >
+计划总成本
+</td>
+<td>pl_ttl_mny_org</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFMoney
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">164</td>
+<td>&nbsp;
+plan_end_time
+</td>
+<td >
+计划结束时间
+</td>
+<td>plan_end_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">165</td>
+<td>&nbsp;
+plan_endhalt_time
+</td>
+<td >
+计划结束停机时间
+</td>
+<td>plan_endhalt_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">166</td>
+<td>&nbsp;
+plan_start_time
+</td>
+<td >
+计划开始时间
+</td>
+<td>plan_start_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">167</td>
+<td>&nbsp;
+plan_sthalt_time
+</td>
+<td >
+计划开始停机时间
+</td>
+<td>plan_sthalt_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">168</td>
+<td>&nbsp;
+pri_clause
+</td>
+<td >
+优先级理由
+</td>
+<td>pri_clause</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">169</td>
+<td>&nbsp;
+receivable_flag
+</td>
+<td >
+已生成应收
+</td>
+<td>receivable_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">170</td>
+<td>&nbsp;
+report_time
+</td>
+<td >
+申请时间
+</td>
+<td>report_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">171</td>
+<td>&nbsp;
+requirepermit
+</td>
+<td >
+需要许可
+</td>
+<td>requirepermit</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">172</td>
+<td>&nbsp;
+service_step_desc
+</td>
+<td >
+维修措施说明
+</td>
+<td>service_step_desc</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">173</td>
+<td>&nbsp;
+src_bill_code
+</td>
+<td >
+来源单据编码
+</td>
+<td>src_bill_code</td>
+<td>
+varchar(40)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">174</td>
+<td>&nbsp;
+src_bill_type
+</td>
+<td >
+来源单据类型
+</td>
+<td>src_bill_type</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">175</td>
+<td>&nbsp;
+src_body_ts
+</td>
+<td >
+来源单据表体ts
+</td>
+<td>src_body_ts</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">176</td>
+<td>&nbsp;
+src_head_ts
+</td>
+<td >
+来源单据表头ts
+</td>
+<td>src_head_ts</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">177</td>
+<td>&nbsp;
+src_pk_bill
+</td>
+<td >
+来源单据主键
+</td>
+<td>src_pk_bill</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">178</td>
+<td>&nbsp;
+src_pk_bill_b
+</td>
+<td >
+来源单据表体主键
+</td>
+<td>src_pk_bill_b</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">179</td>
+<td>&nbsp;
+src_pk_transitype
+</td>
+<td >
+来源交易类型主键
+</td>
+<td>src_pk_transitype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b0fa41cd-a649-4309-b685-d341a5d1b0ed.html" >单据类型  </a>
+</td>
+<td>影响因素交 易类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">180</td>
+<td>&nbsp;
+src_rowno
+</td>
+<td >
+来源单据行号
+</td>
+<td>src_rowno</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">181</td>
+<td>&nbsp;
+src_transi_type
+</td>
+<td >
+来源交易类型
+</td>
+<td>src_transi_type</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">182</td>
+<td>&nbsp;
+status_follow
+</td>
+<td >
+继承父工单状态
+</td>
+<td>status_follow</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">183</td>
+<td>&nbsp;
+status_time
+</td>
+<td >
+状态时间
+</td>
+<td>status_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">184</td>
+<td>&nbsp;
+targ_end_time
+</td>
+<td >
+目标结束时间
+</td>
+<td>targ_end_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">185</td>
+<td>&nbsp;
+targ_start_time
+</td>
+<td >
+目标开始时间
+</td>
+<td>targ_start_time</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">186</td>
+<td>&nbsp;
+task_progress
+</td>
+<td >
+工作情况
+</td>
+<td>task_progress</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">187</td>
+<td>&nbsp;
+task_summary
+</td>
+<td >
+工作总结
+</td>
+<td>task_summary</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">188</td>
+<td>&nbsp;
+transi_type
+</td>
+<td >
+交易类型编码
+</td>
+<td>transi_type</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">189</td>
+<td>&nbsp;
+warrant_flag
+</td>
+<td >
+在保
+</td>
+<td>warrant_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">195</td>
+<td>&nbsp;
+wo_content
+</td>
+<td >
+工作内容
+</td>
+<td>wo_content</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">205</td>
+<td>&nbsp;
+wo_statustype
+</td>
+<td >
+状态类别
+</td>
+<td>wo_statustype</td>
+<td>
+int
+</td>
+<td>
+工单状态类别
+</td>
+<td></td>
+<td>
+-1=作废，0=待批准，1=已批准，2=进行中，3=完成，4=已报告，5=关闭，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">209</td>
+<td>&nbsp;
+workload
+</td>
+<td >
+主要工作量
+</td>
+<td>workload</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

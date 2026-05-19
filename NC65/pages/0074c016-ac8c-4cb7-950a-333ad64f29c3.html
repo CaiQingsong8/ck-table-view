@@ -1,0 +1,292 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>resa_factorass 关联辅助核算</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 0074c016-ac8c-4cb7-950a-333ad64f29c3 -->
+<b><span style="font-size:24px">关联辅助核算 (resa_factorass)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-01-08 16:40:13 &nbsp;修改时间 ：2015-04-16 16:08:26 &nbsp;路径：\uapbd\METADATA\factor\factor.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.resa.factor.FactorAssVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+dataoriginflag 
+</td>
+<td >
+数据来源
+</td>
+<td>dataoriginflag </td>
+<td>
+int
+</td>
+<td>
+数据来源
+</td>
+<td></td>
+<td>
+0=本级产生，1=上级下发，2=下级上报，3=本级产生已上报下发，-1=系统预置，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+isbalancecontrol
+</td>
+<td >
+余额方向控制
+</td>
+<td>isbalancecontrol</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+isempty
+</td>
+<td >
+允许为空
+</td>
+<td>isempty</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+isnonleafused
+</td>
+<td >
+允许录入非末级
+</td>
+<td>isnonleafused</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+issumprint
+</td>
+<td >
+汇总打印
+</td>
+<td>issumprint</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+num
+</td>
+<td >
+引用标识
+</td>
+<td>num</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+orginalfactorasoa
+</td>
+<td >
+被覆盖原始关联表主键
+</td>
+<td>orginalfactorasoa</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="37e3adca-e0a0-4dff-82ea-63b335cf5515.html" >要素关联信息</a>
+</td>
+<td>核算要素</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+pk_coverfactorasoa
+</td>
+<td >
+覆盖所属关联表主键
+</td>
+<td>pk_coverfactorasoa</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="37e3adca-e0a0-4dff-82ea-63b335cf5515.html" >要素关联信息</a>
+</td>
+<td>核算要素</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+pk_entity
+</td>
+<td >
+辅助项目
+</td>
+<td>pk_entity</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="d3f0e93b-9234-44b9-83c1-6e05bf1e9a28.html" >会计辅助核算项目</a>
+</td>
+<td>会计辅助核算项目</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_factorass</b></span>
+</td>
+<td >
+<span style="color:#09C">标识</span>
+</td>
+<td>pk_factorass</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+pk_factorchart
+</td>
+<td >
+创建要素表
+</td>
+<td>pk_factorchart</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="091b5f42-1340-4bc5-8edd-cc5574834f54.html" >要素表</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+seqno
+</td>
+<td >
+序号
+</td>
+<td>seqno</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

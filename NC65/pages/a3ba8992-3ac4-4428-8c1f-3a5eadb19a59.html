@@ -1,0 +1,540 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>resa_reportinit 报表初始化</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- a3ba8992-3ac4-4428-8c1f-3a5eadb19a59 -->
+<b><span style="font-size:24px">报表初始化 (resa_reportinit)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-12-08 15:39:18 &nbsp;修改时间 ：2013-05-17 15:55:52 &nbsp;路径：\resa\METADATA\report\reportinit.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.resa.reportinit.ReportInitVO
+/&nbsp;<a href="83fb9326-21d8-4a43-bc1c-c7dba2fcf774.html" >报表初始化明细</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+bookstyle
+</td>
+<td >
+数量金额式
+</td>
+<td>bookstyle</td>
+<td>
+int
+</td>
+<td>
+金额数量显示方式
+</td>
+<td></td>
+<td>
+0=金额式，1=数量金额式，-1=不可用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+创建时间
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+currytpeshowstyle
+</td>
+<td >
+币种显示格式
+</td>
+<td>currytpeshowstyle</td>
+<td>
+int
+</td>
+<td>
+编码名称显示方式
+</td>
+<td></td>
+<td>
+0=编码，1=名称，2=编码+名称，-1=不可用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+explanation
+</td>
+<td >
+备注
+</td>
+<td>explanation</td>
+<td>
+varchar(200)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+factorshowstyle
+</td>
+<td >
+要素显示样式
+</td>
+<td>factorshowstyle</td>
+<td>
+int
+</td>
+<td>
+编码名称显示方式
+</td>
+<td></td>
+<td>
+0=编码，1=名称，2=编码+名称，-1=不可用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+funccode
+</td>
+<td >
+节点号
+</td>
+<td>funccode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+funcname
+</td>
+<td >
+节点名称
+</td>
+<td>funcname</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+liabookshowstyle
+</td>
+<td >
+账簿显示样式
+</td>
+<td>liabookshowstyle</td>
+<td>
+int
+</td>
+<td>
+编码名称显示方式
+</td>
+<td></td>
+<td>
+0=编码，1=名称，2=编码+名称，-1=不可用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+menuitemcode
+</td>
+<td >
+菜单号
+</td>
+<td>menuitemcode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+menuitemname
+</td>
+<td >
+菜单名称
+</td>
+<td>menuitemname</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+multiorgshowstyle
+</td>
+<td >
+多主体显示
+</td>
+<td>multiorgshowstyle</td>
+<td>
+int
+</td>
+<td>
+多主体显示
+</td>
+<td></td>
+<td>
+0=合并显示，1=分别显示，-1=不可用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+multiplebookstyle
+</td>
+<td >
+是否多账簿
+</td>
+<td>multiplebookstyle</td>
+<td>
+int
+</td>
+<td>
+编码名称显示方式
+</td>
+<td></td>
+<td>
+0=编码，1=名称，2=编码+名称，-1=不可用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+ownmodule
+</td>
+<td >
+所属模块
+</td>
+<td>ownmodule</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="ec4995b1-1881-44ef-8550-2cb0139f5d8a.html" >模块信息</a>
+</td>
+<td>模块信息参照</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+pk_freereport
+</td>
+<td >
+自由报表主键
+</td>
+<td>pk_freereport</td>
+<td>
+char(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+pk_funcnode
+</td>
+<td >
+功能节点主键
+</td>
+<td>pk_funcnode</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="84a5a58d-f9b6-4ef9-a884-b45ee7ff26a6.html" >NC功能实体</a>
+</td>
+<td>NC功能参照</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+所属集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+pk_menuitem
+</td>
+<td >
+菜单项主键
+</td>
+<td>pk_menuitem</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="049fed10-1cc7-42ad-b064-9003237b9ec2.html" >菜单注册实体</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+所属组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="5461ada1-ef2a-419a-af14-656cf0641d34.html" >利润中心</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_reportinit</b></span>
+</td>
+<td >
+<span style="color:#09C">主键</span>
+</td>
+<td>pk_reportinit</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+queryobjectshowstyle
+</td>
+<td >
+查询对象显示样式
+</td>
+<td>queryobjectshowstyle</td>
+<td>
+int
+</td>
+<td>
+编码名称显示方式
+</td>
+<td></td>
+<td>
+0=编码，1=名称，2=编码+名称，-1=不可用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+reportkind
+</td>
+<td >
+报表类型
+</td>
+<td>reportkind</td>
+<td>
+int
+</td>
+<td>
+报表类型
+</td>
+<td></td>
+<td>
+1=要素余额表，2=要素明细帐，3=辅助余额表，4=辅助明细表，5=序时账，6=利润中心汇总表，7=成本中心汇总表，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ic_barcoderule_b 条形码规则定义表体</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- d117077d-5967-4d59-a749-d580b4222039 -->
+<b><span style="font-size:24px">条形码规则定义表体 (ic_barcoderule_b)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2009-04-30 10:14:16 &nbsp;修改时间 ：2013-04-24 10:48:57 &nbsp;路径：\ic\METADATA\business\ic_basedoc\ic_barcode_set\ic_barcoderule.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.ic.barcoderule.BarCodeRuleBodyVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+biskeyofbarcode
+</td>
+<td >
+条形码联合关键字
+</td>
+<td>biskeyofbarcode</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+<span style="color:red"><b>cbarcoderulbid</b></span>
+</td>
+<td >
+<span style="color:#09C">条形码规则表体主键</span>
+</td>
+<td>cbarcoderulbid</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+iattritbute
+</td>
+<td >
+<span style="color:#09C">对象属性</span>
+</td>
+<td>iattritbute</td>
+<td>
+varchar(50)
+</td>
+<td>
+对象属性
+</td>
+<td></td>
+<td>
+1=档案类，2=日期类，3=数字类，4=其他类，5=条码标志，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+iinceptlocation
+</td>
+<td >
+起始位置
+</td>
+<td>iinceptlocation</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+ilength
+</td>
+<td >
+长度
+</td>
+<td>ilength</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+vcorrelationvalue
+</td>
+<td >
+相关值可编辑
+</td>
+<td>vcorrelationvalue</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+vcorrelationvalueid
+</td>
+<td >
+相关值可编辑对应档案主键
+</td>
+<td>vcorrelationvalueid</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+vobject
+</td>
+<td >
+对应业务对象
+</td>
+<td>vobject</td>
+<td>
+varchar(50)
+</td>
+<td>
+对应业务对象
+</td>
+<td></td>
+<td>
+bd_material=物料档案，bd_measdoc=计量单位档案，scm_batchcode=批次档案，bd_marassistant=自由辅助属性，dproducedate=生产日期，dvalidate=失效日期，nnum=数量，costprice=参考成本，resaleprice=参考售价，qualitynum=保质期，otherfixvalue=固定值，othercheckcode=校验码，otherother=其它项，othersn=流水号，barflagfixvalue=条码标志固定值，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+vrowmemo
+</td>
+<td >
+行备注
+</td>
+<td>vrowmemo</td>
+<td>
+varchar(200)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

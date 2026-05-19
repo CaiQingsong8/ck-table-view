@@ -1,0 +1,337 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>oaar_notice 活动通知设置</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 3e7a222b-a925-449f-a658-86bef3a35109 -->
+<b><span style="font-size:24px">活动通知设置 (oaar_notice)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2013-01-16 09:03:54 &nbsp;修改时间 ：2013-05-09 13:55:30 &nbsp;路径：\oaar\METADATA\oaarnotice.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.oa.oaar.activity.NoticeVO
+/&nbsp;AggVO：nc.vo.oa.oaar.activity.AggNoticeVO
+/&nbsp;<a href="8c7315e1-8bd5-4b61-ad3e-c3e96814db04.html" >收件人</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+acceptgroup
+</td>
+<td >
+<span style="color:#09C">接收组</span>
+</td>
+<td>acceptgroup</td>
+<td>
+varchar(50)
+</td>
+<td>
+接收组
+</td>
+<td></td>
+<td>
+1=成功报名的人，2=未报名的人，3=指定人，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+content
+</td>
+<td >
+<span style="color:#09C">内容</span>
+</td>
+<td>content</td>
+<td>
+image(0)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+noticeway
+</td>
+<td >
+<span style="color:#09C">通知方式</span>
+</td>
+<td>noticeway</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+pk_activity
+</td>
+<td >
+活动
+</td>
+<td>pk_activity</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f845c2cb-126b-4794-92c8-b8f028fd98f2.html" >活动</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_notice</b></span>
+</td>
+<td >
+<span style="color:#09C">主键</span>
+</td>
+<td>pk_notice</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+receiver
+</td>
+<td >
+接收人
+</td>
+<td>receiver</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+receivername
+</td>
+<td >
+接收人名称
+</td>
+<td>receivername</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+repeatway
+</td>
+<td >
+重复提醒方式
+</td>
+<td>repeatway</td>
+<td>
+varchar(50)
+</td>
+<td>
+重复提醒方式
+</td>
+<td></td>
+<td>
+1=单次提醒，2=每天重复，3=每周重复，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+sendtime
+</td>
+<td >
+发送时间
+</td>
+<td>sendtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+sendway
+</td>
+<td >
+发送方式
+</td>
+<td>sendway</td>
+<td>
+varchar(50)
+</td>
+<td>
+发送方式
+</td>
+<td></td>
+<td>
+1=立即发送，2=指定时间，3=活动开始前，4=活动开始后，5=活动结束后，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+subject
+</td>
+<td >
+<span style="color:#09C">主题</span>
+</td>
+<td>subject</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+timeunit
+</td>
+<td >
+时间量单位
+</td>
+<td>timeunit</td>
+<td>
+varchar(50)
+</td>
+<td>
+时间量单位
+</td>
+<td></td>
+<td>
+1=小时，2=天，3=月，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+timevalue
+</td>
+<td >
+时间量
+</td>
+<td>timevalue</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+validity
+</td>
+<td >
+<span style="color:#09C">是否启用</span>
+</td>
+<td>validity</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

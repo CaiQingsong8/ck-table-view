@@ -1,0 +1,841 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>po_potrantype 采购订单交易类型</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 7df60c78-0b4a-4d7f-9061-2e039877c5ed -->
+<b><span style="font-size:24px">采购订单交易类型 (po_potrantype)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2009-05-12 15:58:07 &nbsp;修改时间 ：2013-04-24 10:01:16 &nbsp;路径：\pu\METADATA\poorder_transtype.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.pu.m21transtype.entity.PoTransTypeVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+barrive
+</td>
+<td >
+到货
+</td>
+<td>barrive</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+bcheckcenpur
+</td>
+<td >
+采购订单是否检查采购业务委托关系
+</td>
+<td>bcheckcenpur</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+bconfirm
+</td>
+<td >
+对方确认
+</td>
+<td>bconfirm</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+bconfirmcode
+</td>
+<td >
+对方确认单据号 
+</td>
+<td>bconfirmcode</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+bconfirmdate
+</td>
+<td >
+对方确认单据日期
+</td>
+<td>bconfirmdate</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+bconfirmnum
+</td>
+<td >
+对方确认单据数量
+</td>
+<td>bconfirmnum</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+bconsign
+</td>
+<td >
+发货环节
+</td>
+<td>bconsign</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+bconsigncode
+</td>
+<td >
+发货单据号
+</td>
+<td>bconsigncode</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+bconsigndate
+</td>
+<td >
+发货单据日期
+</td>
+<td>bconsigndate</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+bconsignnum
+</td>
+<td >
+发货单据数量
+</td>
+<td>bconsignnum</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+bcustom
+</td>
+<td >
+报关环节
+</td>
+<td>bcustom</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+bcustomcode
+</td>
+<td >
+报关单据号
+</td>
+<td>bcustomcode</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+bcustomdate
+</td>
+<td >
+报关单据日期
+</td>
+<td>bcustomdate</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+bdirect
+</td>
+<td >
+直运采购
+</td>
+<td>bdirect</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+bload
+</td>
+<td >
+装运环节
+</td>
+<td>bload</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+bloadcode
+</td>
+<td >
+装运单据号
+</td>
+<td>bloadcode</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+bloaddate
+</td>
+<td >
+装运单据日期
+</td>
+<td>bloaddate</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+boutcustom
+</td>
+<td >
+出关环节
+</td>
+<td>boutcustom</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+boutcustomcode
+</td>
+<td >
+出关单据号
+</td>
+<td>boutcustomcode</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+boutcustomdate
+</td>
+<td >
+出关单据日期
+</td>
+<td>boutcustomdate</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+boutput
+</td>
+<td >
+输出
+</td>
+<td>boutput</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+boverpay
+</td>
+<td >
+允许超订单付款
+</td>
+<td>boverpay</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+breceiveplan
+</td>
+<td >
+进行到货计划安排
+</td>
+<td>breceiveplan</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+bstore
+</td>
+<td >
+入库
+</td>
+<td>bstore</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+bvmi
+</td>
+<td >
+供应商寄存
+</td>
+<td>bvmi</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+ctrantypeid
+</td>
+<td >
+交易类型
+</td>
+<td>ctrantypeid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+iapproveaft
+</td>
+<td >
+审核后置状态
+</td>
+<td>iapproveaft</td>
+<td>
+int
+</td>
+<td>
+在途状态
+</td>
+<td></td>
+<td>
+0=审核，1=输出，2=确认，3=发货，4=装运，5=报关，6=出关，7=到货，8=入库，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+iconfirmaft
+</td>
+<td >
+确认后置状态
+</td>
+<td>iconfirmaft</td>
+<td>
+int
+</td>
+<td>
+在途状态
+</td>
+<td></td>
+<td>
+0=审核，1=输出，2=确认，3=发货，4=装运，5=报关，6=出关，7=到货，8=入库，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+iconsignaft
+</td>
+<td >
+发货后置状态
+</td>
+<td>iconsignaft</td>
+<td>
+int
+</td>
+<td>
+在途状态
+</td>
+<td></td>
+<td>
+0=审核，1=输出，2=确认，3=发货，4=装运，5=报关，6=出关，7=到货，8=入库，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+icustomaft
+</td>
+<td >
+报关后置状态
+</td>
+<td>icustomaft</td>
+<td>
+int
+</td>
+<td>
+在途状态
+</td>
+<td></td>
+<td>
+0=审核，1=输出，2=确认，3=发货，4=装运，5=报关，6=出关，7=到货，8=入库，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+iloadaft
+</td>
+<td >
+装运后置状态
+</td>
+<td>iloadaft</td>
+<td>
+int
+</td>
+<td>
+在途状态
+</td>
+<td></td>
+<td>
+0=审核，1=输出，2=确认，3=发货，4=装运，5=报关，6=出关，7=到货，8=入库，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+ionwaybegin
+</td>
+<td >
+在途开始
+</td>
+<td>ionwaybegin</td>
+<td>
+int
+</td>
+<td>
+在途状态
+</td>
+<td></td>
+<td>
+0=审核，1=输出，2=确认，3=发货，4=装运，5=报关，6=出关，7=到货，8=入库，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+ionwayend
+</td>
+<td >
+在途结束
+</td>
+<td>ionwayend</td>
+<td>
+int
+</td>
+<td>
+在途状态
+</td>
+<td></td>
+<td>
+0=审核，1=输出，2=确认，3=发货，4=装运，5=报关，6=出关，7=到货，8=入库，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+ioutcustomaft
+</td>
+<td >
+出关后置状态
+</td>
+<td>ioutcustomaft</td>
+<td>
+int
+</td>
+<td>
+在途状态
+</td>
+<td></td>
+<td>
+0=审核，1=输出，2=确认，3=发货，4=装运，5=报关，6=出关，7=到货，8=入库，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+ioutputaft
+</td>
+<td >
+输出后置状态
+</td>
+<td>ioutputaft</td>
+<td>
+int
+</td>
+<td>
+在途状态
+</td>
+<td></td>
+<td>
+0=审核，1=输出，2=确认，3=发货，4=装运，5=报关，6=出关，7=到货，8=入库，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+iprtopolimit
+</td>
+<td >
+请购单生成订单限制方式
+</td>
+<td>iprtopolimit</td>
+<td>
+int
+</td>
+<td>
+请购单生成订单限制方式
+</td>
+<td></td>
+<td>
+0=不限制，1=存在供应商有效价格才能生成，2=经过价格审批才能生成，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_potrantype</b></span>
+</td>
+<td >
+<span style="color:#09C">主键</span>
+</td>
+<td>pk_potrantype</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+vtrantypecode
+</td>
+<td >
+<span style="color:#09C">交易类型编码</span>
+</td>
+<td>vtrantypecode</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

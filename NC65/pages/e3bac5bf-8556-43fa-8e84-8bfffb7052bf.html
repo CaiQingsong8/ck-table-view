@@ -1,0 +1,232 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>org_associaterule 组织关系_组织关系类型_关系规则</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- e3bac5bf-8556-43fa-8e84-8bfffb7052bf -->
+<b><span style="font-size:24px">组织关系_组织关系类型_关系规则 (org_associaterule)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2008-04-30 13:15:32 &nbsp;修改时间 ：2013-12-31 15:49:08 &nbsp;路径：\baseapp\METADATA\org\orgrelation\orgrelationtype.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.org.orgmodel.AssociateRuleVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+multiplicity
+</td>
+<td >
+<span style="color:#09C">多样性</span>
+</td>
+<td>multiplicity</td>
+<td>
+smallint
+</td>
+<td>
+多样性
+</td>
+<td></td>
+<td>
+0=源组织+关联实体+目的组织唯一，1=源组织+关联实体唯一，2=源组织+关联实体+默认值+目的组织唯一，3=源组织+关联实体+目的组织唯一+勾选默认值唯一，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_associaterule</b></span>
+</td>
+<td >
+<span style="color:#09C">关系规则主键</span>
+</td>
+<td>pk_associaterule</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+priority
+</td>
+<td >
+优先级
+</td>
+<td>priority</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+sourceentity
+</td>
+<td >
+<span style="color:#09C">源实体</span>
+</td>
+<td>sourceentity</td>
+<td>
+varchar(36)
+</td>
+<td>
+<a href="b23f9974-94a4-4c86-bd31-d39e8ee643ef.html" >实体</a>
+</td>
+<td>元数据实体</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+sourceentityname
+</td>
+<td >
+源组织显示名称
+</td>
+<td>sourceentityname</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+sourcereftype
+</td>
+<td >
+源实体参照类型
+</td>
+<td>sourcereftype</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+targetentity
+</td>
+<td >
+<span style="color:#09C">目的实体</span>
+</td>
+<td>targetentity</td>
+<td>
+varchar(36)
+</td>
+<td>
+<a href="b23f9974-94a4-4c86-bd31-d39e8ee643ef.html" >实体</a>
+</td>
+<td>元数据实体</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+targetentityname
+</td>
+<td >
+目的组织显示名称
+</td>
+<td>targetentityname</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+targetreftype
+</td>
+<td >
+目的实体参照类型
+</td>
+<td>targetreftype</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

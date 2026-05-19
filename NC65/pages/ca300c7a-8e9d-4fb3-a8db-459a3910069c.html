@@ -1,0 +1,318 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>adp_schtranstask 自动传输任务</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- ca300c7a-8e9d-4fb3-a8db-459a3910069c -->
+<b><span style="font-size:24px">自动传输任务 (adp_schtranstask)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-05-10 11:08:04 &nbsp;修改时间 ：2014-05-06 14:45:09 &nbsp;路径：\riaadp\METADATA\schedtranstask.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.uap.distribution.schedtranstask.SchedTransTaskVO
+/&nbsp;AggVO：nc.vo.uap.distribution.schedtranstask.AggSchedTransTaskVO
+/&nbsp;<a href="eb6f3db6-5d59-4979-8a74-2cd1b01ac02e.html" >任务执行方列表</a>
+/&nbsp;<a href="ba13c248-b077-4a38-a406-86c5006eb0c2.html" >资源接收方列表</a>
+/&nbsp;<a href="40f1d0a3-dfb1-4bb6-930e-932df43f7d1c.html" >传输内容对象</a>
+/&nbsp;<a href="e966e681-23a6-47eb-9b2a-09e573c457f2.html" >任务部署时间属性</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+currentsystem
+</td>
+<td >
+执行系统
+</td>
+<td>currentsystem</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b960d066-6c1f-48c8-8375-5d2a684fa6d6.html" >分布系统目录</a>
+</td>
+<td>分布系统目录</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+initdata
+</td>
+<td >
+是否预置数据
+</td>
+<td>initdata</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+mnemoniccode
+</td>
+<td >
+助记码
+</td>
+<td>mnemoniccode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+origsystem
+</td>
+<td >
+来源系统
+</td>
+<td>origsystem</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b960d066-6c1f-48c8-8375-5d2a684fa6d6.html" >分布系统目录</a>
+</td>
+<td>分布系统目录</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+scheduledenable
+</td>
+<td >
+是否定时执行
+</td>
+<td>scheduledenable</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+sysbgflag
+</td>
+<td >
+是否系统后台任务
+</td>
+<td>sysbgflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+taskcode
+</td>
+<td >
+任务编码
+</td>
+<td>taskcode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+<span style="color:red"><b>taskid</b></span>
+</td>
+<td >
+<span style="color:#09C">ID</span>
+</td>
+<td>taskid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+taskname
+</td>
+<td >
+任务名称
+</td>
+<td>taskname</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+taskremark
+</td>
+<td >
+任务备注
+</td>
+<td>taskremark</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+taskstatus
+</td>
+<td >
+任务状态
+</td>
+<td>taskstatus</td>
+<td>
+int
+</td>
+<td>
+任务状态
+</td>
+<td></td>
+<td>
+1=未启用，2=已启用，3=已停用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+tasktype
+</td>
+<td >
+任务种类
+</td>
+<td>tasktype</td>
+<td>
+int
+</td>
+<td>
+任务类型
+</td>
+<td></td>
+<td>
+1=本地任务，2=外来任务，3=下发任务，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+taskuuid
+</td>
+<td >
+传输任务的全局唯一编码
+</td>
+<td>taskuuid</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

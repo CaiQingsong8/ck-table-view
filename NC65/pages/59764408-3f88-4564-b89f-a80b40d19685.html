@@ -1,0 +1,414 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>qc_checkitem 检验项目</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 59764408-3f88-4564-b89f-a80b40d19685 -->
+<b><span style="font-size:24px">检验项目 (qc_checkitem)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-05-20 11:36:55 &nbsp;修改时间 ：2015-04-01 10:41:16 &nbsp;路径：\qc\METADATA\qc_checkitem.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.qc.checkitem.entity.CheckItemVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+analymethod
+</td>
+<td >
+分析方法
+</td>
+<td>analymethod</td>
+<td>
+int(50)
+</td>
+<td>
+分析方法
+</td>
+<td></td>
+<td>
+0=定量分析，1=定性分析，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+bqpflag
+</td>
+<td >
+优质优价项目
+</td>
+<td>bqpflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+cfeature
+</td>
+<td >
+特征
+</td>
+<td>cfeature</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="81f4daa9-166b-43d9-a5de-94b7fdab79a1.html" >特征</a>
+</td>
+<td>特征</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+cfeatureclass
+</td>
+<td >
+特征类
+</td>
+<td>cfeatureclass</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="72bb9b0b-c5d3-46cf-8fe9-d7a490b1f7c5.html" >特征类</a>
+</td>
+<td>特征类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+ichecktype
+</td>
+<td >
+检验值类型
+</td>
+<td>ichecktype</td>
+<td>
+int(50)
+</td>
+<td>
+检验值类型
+</td>
+<td></td>
+<td>
+0=数值型，1=枚举型，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+iqcindexprfer
+</td>
+<td >
+质量指标性质
+</td>
+<td>iqcindexprfer</td>
+<td>
+int
+</td>
+<td>
+质量指标性质
+</td>
+<td></td>
+<td>
+0=计量型，1=计数型，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+parentcheckitem
+</td>
+<td >
+上级检验项目
+</td>
+<td>parentcheckitem</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="59764408-3f88-4564-b89f-a80b40d19685.html" >检验项目</a>
+</td>
+<td>检验项目</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+pk_checkbasis
+</td>
+<td >
+检测依据
+</td>
+<td>pk_checkbasis</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="84084437-e434-4046-9031-5478e5d4b61f.html" >检测依据</a>
+</td>
+<td>检测依据</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_checkitem</b></span>
+</td>
+<td >
+<span style="color:#09C">检验项目</span>
+</td>
+<td>pk_checkitem</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+pk_checkmethod
+</td>
+<td >
+检测方法
+</td>
+<td>pk_checkmethod</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="95282b1e-0284-486c-afbc-3db98e15fa74.html" >检测依据子表</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+pk_measdoc
+</td>
+<td >
+检验值单位
+</td>
+<td>pk_measdoc</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+质检中心
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="9019762c-3baf-4618-a763-2432b5113f5a.html" >组织_业务单元_质检中心</a>
+</td>
+<td>质检中心</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+pk_outsupplier
+</td>
+<td >
+外部检测机构
+</td>
+<td>pk_outsupplier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="720dcc7c-ff19-48f4-b9c5-b90906682f45.html" >供应商基本信息</a>
+</td>
+<td>供应商档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+pk_workcenter
+</td>
+<td >
+检测中心
+</td>
+<td>pk_workcenter</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="9019762c-3baf-4618-a763-2432b5113f5a.html" >组织_业务单元_质检中心</a>
+</td>
+<td>质检中心</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+vcheckitemcode
+</td>
+<td >
+检验项目编码
+</td>
+<td>vcheckitemcode</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+vcheckitemname
+</td>
+<td >
+检验项目名称
+</td>
+<td>vcheckitemname</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+vmemo
+</td>
+<td >
+备注
+</td>
+<td>vmemo</td>
+<td>
+varchar(181)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

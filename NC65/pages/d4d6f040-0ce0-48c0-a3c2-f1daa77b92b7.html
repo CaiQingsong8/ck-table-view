@@ -1,0 +1,272 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>bcbd_barcoderuleitem 条码规则定义</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- d4d6f040-0ce0-48c0-a3c2-f1daa77b92b7 -->
+<b><span style="font-size:24px">条码规则定义 (bcbd_barcoderuleitem)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2014-12-25 14:28:56 &nbsp;修改时间 ：2015-09-12 15:08:06 &nbsp;路径：\bcbd\METADATA\barcoderule\barcoderule.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.bcbd.barcoderule.BarCodeRuleItemVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+accessstrategy
+</td>
+<td >
+取值策略
+</td>
+<td>accessstrategy</td>
+<td>
+int
+</td>
+<td>
+取值策略
+</td>
+<td></td>
+<td>
+1=元数据，2=条码字典，3=流水号，4=固定值，5=校验码，6=条码标识，7=序列号，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+appobjattrvalue
+</td>
+<td >
+条码对象属性值
+</td>
+<td>appobjattrvalue</td>
+<td>
+varchar(100)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+formate
+</td>
+<td >
+数据格式
+</td>
+<td>formate</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+isparseretrieve
+</td>
+<td >
+解析返回
+</td>
+<td>isparseretrieve</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+length
+</td>
+<td >
+长度
+</td>
+<td>length</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+memo
+</td>
+<td >
+备注
+</td>
+<td>memo</td>
+<td>
+varchar(200)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+pk_appobjattr
+</td>
+<td >
+条码对象属性
+</td>
+<td>pk_appobjattr</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="21bf5482-cd02-4dd5-bad6-d808913234d5.html" >条码应用对象属性</a>
+</td>
+<td>条码对象属性</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+pk_barcoderule
+</td>
+<td >
+条码规则主键
+</td>
+<td>pk_barcoderule</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="70d9ef69-fd68-4dd9-8398-b08f6864f3e3.html" >条码规则(多版本)</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+pk_bardict
+</td>
+<td >
+ 条码字典主键
+</td>
+<td>pk_bardict</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="4beeca66-1290-49db-a425-abdada390dc9.html" >条码字典</a>
+</td>
+<td>条码字典</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_barruleitem</b></span>
+</td>
+<td >
+<span style="color:#09C">条码规则定义主键</span>
+</td>
+<td>pk_barruleitem</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+startpos
+</td>
+<td >
+起始位置
+</td>
+<td>startpos</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

@@ -1,0 +1,976 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>rm_hire_body 录用子表</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- a444e567-83b2-4aed-9544-2358ed69a7cb -->
+<b><span style="font-size:24px">录用子表 (rm_hire_body)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2011-10-11 12:15:31 &nbsp;修改时间 ：2015-11-05 20:46:05 &nbsp;路径：\hrrm\METADATA\hire.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.rm.hire.HireItemVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+contract_begindate
+</td>
+<td >
+合同开始日期
+</td>
+<td>contract_begindate</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+contract_enddate
+</td>
+<td >
+合同结束日期
+</td>
+<td>contract_enddate</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+contract_flag
+</td>
+<td >
+是否需签合同
+</td>
+<td>contract_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+contract_period
+</td>
+<td >
+合同期限
+</td>
+<td>contract_period</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+contract_period_type
+</td>
+<td >
+合同期限类型
+</td>
+<td>contract_period_type</td>
+<td>
+varchar(50)
+</td>
+<td>
+合同期限类型
+</td>
+<td></td>
+<td>
+CM01=固定期限，CM02=无固定期限，CM03=以完成一定工作任务为期限，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+contract_period_unit
+</td>
+<td >
+合同期限单位
+</td>
+<td>contract_period_unit</td>
+<td>
+int
+</td>
+<td>
+期限单位
+</td>
+<td></td>
+<td>
+1=年，2=月，3=天，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+employee_flag
+</td>
+<td >
+录为正式员工
+</td>
+<td>employee_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+hire_date
+</td>
+<td >
+录用日期
+</td>
+<td>hire_date</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+hire_type
+</td>
+<td >
+录用类型
+</td>
+<td>hire_type</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1001Z71000000000DZ53.html" >工作类型(自定义档案)</a>
+</td>
+<td>工作类型(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+ishire
+</td>
+<td >
+是否录用
+</td>
+<td>ishire</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+isnoticed
+</td>
+<td >
+是否发送过通知
+</td>
+<td>isnoticed</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+isprobationary
+</td>
+<td >
+是否试用
+</td>
+<td>isprobationary</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+person_type
+</td>
+<td >
+人员类别
+</td>
+<td>person_type</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="400f55be-f4cc-4b38-b1e2-aabdc75e2aad.html" >人员类别</a>
+</td>
+<td>人员类别</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+pk_active
+</td>
+<td >
+招聘活动
+</td>
+<td>pk_active</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="0db679df-afc5-42ae-ab62-a3a9fdb9aca6.html" >招聘活动</a>
+</td>
+<td>招聘活动</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+所属集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+pk_hire
+</td>
+<td >
+录用主键
+</td>
+<td>pk_hire</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="158a7b88-0d9d-4504-bc16-f5be111f0a11.html" >录用管理</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_hire_body</b></span>
+</td>
+<td >
+<span style="color:#09C">子表主键</span>
+</td>
+<td>pk_hire_body</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+pk_hire_dept
+</td>
+<td >
+录用部门
+</td>
+<td>pk_hire_dept</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="58115861-ce2b-44e8-b881-80119db7bf84.html" >HR部门</a>
+</td>
+<td>部门HR</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+pk_hire_dept2
+</td>
+<td >
+录用部门2
+</td>
+<td>pk_hire_dept2</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="58115861-ce2b-44e8-b881-80119db7bf84.html" >HR部门</a>
+</td>
+<td>部门HR</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+pk_hire_grade
+</td>
+<td >
+录用职级
+</td>
+<td>pk_hire_grade</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="19d7419a-1f6d-4596-9b1c-cafee2fc0930.html" >职级</a>
+</td>
+<td>职级(设置职务主键)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+pk_hire_job
+</td>
+<td >
+录用岗位
+</td>
+<td>pk_hire_job</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="039385a6-3e60-489c-b257-f48a1b7ab046.html" >岗位基本信息</a>
+</td>
+<td>岗位HR</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+pk_hire_job2
+</td>
+<td >
+录用职务
+</td>
+<td>pk_hire_job2</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f1edcbce-a808-4dec-9a7f-41d448d8bb44.html" >职务</a>
+</td>
+<td>职务(设置业务单元主键)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+pk_hire_jobtype
+</td>
+<td >
+职务类别
+</td>
+<td>pk_hire_jobtype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="d09bb4f0-2df0-48cb-a14b-5c82483717d0.html" >职务类别</a>
+</td>
+<td>职务类别HR</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+pk_hire_org
+</td>
+<td >
+录用组织
+</td>
+<td>pk_hire_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a0ec952c-e4e5-416a-b3e0-d402725f76be.html" >组织_业务单元_行政组织</a>
+</td>
+<td>行政组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+pk_hire_pst
+</td>
+<td >
+岗位序列
+</td>
+<td>pk_hire_pst</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="d0a3192d-1493-4022-a400-2a202e9a6636.html" >岗位序列</a>
+</td>
+<td>岗位序列HR</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+pk_hire_rank
+</td>
+<td >
+录用职等
+</td>
+<td>pk_hire_rank</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="718c6a17-38c5-47f0-b285-8fb0d1ff74fa.html" >职等</a>
+</td>
+<td>职等HR</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+pk_interview
+</td>
+<td >
+面试主键
+</td>
+<td>pk_interview</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+pk_job
+</td>
+<td >
+应聘职位
+</td>
+<td>pk_job</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="85238c2d-9d69-48c8-99b0-6ee9de82606d.html" >应聘职位</a>
+</td>
+<td>应聘者</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+pk_majororg
+</td>
+<td >
+合同主体单位
+</td>
+<td>pk_majororg</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a0ec952c-e4e5-416a-b3e0-d402725f76be.html" >组织_业务单元_行政组织</a>
+</td>
+<td>行政组织(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+所属组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f3fed5ea-72f2-4a0a-ad43-d30b1c22c86c.html" >组织_业务单元_人力资源组织</a>
+</td>
+<td>人力资源组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+pk_plan_reg_org
+</td>
+<td >
+计划报到组织
+</td>
+<td>pk_plan_reg_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f3fed5ea-72f2-4a0a-ad43-d30b1c22c86c.html" >组织_业务单元_人力资源组织</a>
+</td>
+<td>人力资源组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+pk_psndoc
+</td>
+<td >
+应聘人员
+</td>
+<td>pk_psndoc</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="05654a1a-6469-4744-963a-fa0a06e0b01f.html" >应聘人员信息</a>
+</td>
+<td>应聘人员信息</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+pk_psndoc2
+</td>
+<td >
+应聘人员2
+</td>
+<td>pk_psndoc2</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="05654a1a-6469-4744-963a-fa0a06e0b01f.html" >应聘人员信息</a>
+</td>
+<td>应聘人员信息</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+pk_reg_job
+</td>
+<td >
+发布职位
+</td>
+<td>pk_reg_job</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1f993e1e-e198-41ef-9716-946e0c9103e6.html" >职位发布</a>
+</td>
+<td>发布职位</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+pk_source
+</td>
+<td >
+来源主键
+</td>
+<td>pk_source</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+plan_reg_date
+</td>
+<td >
+计划报到日期
+</td>
+<td>plan_reg_date</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+probationary_begindate
+</td>
+<td >
+开始试用日期
+</td>
+<td>probationary_begindate</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+probationary_enddate
+</td>
+<td >
+结束试用日期
+</td>
+<td>probationary_enddate</td>
+<td>
+char(10)
+</td>
+<td>
+UFLiteralDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+probationary_pay
+</td>
+<td >
+试用工资
+</td>
+<td>probationary_pay</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+probationary_period
+</td>
+<td >
+试用期限
+</td>
+<td>probationary_period</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+probationary_period_unit
+</td>
+<td >
+试用期限单位
+</td>
+<td>probationary_period_unit</td>
+<td>
+int
+</td>
+<td>
+期限单位
+</td>
+<td></td>
+<td>
+1=年，2=月，3=天，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+psnstatus
+</td>
+<td >
+录用前人员状态
+</td>
+<td>psnstatus</td>
+<td>
+int
+</td>
+<td>
+应聘状态
+</td>
+<td></td>
+<td>
+0=初始态，1=应聘登记，2=初选通过，3=面试中，4=录用中，5=报到中，6=已入职，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+registration_flag
+</td>
+<td >
+是否已报到
+</td>
+<td>registration_flag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+remark
+</td>
+<td >
+备注
+</td>
+<td>remark</td>
+<td>
+varchar(200)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+sourcetype
+</td>
+<td >
+来源类型
+</td>
+<td>sourcetype</td>
+<td>
+int
+</td>
+<td>
+录用来源
+</td>
+<td></td>
+<td>
+0=来自应聘人员，1=来自人才库，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+wages_amount
+</td>
+<td >
+工资数额
+</td>
+<td>wages_amount</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

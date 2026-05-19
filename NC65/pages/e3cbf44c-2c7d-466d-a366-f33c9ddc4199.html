@@ -1,0 +1,372 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>resa_covouchertem 分摊凭证模板</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- e3cbf44c-2c7d-466d-a366-f33c9ddc4199 -->
+<b><span style="font-size:24px">分摊凭证模板 (resa_covouchertem)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2013-11-14 15:26:21 &nbsp;修改时间 ：2015-04-16 18:17:32 &nbsp;路径：\resa\METADATA\coallocrule\receivevoucher.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.resa.corule.CoVoucherTemVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+accbalancefactor
+</td>
+<td >
+接收方平衡要素
+</td>
+<td>accbalancefactor</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="37e3adca-e0a0-4dff-82ea-63b335cf5515.html" >要素关联信息</a>
+</td>
+<td>核算要素(利润中心)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+accbreifinfo
+</td>
+<td >
+接收方摘要
+</td>
+<td>accbreifinfo</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+acceptorassnames
+</td>
+<td >
+接收方辅助核算名称组
+</td>
+<td>acceptorassnames</td>
+<td>
+image
+</td>
+<td>
+BLOB
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+accvouchertype
+</td>
+<td >
+接收方凭证类别
+</td>
+<td>accvouchertype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="246e8a13-a640-4742-bdf9-dc332a33cf89.html" >责任凭证类别</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+pk_acceptordims
+</td>
+<td >
+接收方辅助核算
+</td>
+<td>pk_acceptordims</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+pk_allocrule
+</td>
+<td >
+分摊规则
+</td>
+<td>pk_allocrule</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="fed046fe-f120-4ed3-bf13-8bff363fc416.html" >分摊规则</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_covouchertem</b></span>
+</td>
+<td >
+<span style="color:#09C">标识</span>
+</td>
+<td>pk_covouchertem</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+pk_senderdims
+</td>
+<td >
+发送方辅助核算
+</td>
+<td>pk_senderdims</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+recordedassnames
+</td>
+<td >
+入账辅助核算名称组
+</td>
+<td>recordedassnames</td>
+<td>
+image
+</td>
+<td>
+BLOB
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+recordeddims
+</td>
+<td >
+入账辅助核算
+</td>
+<td>recordeddims</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+recordedfactor
+</td>
+<td >
+入账要素
+</td>
+<td>recordedfactor</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="37e3adca-e0a0-4dff-82ea-63b335cf5515.html" >要素关联信息</a>
+</td>
+<td>核算要素(利润中心)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+senderassnames
+</td>
+<td >
+发送方辅助核算名称组
+</td>
+<td>senderassnames</td>
+<td>
+image
+</td>
+<td>
+BLOB
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+senderbalancefactor
+</td>
+<td >
+发送方平衡分录要素
+</td>
+<td>senderbalancefactor</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="37e3adca-e0a0-4dff-82ea-63b335cf5515.html" >要素关联信息</a>
+</td>
+<td>核算要素(利润中心)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+senderbreifinfo
+</td>
+<td >
+发送方凭证摘要
+</td>
+<td>senderbreifinfo</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+senderdirection
+</td>
+<td >
+发送方凭证方向
+</td>
+<td>senderdirection</td>
+<td>
+int
+</td>
+<td>
+发送方凭证方向
+</td>
+<td></td>
+<td>
+1=与来源同向，2=与来源反向，3=借，4=贷，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+sendervouchertype
+</td>
+<td >
+发送方凭证类别
+</td>
+<td>sendervouchertype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="246e8a13-a640-4742-bdf9-dc332a33cf89.html" >责任凭证类别</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

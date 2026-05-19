@@ -1,0 +1,378 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ct_business 合同交易类型</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- adf2bb7d-7364-4029-b24b-fc5824388fc4 -->
+<b><span style="font-size:24px">合同交易类型 (ct_business)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-03-04 10:33:19 &nbsp;修改时间 ：2015-01-14 15:09:08 &nbsp;路径：\ct\METADATA\ct_business\ct_business.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.ct.business.entity.BusinessSetVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+bbracketorder
+</td>
+<td >
+总括订单
+</td>
+<td>bbracketorder</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+bshowpayterm
+</td>
+<td >
+是否显示收款协议页签
+</td>
+<td>bshowpayterm</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+controltype
+</td>
+<td >
+订单控制方式
+</td>
+<td>controltype</td>
+<td>
+int
+</td>
+<td>
+订单控制方式
+</td>
+<td></td>
+<td>
+1=不控制，2=控制数量，3=控制金额，4=控制数量和金额，5=控制整单数量，6=控制整单金额，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+ctrantypeid
+</td>
+<td >
+交易类型
+</td>
+<td>ctrantypeid</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+fpricepattern
+</td>
+<td >
+取价模式
+</td>
+<td>fpricepattern</td>
+<td>
+int
+</td>
+<td>
+取价模式
+</td>
+<td></td>
+<td>
+1=总价，2=多价格项，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+ismustcontrol
+</td>
+<td >
+是否严格控制订单
+</td>
+<td>ismustcontrol</td>
+<td>
+int
+</td>
+<td>
+是否严格控制订单
+</td>
+<td></td>
+<td>
+1=是，2=否，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+memo
+</td>
+<td >
+备注
+</td>
+<td>memo</td>
+<td>
+varchar(181)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+nbusitype
+</td>
+<td >
+合同类型
+</td>
+<td>nbusitype</td>
+<td>
+int
+</td>
+<td>
+合同类型
+</td>
+<td></td>
+<td>
+1=采购合同，2=销售合同，3=其他付合同，4=其他收合同，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+ndatactlstyle
+</td>
+<td >
+单价控制方式
+</td>
+<td>ndatactlstyle</td>
+<td>
+int
+</td>
+<td>
+订单单价控制方式
+</td>
+<td></td>
+<td>
+1=严格控制，2=不控制，3=允许上调，4=允许下调，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+ninvctlstyle
+</td>
+<td >
+物料控制方式
+</td>
+<td>ninvctlstyle</td>
+<td>
+int
+</td>
+<td>
+物料控制方式
+</td>
+<td></td>
+<td>
+1=物料，2=物料基本分类，3=无，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_business</b></span>
+</td>
+<td >
+<span style="color:#09C">交易类型定义主键</span>
+</td>
+<td>pk_business</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+rate
+</td>
+<td >
+订单容差比例
+</td>
+<td>rate</td>
+<td>
+decimal(20,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+rec_or_pay
+</td>
+<td >
+收付方向
+</td>
+<td>rec_or_pay</td>
+<td>
+int
+</td>
+<td>
+收付方式
+</td>
+<td></td>
+<td>
+1=收，2=付，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+vtrantypecode
+</td>
+<td >
+交易类型编码
+</td>
+<td>vtrantypecode</td>
+<td>
+varchar(20)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+vtrantypename
+</td>
+<td >
+交易类型名称
+</td>
+<td>vtrantypename</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

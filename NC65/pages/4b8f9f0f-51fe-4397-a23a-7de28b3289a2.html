@@ -1,0 +1,1322 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tbm_timerule 考勤规则</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 4b8f9f0f-51fe-4397-a23a-7de28b3289a2 -->
+<b><span style="font-size:24px">考勤规则 (tbm_timerule)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-08-31 20:42:32 &nbsp;修改时间 ：2015-10-22 10:08:13 &nbsp;路径：\hrta\METADATA\timerule\timerule.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.ta.timerule.TimeRuleVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+absentdisp
+</td>
+<td >
+旷工显示值
+</td>
+<td>absentdisp</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+absentunit
+</td>
+<td >
+旷工最小时间单位
+</td>
+<td>absentunit</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+absentunittype
+</td>
+<td >
+旷工最小时间单位舍位方式
+</td>
+<td>absentunittype</td>
+<td>
+int
+</td>
+<td>
+取整方式
+</td>
+<td></td>
+<td>
+1=向上取整，2=向下取整，3=四舍五入，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+autoarrangemonth
+</td>
+<td >
+自动排班月数
+</td>
+<td>autoarrangemonth</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+awayovperprtype
+</td>
+<td >
+出差单跨期处理方式
+</td>
+<td>awayovperprtype</td>
+<td>
+int
+</td>
+<td>
+跨期处理方式
+</td>
+<td></td>
+<td>
+0=分别计算在各自期间，1=第一期间计算在第二期间，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+billmutexrule
+</td>
+<td >
+单据冲突规则
+</td>
+<td>billmutexrule</td>
+<td>
+varchar(300)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+checkinflag
+</td>
+<td >
+支持签到/签退标识
+</td>
+<td>checkinflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+chuchaidisp
+</td>
+<td >
+出差显示值
+</td>
+<td>chuchaidisp</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+<span style="color:#09C">创建时间</span>
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+ctrlothours
+</td>
+<td >
+加班控制小时数
+</td>
+<td>ctrlothours</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+datafilepath
+</td>
+<td >
+刷卡数据自动导入文本路径
+</td>
+<td>datafilepath</td>
+<td>
+varchar(256)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+dayabsentnotice
+</td>
+<td >
+日报旷工是否发通知
+</td>
+<td>dayabsentnotice</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+dayearlynotice
+</td>
+<td >
+日报早退是否发通知
+</td>
+<td>dayearlynotice</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+daylatenotice
+</td>
+<td >
+日报迟到是否发通知
+</td>
+<td>daylatenotice</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+daymidoutnotice
+</td>
+<td >
+日报中途外出是否发通知
+</td>
+<td>daymidoutnotice</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+daytohour
+</td>
+<td >
+工作日折算
+</td>
+<td>daytohour</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+earlydisp
+</td>
+<td >
+早退显示值
+</td>
+<td>earlydisp</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+earlyunit
+</td>
+<td >
+早退最小时间单位
+</td>
+<td>earlyunit</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+earlyunittype
+</td>
+<td >
+早退最小时间单位舍位方式
+</td>
+<td>earlyunittype</td>
+<td>
+int
+</td>
+<td>
+取整方式
+</td>
+<td></td>
+<td>
+1=向上取整，2=向下取整，3=四舍五入，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+exceptionnoticeset
+</td>
+<td >
+异常通知设置
+</td>
+<td>exceptionnoticeset</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+gxdisp
+</td>
+<td >
+公休显示值
+</td>
+<td>gxdisp</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+isautomonthdays
+</td>
+<td >
+自动统计工作天数
+</td>
+<td>isautomonthdays</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+iscansaveoveryear
+</td>
+<td >
+跨年度休假是否允许保存
+</td>
+<td>iscansaveoveryear</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+ispreholidayfirst 
+</td>
+<td >
+启用往期结余假优先
+</td>
+<td>ispreholidayfirst </td>
+<td>
+char(1)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+isrestrictctrlot
+</td>
+<td >
+是否严格控制加班时长
+</td>
+<td>isrestrictctrlot</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+issynchronized
+</td>
+<td >
+是否与上级同步
+</td>
+<td>issynchronized</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+istorestctrlot
+</td>
+<td >
+转调休是否严格控制
+</td>
+<td>istorestctrlot</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+jiabandisp
+</td>
+<td >
+加班显示值
+</td>
+<td>jiabandisp</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+latedisp
+</td>
+<td >
+迟到显示值
+</td>
+<td>latedisp</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+lateunit
+</td>
+<td >
+迟到最小时间单位
+</td>
+<td>lateunit</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+lateunittype
+</td>
+<td >
+迟到最小时间单位舍位方式
+</td>
+<td>lateunittype</td>
+<td>
+int
+</td>
+<td>
+取整方式
+</td>
+<td></td>
+<td>
+1=向上取整，2=向下取整，3=四舍五入，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+levaeovperprtype
+</td>
+<td >
+休假单跨期处理方式
+</td>
+<td>levaeovperprtype</td>
+<td>
+int
+</td>
+<td>
+跨期处理方式
+</td>
+<td></td>
+<td>
+0=分别计算在各自期间，1=第一期间计算在第二期间，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+midwayunit
+</td>
+<td >
+中途外出最小时间单位
+</td>
+<td>midwayunit</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+midwayunittype
+</td>
+<td >
+中途外出最小时间单位舍位方式
+</td>
+<td>midwayunittype</td>
+<td>
+int
+</td>
+<td>
+取整方式
+</td>
+<td></td>
+<td>
+1=向上取整，2=向下取整，3=四舍五入，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+mintimespace
+</td>
+<td >
+刷卡最小时间间隔（分钟）
+</td>
+<td>mintimespace</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+最后修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+monthworkdays
+</td>
+<td >
+月工作天数
+</td>
+<td>monthworkdays</td>
+<td>
+decimal(16,4)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+mreportapproveflag
+</td>
+<td >
+考勤月报是否审核
+</td>
+<td>mreportapproveflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+mreportdecimal
+</td>
+<td >
+考勤月报显示小数位数
+</td>
+<td>mreportdecimal</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+nocheckflag
+</td>
+<td >
+是否启用未刷卡规则
+</td>
+<td>nocheckflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+nocheckinturnto
+</td>
+<td >
+上班未刷卡、下班刷卡的类型计算时长
+</td>
+<td>nocheckinturnto</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+nocheckinturntotype
+</td>
+<td >
+上班未刷卡、下班刷卡的计做类型
+</td>
+<td>nocheckinturntotype</td>
+<td>
+int
+</td>
+<td>
+上班未刷卡处理结果
+</td>
+<td></td>
+<td>
+1=迟到，2=未出勤，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+nocheckoutturnto
+</td>
+<td >
+下班未刷卡，上班刷卡类型计算时长
+</td>
+<td>nocheckoutturnto</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">46</td>
+<td>&nbsp;
+nocheckoutturntotype
+</td>
+<td >
+下班未刷卡，上班刷卡的计做类型
+</td>
+<td>nocheckoutturntotype</td>
+<td>
+int
+</td>
+<td>
+下班未刷卡处理结果
+</td>
+<td></td>
+<td>
+1=早退，2=未出勤，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">47</td>
+<td>&nbsp;
+normaldisp
+</td>
+<td >
+正常显示值
+</td>
+<td>normaldisp</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">48</td>
+<td>&nbsp;
+overtimecheckrule
+</td>
+<td >
+加班单生成和校验规则
+</td>
+<td>overtimecheckrule</td>
+<td>
+int
+</td>
+<td>
+加班单校验规则
+</td>
+<td></td>
+<td>
+0=严格，1=宽松，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">49</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+<span style="color:#09C">所属集团</span>
+</td>
+<td>pk_group</td>
+<td>
+char(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">50</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+<span style="color:#09C">所属组织</span>
+</td>
+<td>pk_org</td>
+<td>
+char(20)
+</td>
+<td>
+<a href="18f0e8e6-8c9f-49a7-a6f8-3ce250854e1d.html" >人力资源组织</a>
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">51</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_timerule</b></span>
+</td>
+<td >
+<span style="color:#09C">考勤规则主键</span>
+</td>
+<td>pk_timerule</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">52</td>
+<td>&nbsp;
+pk_timezone
+</td>
+<td >
+时区
+</td>
+<td>pk_timezone</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="a20b97bb-b186-4e09-a43e-027669cf1be8.html" >时区</a>
+</td>
+<td>时区</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">53</td>
+<td>&nbsp;
+rounding
+</td>
+<td >
+舍入规则
+</td>
+<td>rounding</td>
+<td>
+int
+</td>
+<td>
+取整方式
+</td>
+<td></td>
+<td>
+1=向上取整，2=向下取整，3=四舍五入，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">54</td>
+<td>&nbsp;
+shutdowndisp
+</td>
+<td >
+停工待料显示
+</td>
+<td>shutdowndisp</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">55</td>
+<td>&nbsp;
+signcounts
+</td>
+<td >
+签卡提示次数
+</td>
+<td>signcounts</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">56</td>
+<td>&nbsp;
+timedecimal
+</td>
+<td >
+考勤小数位
+</td>
+<td>timedecimal</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">57</td>
+<td>&nbsp;
+timezone
+</td>
+<td >
+时区字符串
+</td>
+<td>timezone</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">58</td>
+<td>&nbsp;
+torestlongest
+</td>
+<td >
+一个考勤期间内转调休最大时长
+</td>
+<td>torestlongest</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">59</td>
+<td>&nbsp;
+totbmpsntype
+</td>
+<td >
+新进员工自动加入考勤档案
+</td>
+<td>totbmpsntype</td>
+<td>
+int
+</td>
+<td>
+加入考勤档案方式
+</td>
+<td></td>
+<td>
+0=不加入考勤档案，1=手工考勤，2=机器考勤，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">60</td>
+<td>&nbsp;
+usemobile
+</td>
+<td >
+是否启用移动签到
+</td>
+<td>usemobile</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">61</td>
+<td>&nbsp;
+worklenminusitems
+</td>
+<td >
+出勤时长减项
+</td>
+<td>worklenminusitems</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">62</td>
+<td>&nbsp;
+workplaceflag
+</td>
+<td >
+支持工作场所
+</td>
+<td>workplaceflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">63</td>
+<td>&nbsp;
+xiujiadisp
+</td>
+<td >
+休假显示值
+</td>
+<td>xiujiadisp</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

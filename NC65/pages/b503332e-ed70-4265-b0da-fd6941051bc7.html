@@ -1,0 +1,969 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>iufo_task 任务</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- b503332e-ed70-4265-b0da-fd6941051bc7 -->
+<b><span style="font-size:24px">任务 (iufo_task)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2010-01-18 14:02:55 &nbsp;修改时间 ：2014-06-19 08:52:17 &nbsp;路径：\ufoe\METADATA\task\task.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.iufo.task.TaskVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+accbooktype
+</td>
+<td >
+检查账表一致性账簿类型
+</td>
+<td>accbooktype</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="835e9f49-5f2f-49fd-bb50-3139d0dd4435.html" >账簿_账簿类型</a>
+</td>
+<td>账簿类型</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+approvemode
+</td>
+<td >
+审批模式
+</td>
+<td>approvemode</td>
+<td>
+int
+</td>
+<td>
+审批模式
+</td>
+<td></td>
+<td>
+0=按任务，1=按报表，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+assignorgtype
+</td>
+<td >
+重复分配时分配组织取值
+</td>
+<td>assignorgtype</td>
+<td>
+varchar(50)
+</td>
+<td>
+重复分配时分配组织取值类型
+</td>
+<td></td>
+<td>
+0=取全局参数值，1=当前单位，2=更高层上级，3=更直接上级，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+autohasten
+</td>
+<td >
+自动催报
+</td>
+<td>autohasten</td>
+<td>
+int
+</td>
+<td>
+自动催报
+</td>
+<td></td>
+<td>
+0=否，1=是，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+busi_prop
+</td>
+<td >
+业务属性
+</td>
+<td>busi_prop</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="1010ZZ10000000006BN3.html" >业务属性(自定义档案)</a>
+</td>
+<td>业务属性(自定义档案)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+code
+</td>
+<td >
+<span style="color:#09C">任务编码</span>
+</td>
+<td>code</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+commit_end_day
+</td>
+<td >
+上报截止天数
+</td>
+<td>commit_end_day</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+commit_end_time
+</td>
+<td >
+上报截止时间(格式:00:00:00)
+</td>
+<td>commit_end_time</td>
+<td>
+char(8)
+</td>
+<td>
+UFTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+commitcheck
+</td>
+<td >
+上报审核要求
+</td>
+<td>commitcheck</td>
+<td>
+int
+</td>
+<td>
+上报审核要求
+</td>
+<td></td>
+<td>
+0=不限制，1=报表审核，2=审核方案，3=所有审核，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+commitmode
+</td>
+<td >
+上报模式
+</td>
+<td>commitmode</td>
+<td>
+int
+</td>
+<td>
+上报模式
+</td>
+<td></td>
+<td>
+0=直报，1=层层上报，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+commitopt
+</td>
+<td >
+上报流程包含确认
+</td>
+<td>commitopt</td>
+<td>
+int
+</td>
+<td>
+上报流程包含确认
+</td>
+<td></td>
+<td>
+0=不包含，1=包含，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+commstrategy
+</td>
+<td >
+报表数据报送策略
+</td>
+<td>commstrategy</td>
+<td>
+int
+</td>
+<td>
+报表数据报送策略
+</td>
+<td></td>
+<td>
+0=全部，1=手选，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+creationtime
+</td>
+<td >
+创建时间
+</td>
+<td>creationtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+creator
+</td>
+<td >
+创建人
+</td>
+<td>creator</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+data_contype
+</td>
+<td >
+数据权限控制方式
+</td>
+<td>data_contype</td>
+<td>
+int
+</td>
+<td>
+数据权限控制方式
+</td>
+<td></td>
+<td>
+0=不进行控制，1=默认无权限，2=默认查看权限，3=默认修改权限，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+dataorigin
+</td>
+<td >
+数据来源
+</td>
+<td>dataorigin</td>
+<td>
+varchar(50)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+enablestate
+</td>
+<td >
+启用状态
+</td>
+<td>enablestate</td>
+<td>
+int
+</td>
+<td>
+启用状态
+</td>
+<td></td>
+<td>
+1=未启用，2=已启用，3=已停用，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+end_date
+</td>
+<td >
+终止日期
+</td>
+<td>end_date</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+flag_deffiter
+</td>
+<td >
+是否按组织的自定义项匹配报表
+</td>
+<td>flag_deffiter</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+fml_edittype
+</td>
+<td >
+取数单元格允许编辑
+</td>
+<td>fml_edittype</td>
+<td>
+int(50)
+</td>
+<td>
+下拉参数控制
+</td>
+<td></td>
+<td>
+0=取全局参数值，1=是，2=否，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+hasten_bef_day
+</td>
+<td >
+提前天数
+</td>
+<td>hasten_bef_day</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+isaccbookcheck
+</td>
+<td >
+上报时检查账表一致性
+</td>
+<td>isaccbookcheck</td>
+<td>
+varchar(50)
+</td>
+<td>
+上报时检查账表一致性
+</td>
+<td></td>
+<td>
+1=是，2=提示，3=否，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+isapproveerrorcommit
+</td>
+<td >
+审批不通过时，允许上报
+</td>
+<td>isapproveerrorcommit</td>
+<td>
+int
+</td>
+<td>
+无全局下拉参数控制
+</td>
+<td></td>
+<td>
+1=是，2=否，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+iscellimport
+</td>
+<td >
+取数单元格可以导入
+</td>
+<td>iscellimport</td>
+<td>
+int
+</td>
+<td>
+无全局下拉参数控制
+</td>
+<td></td>
+<td>
+1=是，2=否，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+ischeckerrorcommit
+</td>
+<td >
+审核不通过时，允许上报
+</td>
+<td>ischeckerrorcommit</td>
+<td>
+int
+</td>
+<td>
+无全局下拉参数控制
+</td>
+<td></td>
+<td>
+1=是，2=否，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+isonlyselfcancel
+</td>
+<td >
+仅本单位可以请求取消上报
+</td>
+<td>isonlyselfcancel</td>
+<td>
+int
+</td>
+<td>
+无全局下拉参数控制
+</td>
+<td></td>
+<td>
+1=是，2=否，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+isselfandcancancel
+</td>
+<td >
+本级及上级可直接取消上报
+</td>
+<td>isselfandcancancel</td>
+<td>
+varchar(50)
+</td>
+<td>
+本级及上级是否可直接取消上报
+</td>
+<td></td>
+<td>
+1=否，2=所有上级单位，3=直接上级单位，4=任务创建单位，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+istaskunitcancel
+</td>
+<td >
+截止日后仅任务单位可取消上报
+</td>
+<td>istaskunitcancel</td>
+<td>
+int
+</td>
+<td>
+无全局下拉参数控制
+</td>
+<td></td>
+<td>
+1=是，2=否，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">29</td>
+<td>&nbsp;
+iswarnchecked
+</td>
+<td >
+审核中出现警告允许审核通过
+</td>
+<td>iswarnchecked</td>
+<td>
+int
+</td>
+<td>
+无全局下拉参数控制
+</td>
+<td></td>
+<td>
+1=是，2=否，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">30</td>
+<td>&nbsp;
+modifiedtime
+</td>
+<td >
+最后修改时间
+</td>
+<td>modifiedtime</td>
+<td>
+char(19)
+</td>
+<td>
+UFDateTime
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">31</td>
+<td>&nbsp;
+modifier
+</td>
+<td >
+最后修改人
+</td>
+<td>modifier</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="f6f9a473-56c0-432f-8bc7-fbf8fde54fee.html" >用户</a>
+</td>
+<td>用户</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">32</td>
+<td>&nbsp;
+name
+</td>
+<td >
+任务名称
+</td>
+<td>name</td>
+<td>
+varchar(200)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">33</td>
+<td>&nbsp;
+nodetype
+</td>
+<td >
+节点类型
+</td>
+<td>nodetype</td>
+<td>
+char(1)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">34</td>
+<td>&nbsp;
+note
+</td>
+<td >
+备注
+</td>
+<td>note</td>
+<td>
+varchar(1024)
+</td>
+<td>
+备注
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">35</td>
+<td>&nbsp;
+pk_accscheme
+</td>
+<td >
+会计期间方案
+</td>
+<td>pk_accscheme</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="44187a94-e78b-4770-8b2a-9fe8db022b12.html" >会计期间方案</a>
+</td>
+<td>会计期间方案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">36</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+所属集团
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >组织_集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">37</td>
+<td>&nbsp;
+pk_keygroup
+</td>
+<td >
+任务关键字
+</td>
+<td>pk_keygroup</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="d04991be-461b-4a61-bd08-044981adcecf.html" >关键字组合</a>
+</td>
+<td>关键字组合</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">38</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+所属组织
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="985be8a4-3a36-4778-8afe-2d8ed3902659.html" >组织</a>
+</td>
+<td>全局+当前集团+当前集团下的所有组织(所有)</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">39</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_task</b></span>
+</td>
+<td >
+<span style="color:#09C">任务主键</span>
+</td>
+<td>pk_task</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">40</td>
+<td>&nbsp;
+pk_tasksort
+</td>
+<td >
+<span style="color:#09C">任务分类</span>
+</td>
+<td>pk_tasksort</td>
+<td>
+(20)
+</td>
+<td>
+<a href="f16a201f-8508-4cbb-99ae-e9bff2e9c356.html" >任务分类</a>
+</td>
+<td>任务分类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">41</td>
+<td>&nbsp;
+sealflag
+</td>
+<td >
+封存标记
+</td>
+<td>sealflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">42</td>
+<td>&nbsp;
+start_date
+</td>
+<td >
+起始日期
+</td>
+<td>start_date</td>
+<td>
+char(19)
+</td>
+<td>
+UFDate
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">43</td>
+<td>&nbsp;
+templatefilecount
+</td>
+<td >
+管理报告模版数量
+</td>
+<td>templatefilecount</td>
+<td>
+int
+</td>
+<td>
+Integer
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">44</td>
+<td>&nbsp;
+templatefilename
+</td>
+<td >
+管理报告模版
+</td>
+<td>templatefilename</td>
+<td>
+varchar(500)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">45</td>
+<td>&nbsp;
+usedflag
+</td>
+<td >
+启用标记
+</td>
+<td>usedflag</td>
+<td>
+char(1)
+</td>
+<td>
+UFBoolean
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>

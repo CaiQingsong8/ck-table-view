@@ -1,0 +1,616 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>prm_pricecondition 定价条件</title>
+<style type="text/css">
+.guest_link{ background:#FCFCFC; border:solid 1px #ccc;padding:5px; margin-top:0px; margin-left:0px; margin-right:0px;margin-bottom:10px; font-size:12px;}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #09C;
+	text-decoration: none;
+}
+a:visited {
+	color: #09C;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+<body  leftmargin="3" rightmargin="3" topmargin="3">
+<div class="guest_link">
+<!-- 7013a940-653b-4155-a564-91438bc90af6 -->
+<b><span style="font-size:24px">定价条件 (prm_pricecondition)</span></b>
+</div>
+<p align="right" style="color:#CDCDCD">&nbsp;&nbsp;创建时间：2009-12-08 19:50:16 &nbsp;修改时间 ：2011-08-08 09:25:09 &nbsp;路径：\price\METADATA\PricePolicy\pricecondition.bmf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+VO：nc.vo.price.pricecondition.entity.PriceConditionVO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" style="border-collapse: collapse;table-layout:fixed;word-wrap:break-word;">
+<tr bgcolor="#DFE9FA" height="30px" align="center">
+<td width="30">序号</td>
+<td>编码</td>
+<td>名称</td>
+<td>字段编码</td>
+<td width="88">字段类型</td>
+<td>类型</td>
+<td>引用模型</td>
+<td>枚举</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">1</td>
+<td>&nbsp;
+areaclinnercode
+</td>
+<td >
+地区分类内部码
+</td>
+<td>areaclinnercode</td>
+<td>
+varchar(230)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">2</td>
+<td>&nbsp;
+csrcconditionid
+</td>
+<td >
+来源定价条件主键
+</td>
+<td>csrcconditionid</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">3</td>
+<td>&nbsp;
+csrcsaleorgid
+</td>
+<td >
+来源销售组织
+</td>
+<td>csrcsaleorgid</td>
+<td>
+varchar(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">4</td>
+<td>&nbsp;
+customerinnercode
+</td>
+<td >
+客户内部码
+</td>
+<td>customerinnercode</td>
+<td>
+varchar(230)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">5</td>
+<td>&nbsp;
+dbegindate
+</td>
+<td >
+有效期从
+</td>
+<td>dbegindate</td>
+<td>
+varchar(19)
+</td>
+<td>
+UFDate_begin
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">6</td>
+<td>&nbsp;
+denddate
+</td>
+<td >
+有效期至
+</td>
+<td>denddate</td>
+<td>
+varchar(19)
+</td>
+<td>
+UFDate_end
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">7</td>
+<td>&nbsp;
+fcalctypeflag
+</td>
+<td >
+计算类型
+</td>
+<td>fcalctypeflag</td>
+<td>
+int(50)
+</td>
+<td>
+计算类型
+</td>
+<td></td>
+<td>
+0=折扣，1=加价，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">8</td>
+<td>&nbsp;
+fconditiontypeflag
+</td>
+<td >
+<span style="color:#09C">条件取值类型</span>
+</td>
+<td>fconditiontypeflag</td>
+<td>
+int
+</td>
+<td>
+条件取值类型
+</td>
+<td></td>
+<td>
+0=直接折扣，1=直接加价，2=条件比较，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">9</td>
+<td>&nbsp;
+forigattributeflag
+</td>
+<td >
+条件来源属性
+</td>
+<td>forigattributeflag</td>
+<td>
+int
+</td>
+<td>
+条件来源类型
+</td>
+<td></td>
+<td>
+0=参照选择，1=任意输入，2=函数，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">10</td>
+<td>&nbsp;
+materialinnercode
+</td>
+<td >
+物料内部码
+</td>
+<td>materialinnercode</td>
+<td>
+varchar(230)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">11</td>
+<td>&nbsp;
+ndiscount
+</td>
+<td >
+折扣(%)/加价
+</td>
+<td>ndiscount</td>
+<td>
+decimal(28,8)
+</td>
+<td>
+UFDouble
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">12</td>
+<td>&nbsp;
+pk_conditionsource
+</td>
+<td >
+条件来源
+</td>
+<td>pk_conditionsource</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="6e1b3fe6-83b2-4526-a5a2-a69c0d239487.html" >条件来源</a>
+</td>
+<td>定价条件来源</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">13</td>
+<td>&nbsp;
+pk_custclass
+</td>
+<td >
+客户分类
+</td>
+<td>pk_custclass</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="b941438d-ce1f-4fd7-b972-f4f342fbd04f.html" >客户基本分类</a>
+</td>
+<td>客户基本分类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">14</td>
+<td>&nbsp;
+pk_customer
+</td>
+<td >
+客户
+</td>
+<td>pk_customer</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="e4f48eaf-5567-4383-a370-a59cb3e8a451.html" >客户基本信息</a>
+</td>
+<td>客户档案</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">15</td>
+<td>&nbsp;
+pk_custsaleclass
+</td>
+<td >
+客户销售分类
+</td>
+<td>pk_custsaleclass</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="540a5bff-7232-4aa8-96c8-ae5b53e4ce59.html" >客户销售分类</a>
+</td>
+<td>客户销售分类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">16</td>
+<td>&nbsp;
+pk_group
+</td>
+<td >
+<span style="color:#09C">集团</span>
+</td>
+<td>pk_group</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="3b6dd171-2900-47f3-bfbe-41e4483a2a65.html" >集团</a>
+</td>
+<td>集团</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">17</td>
+<td>&nbsp;
+pk_marbasclass
+</td>
+<td >
+物料分类
+</td>
+<td>pk_marbasclass</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="c099f7d7-52a9-4b98-bee7-2e3a6c3ea263.html" >物料基本分类</a>
+</td>
+<td>物料基本分类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">18</td>
+<td>&nbsp;
+pk_marsaleclass
+</td>
+<td >
+物料销售分类
+</td>
+<td>pk_marsaleclass</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="123ed90f-8907-4604-a978-0a0b6c80a030.html" >物料销售分类</a>
+</td>
+<td>物料销售分类</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">19</td>
+<td>&nbsp;
+pk_material
+</td>
+<td >
+物料
+</td>
+<td>pk_material</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="eae040f4-3c88-413d-abc9-b15774463d46.html" >物料基本信息（最新版本）</a>
+</td>
+<td>物料</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">20</td>
+<td>&nbsp;
+pk_org
+</td>
+<td >
+<span style="color:#09C">销售组织</span>
+</td>
+<td>pk_org</td>
+<td>
+varchar(20)
+</td>
+<td>
+<a href="945f38b6-48ec-43e6-bb09-77ec89a3728f.html" >销售组织</a>
+</td>
+<td>销售组织</td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">21</td>
+<td>&nbsp;
+<span style="color:red"><b>pk_pricecondition</b></span>
+</td>
+<td >
+<span style="color:#09C">定价条件主键</span>
+</td>
+<td>pk_pricecondition</td>
+<td>
+char(20)
+</td>
+<td>
+UFID
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">22</td>
+<td>&nbsp;
+vcode
+</td>
+<td >
+定价条件编号
+</td>
+<td>vcode</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">23</td>
+<td>&nbsp;
+vcomoperator1
+</td>
+<td >
+比较符1
+</td>
+<td>vcomoperator1</td>
+<td>
+varchar(50)
+</td>
+<td>
+比较符类型
+</td>
+<td></td>
+<td>
+==等于，&gt;=大于，&gt;==大于等于，!==不等于，&lt;=小于，&lt;==小于等于，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">24</td>
+<td>&nbsp;
+vcomoperator2
+</td>
+<td >
+比较符2
+</td>
+<td>vcomoperator2</td>
+<td>
+varchar(50)
+</td>
+<td>
+比较符类型
+</td>
+<td></td>
+<td>
+==等于，&gt;=大于，&gt;==大于等于，!==不等于，&lt;=小于，&lt;==小于等于，
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">25</td>
+<td>&nbsp;
+vname
+</td>
+<td >
+定价条件名称
+</td>
+<td>vname</td>
+<td>
+varchar(30)
+</td>
+<td>
+多语文本
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">26</td>
+<td>&nbsp;
+vnote
+</td>
+<td >
+备注
+</td>
+<td>vnote</td>
+<td>
+varchar(181)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">27</td>
+<td>&nbsp;
+vvalue1
+</td>
+<td >
+比较值1
+</td>
+<td>vvalue1</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+<tr align="center">
+<td  bgcolor="#F5F5F5">28</td>
+<td>&nbsp;
+vvalue2
+</td>
+<td >
+比较值2
+</td>
+<td>vvalue2</td>
+<td>
+varchar(30)
+</td>
+<td>
+String
+</td>
+<td></td>
+<td>
+<span style="font-size:28px">&nbsp;</span>
+</td>
+</tr>
+</table>
+&nbsp;
+<div align="right" class="guest_link"><a href="http://www.hanzhisoft.com" ><span style="font-family:Tahoma;font-size:14px;"> &copy;</span>翰智软件</a> <span style="font-family:arial;">@研发中心&nbsp; 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>
