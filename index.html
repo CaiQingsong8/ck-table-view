@@ -89,6 +89,81 @@ a{text-decoration:none;transition:color .15s}
 .status-value.green{color:var(--primary);text-shadow:0 0 10px rgba(0,229,155,.3)}
 .status-value.amber{color:var(--accent);text-shadow:0 0 10px rgba(229,160,0,.3)}
 
+/* ─── Search Bar ───────────────────────────────── */
+.search-bar{
+  border:1px solid var(--border);background:var(--surface);
+  padding:10px 24px;display:flex;gap:10px;align-items:center;flex-shrink:0;
+  position:relative;
+}
+.search-bar label{
+  font-size:var(--mono-sm);color:var(--on-muted);letter-spacing:.04em;white-space:nowrap;flex-shrink:0;
+}
+.search-input-wrap{
+  flex:1;display:flex;align-items:center;gap:0;
+  border:1px solid var(--border-bright);background:var(--surface-raised);
+  transition:border-color .15s,box-shadow .15s;
+}
+.search-input-wrap:focus-within{
+  border-color:var(--primary);box-shadow:0 0 0 2px rgba(0,229,155,.12);
+}
+.search-input{
+  flex:1;padding:8px 14px;font-family:var(--mono);font-size:var(--mono-md);
+  background:transparent;border:none;color:var(--on-bright);outline:none;
+}
+.search-input::placeholder{color:var(--on-muted);opacity:.6}
+.search-mode{
+  display:flex;border-left:1px solid var(--border);flex-shrink:0;
+}
+.search-mode button{
+  padding:8px 14px;font-family:var(--mono);font-size:var(--mono-xs);font-weight:500;
+  background:transparent;border:none;color:var(--on-muted);cursor:pointer;
+  letter-spacing:.03em;transition:all .15s;white-space:nowrap;
+}
+.search-mode button:hover{color:var(--on)}
+.search-mode button.active{background:var(--primary-glow);color:var(--primary)}
+.search-hint{
+  font-size:var(--mono-xs);color:var(--on-muted);white-space:nowrap;flex-shrink:0;opacity:.7;
+}
+.search-input-wrap{position:relative}
+.search-dropdown{
+  display:none;position:absolute;top:100%;left:0;right:0;z-index:100;
+  background:var(--surface-raised);border:1px solid var(--border-bright);
+  max-height:420px;overflow-y:auto;margin-top:4px;
+  box-shadow:0 12px 40px rgba(0,0,0,.45);
+}
+.search-dropdown.open{display:block}
+.dd-group{padding:6px 0}
+.dd-group+.dd-group{border-top:1px solid var(--border)}
+.dd-group-title{
+  padding:6px 16px 4px;font-size:var(--mono-xs);font-weight:600;
+  color:var(--on-muted);letter-spacing:.06em;text-transform:uppercase;
+}
+.dd-item{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:8px 16px;cursor:pointer;transition:background .1s;gap:12px;
+}
+.dd-item:hover,.dd-item.active{background:var(--primary-glow)}
+.dd-name{
+  font-size:var(--mono-md);color:var(--on-bright);flex:1;min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.dd-name mark{
+  background:rgba(0,229,155,.2);color:var(--primary);border-radius:2px;padding:0 1px;
+}
+.dd-code{
+  font-size:var(--mono-xs);color:var(--on-muted);margin-left:6px;font-weight:400;
+}
+.dd-field{
+  font-weight:500;color:var(--on-bright);
+}
+.dd-comment{
+  font-size:var(--mono-sm);color:var(--on-muted);margin-left:4px;
+}
+.dd-tag{
+  font-size:var(--mono-xs);padding:2px 8px;border:1px solid;
+  white-space:nowrap;flex-shrink:0;letter-spacing:.02em;
+}
+
 /* ─── Cards ────────────────────────────────────── */
 .cards{
   display:grid;grid-template-columns:1fr 1fr;gap:0;
@@ -220,6 +295,11 @@ a{text-decoration:none;transition:color .15s}
   .tool-card:first-child{border-right:none;border-bottom:1px solid var(--border)}
   .header-title h1{font-size:22px}
   .status-bar{flex-wrap:wrap}
+  .search-bar{flex-wrap:wrap;padding:10px 16px}
+  .search-bar label{width:100%;margin-bottom:2px}
+  .search-input-wrap{min-width:0}
+  .search-hint{display:none}
+  .history-dropdown{width:calc(100vw - 32px);right:16px}
   .status-item{min-width:calc(33% - 1px)}
   .flow-h{flex-wrap:wrap;justify-content:center}
 }
@@ -234,11 +314,11 @@ a{text-decoration:none;transition:color .15s}
     <div class="header-top">
       <div class="header-title">
         <h1>澳华集团数仓血缘关系图<span class="cursor"></span></h1>
-        <div class="subtitle">// ClickHouse数仓 & NC65 ERP 数据字典 — 蔡青松</div>
-      </div>
-      <div class="header-meta">
-        <span><span class="dot"></span>ONLINE</span>
-        <span>v3.0.0</span>
+        <div style="display:flex;justify-content:flex-end;gap:16px;margin-top:4px;font-size:var(--mono-xs);color:var(--on-muted)">
+          <a href="https://github.com/CaiQingsong8/ck-table-view" target="_blank" style="color:var(--primary);text-decoration:none;font-weight:600;transition:opacity .15s" onmouseover="this.style.opacity='.7'" onmouseout="this.style.opacity='1'">🔗 GitHub</a>
+          <span>Author: CaiQingsong8</span>
+          <span>Version: v3.0.0</span>
+        </div>
       </div>
     </div>
   </header>
@@ -269,6 +349,33 @@ a{text-decoration:none;transition:color .15s}
       <span class="status-label">跨库联动</span>
       <span class="status-value" style="color:var(--on-bright)">66<span class="unit">links</span></span>
     </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <label>全局搜索</label>
+    <div class="search-input-wrap">
+      <input type="text" class="search-input" id="globalSearch" placeholder="输入表名、字段名或模块名..." autocomplete="off" autofocus>
+      <div id="searchDropdown" class="search-dropdown"></div>
+      <div class="search-mode">
+        <button id="modeTable" class="active" onclick="setSearchMode('table')">表名模块</button>
+        <button id="modeField" onclick="setSearchMode('field')">字段</button>
+      </div>
+    </div>
+    <button class="history-btn" id="historyBtn" onclick="toggleHistory()" title="查询记录">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span>查询记录</span>
+    </button>
+    <div class="history-dropdown" id="historyDropdown" style="position:absolute;top:calc(100% + 4px);right:40px">
+      <div class="history-search-wrap">
+        <input type="text" class="history-search" id="historySearch" placeholder="搜索历史记录..." oninput="renderHistory()">
+        <button class="history-clear" onclick="clearHistory()" title="清空记录">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+        </button>
+      </div>
+      <div class="history-list" id="historyList"></div>
+    </div>
+    <span class="search-hint">Ctrl+K 聚焦</span>
   </div>
 
   <!-- Tool Cards -->
@@ -413,17 +520,334 @@ a{text-decoration:none;transition:color .15s}
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <span>澳华集团数仓血缘关系图 // 蔡青松</span>
-    <div class="footer-links">
-      <a href="ClickHouse/数据字典查询.html">CK 查询</a>
-      <a href="NC65/nc字典查询.html">NC65 查询</a>
-      <a href="https://github.com/CaiQingsong8/ck-table-view" target="_blank">GitHub</a>
-    </div>
-  </footer>
 
 </div>
+
+<!-- History Styles -->
+<style>
+.history-btn{
+  display:flex;align-items:center;gap:6px;padding:7px 14px;
+  background:var(--surface-raised);border:1px solid var(--border-bright);
+  color:var(--on-muted);font-family:var(--mono);font-size:var(--mono-xs);
+  cursor:pointer;transition:all .15s;white-space:nowrap;flex-shrink:0;
+}
+.history-btn:hover{color:var(--on);border-color:var(--primary)}
+.history-btn.active{color:var(--primary);border-color:var(--primary);background:var(--primary-glow)}
+.history-dropdown{
+  display:none;position:absolute;top:calc(100% + 4px);right:40px;z-index:200;
+  width:420px;max-height:480px;background:var(--surface-raised);
+  border:1px solid var(--border-bright);border-radius:4px;
+  box-shadow:0 12px 40px rgba(0,0,0,.5);flex-direction:column;overflow:hidden;
+}
+.history-dropdown.open{display:flex}
+.history-search-wrap{
+  display:flex;align-items:center;gap:6px;padding:10px 12px;
+  border-bottom:1px solid var(--border);flex-shrink:0;
+}
+.history-search{
+  flex:1;background:var(--bg);border:1px solid var(--border);color:var(--on-bright);
+  font-family:var(--mono);font-size:var(--mono-xs);padding:6px 10px;outline:none;
+}
+.history-search:focus{border-color:var(--primary)}
+.history-search::placeholder{color:var(--on-muted)}
+.history-clear{
+  display:flex;align-items:center;justify-content:center;width:28px;height:28px;
+  background:transparent;border:1px solid var(--border);color:var(--on-muted);
+  cursor:pointer;transition:all .15s;flex-shrink:0;
+}
+.history-clear:hover{color:var(--error);border-color:var(--error)}
+.history-list{overflow-y:auto;flex:1;max-height:400px}
+.history-item{
+  display:flex;align-items:center;gap:10px;padding:8px 12px;
+  cursor:pointer;transition:background .1s;border-bottom:1px solid var(--border);
+}
+.history-item:last-child{border-bottom:none}
+.history-item:hover{background:var(--primary-glow)}
+.history-rank{
+  font-size:var(--mono-xs);color:var(--on-muted);width:24px;text-align:right;flex-shrink:0;
+  font-variant-numeric:tabular-nums;
+}
+.history-info{flex:1;min-width:0}
+.history-name{
+  font-size:var(--mono-sm);color:var(--on-bright);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;
+}
+.history-name mark{background:rgba(0,229,155,.2);color:var(--primary);border-radius:2px;padding:0 1px}
+.history-meta{font-size:11px;color:var(--on-muted);margin-top:1px}
+.history-count{
+  display:flex;align-items:center;gap:3px;font-size:var(--mono-xs);
+  color:var(--on-muted);flex-shrink:0;font-variant-numeric:tabular-nums;
+}
+.history-count.hot{color:var(--accent)}
+.history-count .flame{font-size:14px;line-height:1}
+.history-empty{padding:24px;text-align:center;color:var(--on-muted);font-size:var(--mono-xs)}
+.dd-flame{
+  display:inline-flex;align-items:center;gap:2px;
+  font-size:11px;color:var(--accent);margin-left:6px;flex-shrink:0;
+}
+.dd-flame .flame-icon{font-size:12px}
+</style>
+
+<script>
+// ── Search Index ──────────────────────────────────
+const CK_TABLES = {"ads_sales_profit_contribution_snap":{"l":"ADS","c":"销售利润贡献快照"},"crm_sys_office":{"l":"OTHER"},"dim_bd_custsale":{"l":"DIM","c":"客户销售档案"},"dim_bd_defdoc":{"l":"DIM","c":"基础档案"},"dim_bd_defdoclist":{"l":"DIM","c":"档案目录"},"dim_client":{"l":"DIM","c":"客户主数据"},"dim_client_dict":{"l":"DIM","c":"客户字典"},"dim_fact_row_price_snap":{"l":"DIM","c":"行价格快照"},"dim_formula_product_day_snap":{"l":"DIM","c":"配方产品日快照"},"dim_formula_product_snap":{"l":"DIM","c":"配方产品快照"},"dim_fx_client":{"l":"DIM","c":"帆软客户"},"dim_fx_organization":{"l":"DIM","c":"帆软组织"},"dim_fx_organization_dict":{"l":"DIM","c":"帆软组织字典"},"dim_material":{"l":"DIM","c":"物料主数据"},"dim_material_dict":{"l":"DIM","c":"物料字典"},"dim_material_rd45":{"l":"DIM","c":"RD45物料"},"dim_row_product_snap":{"l":"DIM","c":"行产品快照"},"dim_stordoc":{"l":"DIM","c":"仓库档案"},"dim_supplier":{"l":"DIM","c":"供应商主数据"},"dim_unit":{"l":"DIM","c":"计量单位"},"dim_unit_dict":{"l":"DIM","c":"单位字典"},"dwd_cust_rebate_actual_m":{"l":"DWD","c":"客户返利实际月表"},"dwd_fin_budget_detail":{"l":"DWD","c":"财务预算明细"},"dwd_fin_gross_profit":{"l":"DWD","c":"毛利配置"},"dwd_fin_profit_detail":{"l":"DWD","c":"财务利润明细"},"dwd_gl_balance":{"l":"DWD","c":"总账科目余额"},"dwd_ia_monthnab":{"l":"DWD","c":"库存月度结存"},"dwd_ia_monthnab_snap":{"l":"DWD","c":"库存月结快照"},"dwd_ic_flow":{"l":"DWD","c":"库存流水"},"dwd_po_order_detail_all":{"l":"DWD","c":"采购订单明细"},"dwd_so_cost":{"l":"DWD","c":"销售成本"},"dwd_so_priceform":{"l":"DWD","c":"销售价格表单"},"dwd_so_profit":{"l":"DWD","c":"销售利润"},"dwd_so_saleorder":{"l":"DWD","c":"销售订单明细"},"dws_cust_rebate_actual_m":{"l":"DWS","c":"客户返利月汇总"},"dws_formula_product_day":{"l":"DWS","c":"配方产品日汇总"},"dws_fr_cg_kcgzb":{"l":"DWS","c":"帆软采购库存跟踪"},"dws_ia_material_day_stock":{"l":"DWS","c":"物料日库存汇总"},"dws_product_subject_cost":{"l":"DWS","c":"产品科目成本"},"dws_sal_so_saleorder":{"l":"DWS","c":"销售订单汇总"},"dws_so_costsharing":{"l":"DWS","c":"销售成本分摊"},"ods_fx_client_forecast":{"l":"ODS","c":"帆软客户预测(贴源)"},"ods_ia_detailledger":{"l":"ODS","c":"库存明细账(贴源)"},"v_dim_client":{"l":"DIM","c":"客户维度视图"},"v_dwd_po_order_detail":{"l":"DWD","c":"采购订单明细视图"},"v_dwd_so_saleorder":{"l":"DWD","c":"销售订单综合视图"}};
+const CK_FIELDS = [{"f":"d_region_name","c":"所属区域名称","n":3},{"f":"d_corp_id","c":"公司ID","n":3},{"f":"d_corp_code","c":"公司编码","n":3},{"f":"d_corp_name","c":"公司名称","n":3},{"f":"d_client_id","c":"客户ID","n":3},{"f":"d_client_code","c":"客户编码","n":3},{"f":"d_client_name","c":"客户名称","n":3},{"f":"d_class_name2","c":"产品二级分类名称","n":3},{"f":"d_product_name","c":"产品名称","n":3},{"f":"d_measure_name","c":"计量单位","t":"ads_sales_profit_contribution_snap"},{"f":"d_formula_code","c":"配方编码","n":3},{"f":"f_sale_qty","c":"本月销量","n":2},{"f":"f_sale_amt","c":"本月实际销售金额","n":2},{"f":"f_rebate_amt","c":"本月返利金额","n":3},{"f":"f_cost_amt","c":"本月成本金额","t":"ads_sales_profit_contribution_snap"},{"f":"f_material_cost_ton","c":"单吨配方材料成本","n":3},{"f":"f_manufacture_cost_ton","c":"单吨制造费用","n":2},{"f":"f_package_cost_ton","c":"单吨包装袋费用","t":"dwd_so_profit"},{"f":"f_profit_ton","c":"单吨毛利","t":"dwd_so_profit"},{"f":"d_material_id","c":"物料主键","n":3},{"f":"d_material_code","c":"物料编码","n":3},{"f":"d_material_name","c":"物料名称","n":3},{"f":"d_supplier_id","c":"供应商主键","n":3},{"f":"d_supplier_code","c":"供应商编码","n":3},{"f":"d_supplier_name","c":"供应商名称","n":3},{"f":"f_qty","c":"期末结存数量","n":2},{"f":"f_price_mth","c":"全月平均单价","n":2},{"f":"bill_code","c":"单据编号","n":3},{"f":"f_inbound_qty","c":"入库数量","n":2},{"f":"f_outbound_qty","c":"出库数量","n":2}];
+const NC_TABLES = [{"t":"bd_material","d":"物料基本信息（多版本）(347次引用)","m":"★ 核心档案表"},{"t":"bd_marbasclass","d":"物料基本分类(203次引用)","m":"★ 核心档案表"},{"t":"bd_measdoc","d":"计量单位(197次引用)","m":"★ 核心档案表"},{"t":"bd_defdoc","d":"用工形式(自定义档案)(169次引用)","m":"★ 核心档案表"},{"t":"bd_billtype","d":"交易类型(103次引用)","m":"★ 核心档案表"},{"t":"org_dept","d":"HR部门(102次引用)","m":"★ 核心档案表"},{"t":"bd_customer","d":"客户基本信息(95次引用)","m":"★ 核心档案表"},{"t":"bd_bom","d":"物料清单(92次引用)","m":"★ 核心档案表"},{"t":"org_orgs_v","d":"组织_版本信息(92次引用)","m":"★ 核心档案表"},{"t":"bd_bom_b","d":"物料清单明细(92次引用)","m":"★ 核心档案表"},{"t":"bd_psndoc","d":"人员基本信息(86次引用)","m":"★ 核心档案表"},{"t":"org_orgs","d":"组织(73次引用)","m":"★ 核心档案表"},{"t":"org_stockorg","d":"组织_业务单元_库存组织(72次引用)","m":"★ 核心档案表"},{"t":"bd_supplier","d":"供应商基本信息(58次引用)","m":"★ 核心档案表"},{"t":"bd_custsale","d":"客户销售信息(52次引用)","m":"★ 核心档案表"},{"t":"bd_stordoc","d":"仓库(49次引用)","m":"★ 核心档案表"},{"t":"org_financeorg","d":"组织_业务单元_财务组织(39次引用)","m":"★ 核心档案表"},{"t":"bd_branddoc","d":"品牌档案(36次引用)","m":"★ 核心档案表"},{"t":"sm_user","d":"用户(35次引用)","m":"★ 核心档案表"},{"t":"bd_custclass","d":"客户基本分类(31次引用)","m":"★ 核心档案表"},{"t":"org_salesorg","d":"组织_业务单元_销售组织(30次引用)","m":"★ 核心档案表"},{"t":"so_saleorder","d":"销售订单主实体(18次引用)","m":"★ 核心档案表"},{"t":"ar_recbill","d":"客户应收单(16次引用)","m":"★ 核心档案表"},{"t":"ic_finprodin_h","d":"产成品入库单表头(15次引用)","m":"★ 核心档案表"},{"t":"po_order","d":"采购订单(10次引用)","m":"★ 核心档案表"},{"t":"po_order_b","d":"采购订单明细(10次引用)","m":"★ 核心档案表"},{"t":"ic_material_h","d":"材料出库单表头(14次引用)","m":"★ 核心档案表"},{"t":"ic_finprodin_b","d":"产成品入库单表体(14次引用)","m":"★ 核心档案表"},{"t":"gl_balance","d":"凭证余额","m":"gl 总账"},{"t":"gl_voucher","d":"凭证","m":"gl 总账"},{"t":"ia_generalnab","d":"存货总账","m":"ia 存货核算"},{"t":"ia_detailledger","d":"单据明细实体","m":"ia 存货核算"},{"t":"ia_monthnab","d":"存货总账月结存","m":"ia 存货核算"}];
+const NC_MODULES = [{"c":"★","n":"核心档案表","t":100},{"c":"uapbd","n":"基础数据","t":409},{"c":"hrhi","n":"人员信息","t":90},{"c":"riaorg","n":"组织管理","t":148},{"c":"baseapp","n":"baseapp","t":168},{"c":"ic","n":"库存管理","t":152},{"c":"arap","n":"应收应付","t":61},{"c":"hrjf","n":"组织机构管理","t":70},{"c":"sr","n":"返利管理","t":29},{"c":"hrrm","n":"招聘管理","t":55},{"c":"pu","n":"采购管理","t":49},{"c":"so","n":"销售管理","t":47},{"c":"gl","n":"总账","t":170},{"c":"ia","n":"存货核算","t":59},{"c":"hrwa","n":"薪酬管理","t":55},{"c":"cm","n":"成本管理","t":85},{"c":"mmpac","n":"生产任务管理公共","t":76}];
+const LAYER_LABEL = {ADS:'ADS 应用层',DIM:'DIM 维度层',DWD:'DWD 明细层',DWS:'DWS 汇总层',ODS:'ODS 贴源层',OTHER:'OTHER 其他'};
+const LAYER_COLOR = {ADS:'var(--primary)',DIM:'#7c6dd8',DWD:'var(--primary)',DWS:'#4da6c9',ODS:'#e5a000',OTHER:'var(--on-muted)'};
+
+let activeIdx = -1;
+let searchMode = 'table';
+
+function setSearchMode(mode) {
+  searchMode = mode;
+  document.getElementById('modeTable').classList.toggle('active', mode === 'table');
+  document.getElementById('modeField').classList.toggle('active', mode === 'field');
+  document.getElementById('globalSearch').placeholder = mode === 'table' ? '输入表名、模块名...' : '输入字段名或中文注释...';
+  closeDropdown();
+  document.getElementById('globalSearch').focus();
+}
+
+function searchCKTables(q) {
+  const r = [], ql = q.toLowerCase();
+  for (const [n, i] of Object.entries(CK_TABLES)) {
+    let s = -1; const nl = n.toLowerCase();
+    if (nl === ql) s = 0; else if (nl.startsWith(ql)) s = 1; else if (nl.includes(ql)) s = 2; else if (i.c && i.c.includes(q)) s = 3;
+    if (s >= 0) r.push({ name: n, layer: i.l, cn: i.c || '', score: s });
+  }
+  return r.sort((a, b) => a.score - b.score || a.name.length - b.name.length).slice(0, 6);
+}
+function searchCKFields(q) {
+  const r = [], ql = q.toLowerCase();
+  for (const e of CK_FIELDS) {
+    let s = -1; const fl = e.f.toLowerCase();
+    if (fl === ql) s = 0; else if (fl.startsWith(ql)) s = 1; else if (fl.includes(ql)) s = 2; else if (e.c && e.c.includes(q)) s = 3;
+    if (s >= 0) r.push({ ...e, score: s });
+  }
+  return r.sort((a, b) => a.score - b.score || a.f.length - b.f.length).slice(0, 5);
+}
+function searchNCTables(q) {
+  const r = [], ql = q.toLowerCase();
+  for (const e of NC_TABLES) {
+    let s = -1; const tl = e.t.toLowerCase();
+    if (tl === ql) s = 0; else if (tl.startsWith(ql)) s = 1; else if (tl.includes(ql)) s = 2; else if (e.d && e.d.includes(q)) s = 3;
+    if (s >= 0) r.push({ ...e, score: s });
+  }
+  return r.sort((a, b) => a.score - b.score || a.t.length - b.t.length).slice(0, 5);
+}
+function searchNCModules(q) {
+  const r = [], ql = q.toLowerCase();
+  for (const m of NC_MODULES) {
+    let s = -1; const cl = m.c.toLowerCase();
+    if (cl === ql) s = 0; else if (cl.startsWith(ql)) s = 1; else if (cl.includes(ql)) s = 2; else if (m.n.includes(q)) s = 3;
+    if (s >= 0) r.push({ ...m, score: s });
+  }
+  return r.sort((a, b) => a.score - b.score || b.t - a.t).slice(0, 4);
+}
+
+function highlightMatch(text, q) {
+  if (!q) return text;
+  const i = text.toLowerCase().indexOf(q.toLowerCase());
+  return i === -1 ? text : text.slice(0, i) + '<mark>' + text.slice(i, i + q.length) + '</mark>' + text.slice(i + q.length);
+}
+
+function renderDropdown(query) {
+  const dd = document.getElementById('searchDropdown');
+  if (!query || query.length < 1) { closeDropdown(); return; }
+  let html = '';
+  if (searchMode === 'table') {
+    const ck = searchCKTables(query), nc = searchNCTables(query), nm = searchNCModules(query);
+    if (ck.length) {
+      html += '<div class="dd-group"><div class="dd-group-title">ClickHouse 表</div>';
+      ck.forEach(r => {
+        const lc = LAYER_COLOR[r.layer] || 'var(--on-muted)', ll = LAYER_LABEL[r.layer] || r.layer;
+        const label = r.cn ? r.cn + ' · ' + r.name : r.name;
+        const flame = renderFlameBadge(r.name, 'ck');
+        html += '<div class="dd-item" onclick="goCK(\'' + r.name + '\')"><span class="dd-name">' + highlightMatch(label, query) + flame + '</span><span class="dd-tag" style="color:' + lc + ';border-color:' + lc + '">' + ll + '</span></div>';
+      });
+      html += '</div>';
+    }
+    if (nc.length) {
+      html += '<div class="dd-group"><div class="dd-group-title">NC65 表</div>';
+      nc.forEach(r => {
+        const desc = r.d ? r.d.replace(/\s*\(\d+次引用\)/, '') : '';
+        const flame = renderFlameBadge(r.t, 'nc_table');
+        html += '<div class="dd-item" onclick="goNCTable(\'' + r.t + '\')"><span class="dd-name"><span class="dd-field">' + highlightMatch(r.t, query) + '</span> <span class="dd-comment">' + desc + '</span>' + flame + '</span><span class="dd-tag" style="color:var(--accent);border-color:var(--accent)">' + r.m + '</span></div>';
+      });
+      html += '</div>';
+    }
+    if (nm.length) {
+      html += '<div class="dd-group"><div class="dd-group-title">NC65 模块</div>';
+      nm.forEach(r => {
+        const flame = renderFlameBadge(r.c, 'nc_module');
+        html += '<div class="dd-item" onclick="goNC(\'' + r.c + '\')"><span class="dd-name">' + (r.c === '★' ? '★ ' : '') + highlightMatch(r.n, query) + ' <span class="dd-code">' + r.c + '</span>' + flame + '</span><span class="dd-tag" style="color:var(--accent);border-color:var(--accent)">' + r.t + ' 张表</span></div>';
+      });
+      html += '</div>';
+    }
+  } else {
+    const ck = searchCKFields(query);
+    if (ck.length) {
+      html += '<div class="dd-group"><div class="dd-group-title">ClickHouse 字段</div>';
+      ck.forEach(r => {
+        const info = r.n ? '出现在 ' + r.n + ' 张表' : (r.t || '');
+        html += '<div class="dd-item" onclick="goCK(\'' + (r.t || r.f) + '\')"><span class="dd-name"><span class="dd-field">' + highlightMatch(r.f, query) + '</span> <span class="dd-comment">' + (r.c || '') + '</span></span><span class="dd-tag" style="color:var(--on-muted);border-color:var(--border-bright)">' + info + '</span></div>';
+      });
+      html += '</div>';
+    }
+  }
+  if (!html) { closeDropdown(); return; }
+  dd.innerHTML = html; dd.classList.add('open'); activeIdx = -1;
+}
+
+function closeDropdown() {
+  const dd = document.getElementById('searchDropdown');
+  dd.classList.remove('open'); dd.innerHTML = ''; activeIdx = -1;
+}
+function navigateItem(dir) {
+  const items = document.querySelectorAll('#searchDropdown .dd-item');
+  if (!items.length) return;
+  items.forEach(i => i.classList.remove('active'));
+  activeIdx = (activeIdx + dir + items.length) % items.length;
+  items[activeIdx].classList.add('active');
+  items[activeIdx].scrollIntoView({ block: 'nearest' });
+}
+
+// ── Navigation ────────────────────────────────────
+function goCK(name) {
+  recordQuery(name, 'ck', 'ClickHouse');
+  window.location.href = 'ClickHouse/数据字典查询.html?q=' + encodeURIComponent(name);
+}
+function goNC(code) {
+  recordQuery(code, 'nc_module', 'NC65模块');
+  window.location.href = 'NC65/nc字典查询.html?module=' + encodeURIComponent(code);
+}
+function goNCTable(name) {
+  const info = NC_TABLES.find(t => t.t === name);
+  recordQuery(name, 'nc_table', info ? info.m : 'NC65');
+  window.location.href = 'NC65/nc字典查询.html?q=' + encodeURIComponent(name);
+}
+
+// ── Query History (localStorage) ──────────────────
+const HISTORY_KEY = 'sema_query_history';
+const HISTORY_MAX = 100;
+const HOT_THRESHOLD = 10;
+
+function loadHistory() {
+  try { return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; }
+  catch { return []; }
+}
+function saveHistory(list) {
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(list.slice(0, HISTORY_MAX)));
+}
+function recordQuery(name, type, meta) {
+  const list = loadHistory();
+  const existing = list.find(h => h.name === name && h.type === type);
+  if (existing) {
+    existing.count++;
+    existing.lastTime = Date.now();
+  } else {
+    list.unshift({ name, type, meta: meta || '', count: 1, lastTime: Date.now() });
+  }
+  list.sort((a, b) => b.count - a.count || b.lastTime - a.lastTime);
+  saveHistory(list);
+}
+function getHotCount(name, type) {
+  const list = loadHistory();
+  const h = list.find(item => item.name === name && item.type === type);
+  return h ? h.count : 0;
+}
+function renderFlameBadge(name, type) {
+  const count = getHotCount(name, type);
+  if (count < HOT_THRESHOLD) return '';
+  return '<span class="dd-flame"><span class="flame-icon">&#128293;</span>' + count + '</span>';
+}
+
+// ── History Dropdown ──────────────────────────────
+function toggleHistory() {
+  const dd = document.getElementById('historyDropdown');
+  const btn = document.getElementById('historyBtn');
+  const isOpen = dd.classList.contains('open');
+  closeDropdown();
+  if (isOpen) {
+    dd.classList.remove('open'); btn.classList.remove('active');
+  } else {
+    dd.classList.add('open'); btn.classList.add('active');
+    document.getElementById('historySearch').value = '';
+    document.getElementById('historySearch').focus();
+    renderHistory();
+  }
+}
+function renderHistory() {
+  const list = document.getElementById('historyList');
+  const query = (document.getElementById('historySearch').value || '').toLowerCase().trim();
+  let items = loadHistory();
+  if (query) {
+    items = items.filter(h =>
+      h.name.toLowerCase().includes(query) ||
+      (h.meta && h.meta.toLowerCase().includes(query)) ||
+      h.type.toLowerCase().includes(query)
+    );
+  }
+  if (!items.length) {
+    list.innerHTML = '<div class="history-empty">' + (query ? '没有匹配的记录' : '暂无查询记录') + '</div>';
+    return;
+  }
+  let html = '';
+  items.forEach((h, i) => {
+    const isHot = h.count >= HOT_THRESHOLD;
+    const timeStr = formatTime(h.lastTime);
+    const nameHtml = query ? highlightMatch(h.name, query) : h.name;
+    const metaHtml = h.meta ? (query ? highlightMatch(h.meta, query) : h.meta) : h.type;
+    html += '<div class="history-item" onclick="jumpHistory(\'' + h.type + '\',\'' + h.name.replace(/'/g, "\\'") + '\')">' +
+      '<span class="history-rank">' + (i + 1) + '</span>' +
+      '<div class="history-info"><div class="history-name">' + nameHtml + '</div>' +
+      '<div class="history-meta">' + metaHtml + ' · ' + timeStr + '</div></div>' +
+      '<span class="history-count' + (isHot ? ' hot' : '') + '">' +
+      (isHot ? '<span class="flame">&#128293;</span>' : '') + h.count + '次</span></div>';
+  });
+  list.innerHTML = html;
+}
+function formatTime(ts) {
+  const d = new Date(ts), now = new Date(), diff = now - d;
+  if (diff < 60000) return '刚刚';
+  if (diff < 3600000) return Math.floor(diff / 60000) + '分钟前';
+  if (diff < 86400000) return Math.floor(diff / 3600000) + '小时前';
+  if (diff < 604800000) return Math.floor(diff / 86400000) + '天前';
+  return d.toLocaleDateString('zh-CN', { month: 'short', day: 'numeric' });
+}
+function jumpHistory(type, name) {
+  if (type === 'ck') goCK(name);
+  else if (type === 'nc_table') goNCTable(name);
+  else if (type === 'nc_module') goNC(name);
+}
+function clearHistory() {
+  if (!confirm('确定清空所有查询记录？')) return;
+  localStorage.removeItem(HISTORY_KEY);
+  renderHistory();
+}
+
+// ── Event Listeners ───────────────────────────────
+const searchInput = document.getElementById('globalSearch');
+searchInput.addEventListener('input', function() { renderDropdown(this.value.trim()); });
+searchInput.addEventListener('keydown', function(e) {
+  if (e.key === 'ArrowDown') { e.preventDefault(); navigateItem(1); }
+  else if (e.key === 'ArrowUp') { e.preventDefault(); navigateItem(-1); }
+  else if (e.key === 'Escape') { closeDropdown(); }
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.search-input-wrap') && !e.target.closest('.search-dropdown')) closeDropdown();
+  if (!e.target.closest('.history-btn') && !e.target.closest('.history-dropdown')) {
+    const hdd = document.getElementById('historyDropdown');
+    const hbtn = document.getElementById('historyBtn');
+    if (hdd) hdd.classList.remove('open');
+    if (hbtn) hbtn.classList.remove('active');
+  }
+});
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); searchInput.focus(); }
+});
+</script>
 
 </body>
 </html>

@@ -40259,6 +40259,35 @@
                 });
             }, 150);
         });
+
+        // Read URL params from index page search
+        (function() {
+            const params = new URLSearchParams(window.location.search);
+            const q = params.get('q');
+            const module = params.get('module');
+            if (q) {
+                searchInput.value = q;
+                searchInput.dispatchEvent(new Event('input'));
+                setTimeout(() => {
+                    const first = document.querySelector('.table-item:not(.hidden)');
+                    if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 300);
+            } else if (module) {
+                const links = document.querySelectorAll('.module-list a');
+                for (const link of links) {
+                    const text = link.textContent.toLowerCase();
+                    if (text.includes(module.toLowerCase())) {
+                        link.click();
+                        const href = link.getAttribute('href');
+                        if (href && href.startsWith('#')) {
+                            const target = document.getElementById(href.slice(1));
+                            if (target) target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                        break;
+                    }
+                }
+            }
+        })();
     </script>
 </body>
 </html>

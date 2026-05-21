@@ -56,8 +56,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 .fields-table tr:hover td{background:#f8f9fa}
 .fields-table tr.field-highlight td{background:#fff9e6}
 .field-name{font-family:"SF Mono",Monaco,monospace;font-weight:500;color:#21295C}
+.field-name.copyable{cursor:pointer;transition:background .15s;border-radius:3px;padding:1px 4px;margin:-1px -4px}
+.field-name.copyable:hover{background:#e3f2fd}
 .field-type{color:#636e72;font-size:12px}
+.field-type.copyable{cursor:pointer;transition:background .15s;border-radius:3px;padding:1px 4px;margin:-1px -4px}
+.field-type.copyable:hover{background:#e3f2fd}
 .field-comment{color:#2d3436}
+.field-comment.copyable{cursor:pointer;transition:background .15s;border-radius:3px;padding:1px 4px;margin:-1px -4px}
+.field-comment.copyable:hover{background:#e3f2fd}
+.copied-toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#21295C;color:#fff;padding:6px 16px;border-radius:6px;font-size:12px;z-index:999;opacity:0;transition:opacity .2s}
+.copied-toast.show{opacity:1}
+.export-inline{font-size:13px;color:#b2bec3;cursor:pointer;padding:2px 4px;border-radius:4px;transition:all .15s;margin-left:4px}
+.export-inline:hover{color:#065A82;background:rgba(6,90,130,.1)}
+.tab-actions{display:flex;gap:8px;margin-left:auto;align-items:center}
 .highlight{background:#ffeaa7;padding:1px 2px;border-radius:2px}
 .no-results{text-align:center;padding:60px 20px;color:#b2bec3}
 .no-results h3{font-size:18px;margin-bottom:8px}
@@ -86,6 +97,85 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 .sql-func{color:#dcdcaa}
 .sql-table{color:#9cdcfe}
 .sql-alias{color:#4fc1ff}
+
+/* DDL Generator Modal */
+.ddl-modal{background:#fff;border-radius:12px;width:90%;max-width:700px;max-height:85vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.ddl-form{padding:20px 24px;overflow-y:auto;flex:1}
+.ddl-row{display:flex;gap:12px;margin-bottom:14px;align-items:flex-end}
+.ddl-row label{font-size:12px;color:#636e72;margin-bottom:4px;display:block}
+.ddl-row .field{flex:1}
+.ddl-row input,.ddl-row select{width:100%;padding:8px 12px;border:1px solid #dfe6e9;border-radius:6px;font-size:13px;font-family:inherit;outline:none;transition:border-color .2s}
+.ddl-row input:focus,.ddl-row select:focus{border-color:#065A82}
+.ddl-row textarea{width:100%;padding:8px 12px;border:1px solid #dfe6e9;border-radius:6px;font-size:13px;font-family:"SF Mono",Monaco,monospace;outline:none;resize:vertical;min-height:32px;transition:border-color .2s}
+.ddl-row textarea:focus{border-color:#065A82}
+.ddl-radio-group{display:flex;gap:0;border:1px solid #dfe6e9;border-radius:6px;overflow:hidden;flex:1}
+.ddl-radio-group label{flex:1;text-align:center;padding:8px 12px;font-size:13px;cursor:pointer;background:#fff;border-right:1px solid #dfe6e9;transition:all .15s;margin:0}
+.ddl-radio-group label:last-child{border-right:none}
+.ddl-radio-group input[type=radio]{display:none}
+.ddl-radio-group input[type=radio]:checked+label{background:#065A82;color:#fff;font-weight:600}
+.ddl-type-chips{display:flex;gap:6px;flex-wrap:wrap}
+.ddl-type-chip{padding:5px 12px;border:1px solid #dfe6e9;border-radius:16px;font-size:12px;cursor:pointer;background:#fff;transition:all .15s}
+.ddl-type-chip:hover{border-color:#065A82}
+.ddl-type-chip.active{background:#065A82;color:#fff;border-color:#065A82}
+.ddl-type-custom{margin-top:6px}
+.ddl-type-custom input{padding:6px 10px;border:1px solid #dfe6e9;border-radius:6px;font-size:12px;font-family:"SF Mono",Monaco,monospace;width:100%;outline:none}
+.ddl-type-custom input:focus{border-color:#065A82}
+.ddl-gen-btn{display:block;width:100%;padding:10px;background:#065A82;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s;margin-top:8px}
+.ddl-gen-btn:hover{background:#044a6a}
+.ddl-modal .ddl-form{padding-bottom:0}
+.ddl-modal .ddl-footer{padding:12px 24px;border-top:1px solid #eee;background:#f8f9fa;flex-shrink:0}
+.ddl-modal .ddl-footer .ddl-gen-btn{margin:0}
+.ddl-output{background:#1e1e1e;border-radius:8px;padding:16px 20px;margin-top:12px;font-family:"SF Mono",Monaco,monospace;font-size:13px;line-height:1.6;color:#d4d4d4;white-space:pre-wrap;word-break:break-all;position:relative;min-height:60px}
+.ddl-output .copy-btn{position:absolute;top:8px;right:8px;padding:4px 10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:4px;color:#fff;font-size:11px;cursor:pointer;transition:all .15s}
+.ddl-output .copy-btn:hover{background:rgba(255,255,255,.2)}
+.ddl-placeholder{color:#636e72;font-style:italic}
+.ddl-update-note{background:#fff9e6;border:1px solid #ffeaa7;border-radius:6px;padding:8px 12px;font-size:12px;color:#856404;margin-top:10px;line-height:1.5}
+
+/* DDL Autocomplete */
+.ddl-ac-wrap{position:relative}
+.ddl-ac{display:none;position:absolute;top:100%;left:0;right:0;max-height:260px;overflow-y:auto;background:#fff;border:1px solid #dfe6e9;border-top:none;border-radius:0 0 6px 6px;box-shadow:0 4px 12px rgba(0,0,0,.1);z-index:10}
+.ddl-ac.open{display:block}
+.ddl-ac-item{padding:7px 12px;cursor:pointer;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f5f5f5;transition:background .1s}
+.ddl-ac-item:hover,.ddl-ac-item.active{background:#e8f4fd}
+.ddl-ac-item .ac-name{font-family:"SF Mono",Monaco,monospace;font-weight:600;color:#21295C;font-size:12px;flex:1}
+.ddl-ac-item .ac-type{color:#636e72;font-size:11px;font-family:"SF Mono",Monaco,monospace;flex-shrink:0}
+.ddl-ac-item .ac-table{color:#b2bec3;font-size:10px;flex-shrink:0}
+.ddl-ac-item .ac-comment{color:#636e72;font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:120px}
+.ddl-ac-warn{padding:6px 12px;color:#d63031;font-size:12px;background:#fff5f5;border-bottom:1px solid #ffe0e0}
+.ddl-ac-empty{padding:6px 12px;color:#b2bec3;font-size:12px;font-style:italic}
+mark.ac-hl{background:#ffeaa7;padding:0 1px;border-radius:2px}
+
+/* DDL SQL Builder */
+.ddl-builder{border:1px solid #dfe6e9;border-radius:8px;padding:14px 16px;margin-top:10px;background:#f8f9fa}
+.ddl-builder-title{font-size:13px;font-weight:600;color:#2d3436;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.ddl-builder-title .builder-icon{font-size:16px}
+.ddl-join-row{display:flex;gap:8px;margin-bottom:8px;align-items:flex-end}
+.ddl-join-row .field{flex:1}
+.ddl-join-row label{font-size:11px;color:#636e72;margin-bottom:2px;display:block}
+.ddl-join-row input,.ddl-join-row select{width:100%;padding:6px 10px;border:1px solid #dfe6e9;border-radius:5px;font-size:12px;outline:none;background:#fff;font-family:"SF Mono",Monaco,monospace}
+.ddl-join-row select option{font-family:"SF Mono",Monaco,monospace}
+.ddl-join-row input:focus,.ddl-join-row select:focus{border-color:#065A82}
+.ddl-join-add{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border:1px dashed #b2bec3;border-radius:4px;background:#fff;color:#636e72;font-size:11px;cursor:pointer;transition:all .15s;margin-bottom:8px}
+.ddl-join-add:hover{border-color:#065A82;color:#065A82}
+.ddl-join-del{padding:4px 8px;border:1px solid #eee;border-radius:4px;background:#fff;color:#d63031;font-size:11px;cursor:pointer;flex-shrink:0}
+.ddl-join-del:hover{background:#ffe0e0}
+.src-tbl-dd{display:none;position:absolute;top:100%;left:0;right:0;z-index:10;background:#fff;border:1px solid #dfe6e9;border-top:none;border-radius:0 0 6px 6px;max-height:200px;overflow-y:auto;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.src-tbl-dd.open{display:block}
+.src-tbl-dd-item{padding:7px 10px;cursor:pointer;font-size:12px;font-family:"SF Mono",Monaco,monospace;border-bottom:1px solid #f5f5f5;display:flex;gap:8px;align-items:center}
+.src-tbl-dd-item:hover{background:#e8f4fd}
+.src-tbl-dd-item .dd-name{font-weight:600;color:#21295C}
+.src-tbl-dd-item .dd-label{color:#636e72;font-size:11px}
+.src-tbl-dd-empty{padding:10px;color:#b2bec3;font-size:12px;text-align:center}
+.ddl-join-item,.ddl-sel-field-item{background:#fff;border:1px solid #eee;border-radius:6px;padding:10px;margin-bottom:8px}
+.ddl-join-table-item{background:#f8f9fa;border:1px solid #dfe6e9;border-radius:8px;padding:12px;margin-bottom:10px;position:relative}
+.ddl-join-table-item .jt-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.ddl-join-table-item .jt-title{font-size:13px;font-weight:600;color:#21295C}
+.ddl-join-table-item .jt-del{padding:4px 10px;border:1px solid #eee;border-radius:4px;background:#fff;color:#d63031;font-size:11px;cursor:pointer}
+.ddl-join-table-item .jt-del:hover{background:#ffe0e0}
+.ddl-join-item-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-size:11px;color:#636e72}
+.ddl-builder-sql{background:#1e1e1e;border-radius:6px;padding:12px 16px;margin-top:10px;font-family:"SF Mono",Monaco,monospace;font-size:12px;line-height:1.5;color:#d4d4d4;white-space:pre-wrap;word-break:break-all;position:relative}
+.ddl-builder-sql .copy-btn{position:absolute;top:6px;right:6px;padding:3px 8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:4px;color:#fff;font-size:10px;cursor:pointer;transition:all .15s}
+.ddl-builder-sql .copy-btn:hover{background:rgba(255,255,255,.2)}
 
 /* Workflow tab */
 .wf-card{background:#fff;border-radius:12px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.06);overflow:hidden}
@@ -195,6 +285,150 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
   </div>
 </div>
 
+<!-- DDL Generator Modal -->
+<div class="modal-overlay" id="ddlModal">
+  <div class="ddl-modal">
+    <div class="modal-header">
+      <h3 id="ddlTitle">DDL 语句生成器</h3>
+      <button class="modal-close" onclick="closeDdlModal()">&times;</button>
+    </div>
+    <div class="ddl-form">
+      <input type="hidden" id="ddlTableName">
+
+      <div class="ddl-row">
+        <label>操作类型</label>
+        <div class="ddl-radio-group">
+          <input type="radio" name="ddlOp" id="ddlOpAdd" value="add" checked><label for="ddlOpAdd">新增字段</label>
+          <input type="radio" name="ddlOp" id="ddlOpJoin" value="join"><label for="ddlOpJoin">JOIN取数</label>
+          <input type="radio" name="ddlOp" id="ddlOpModify" value="modify"><label for="ddlOpModify">修改字段</label>
+          <input type="radio" name="ddlOp" id="ddlOpDelete" value="delete"><label for="ddlOpDelete">删除字段</label>
+        </div>
+      </div>
+
+      <div class="ddl-row">
+        <div class="field ddl-ac-wrap">
+          <label>字段名称（输入后可 Tab 补全其他表已有字段，已存在字段会提示）</label>
+          <input type="text" id="ddlColName" placeholder="输入字段名，Tab 补全其他表已有字段" autocomplete="off">
+          <div class="ddl-ac" id="ddlAc"></div>
+        </div>
+      </div>
+
+      <div class="ddl-row" id="ddlExistsWarn" style="display:none">
+        <div class="field">
+          <div style="padding:6px 12px;background:#fff5f5;border:1px solid #ffcccc;border-radius:6px;color:#d63031;font-size:12px">
+            ⚠ 该字段在当前表中已存在，请修改字段名称
+          </div>
+        </div>
+      </div>
+
+      <div class="ddl-row" id="ddlTypeRow">
+        <div class="field">
+          <label>数据类型</label>
+          <div class="ddl-type-chips">
+            <span class="ddl-type-chip active" onclick="selectDdlType(this,'String')">String</span>
+            <span class="ddl-type-chip" onclick="selectDdlType(this,'Decimal(18, 6)')">Decimal(18, 6)</span>
+            <span class="ddl-type-chip" onclick="selectDdlType(this,'FixedString(20)')">FixedString(20)</span>
+            <span class="ddl-type-chip" onclick="selectDdlType(this,'Int64')">Int64</span>
+            <span class="ddl-type-chip" onclick="selectDdlType(this,'Date')">Date</span>
+            <span class="ddl-type-chip" onclick="selectDdlType(this,'DateTime')">DateTime</span>
+          </div>
+          <div class="ddl-type-custom" style="margin-top:6px">
+            <input type="text" id="ddlColType" value="String" placeholder="自定义类型，如 Nullable(String), Array(String)">
+          </div>
+        </div>
+      </div>
+
+      <div class="ddl-row" id="ddlPosRow">
+        <div class="field">
+          <label>位置（可选）</label>
+          <select id="ddlPosition" onchange="toggleDdlAfter()">
+            <option value="last">最后一个（默认）</option>
+            <option value="first">第一个</option>
+            <option value="after">指定字段之后</option>
+          </select>
+        </div>
+        <div class="field" id="ddlAfterField" style="display:none">
+          <label>在哪个字段之后</label>
+          <input type="text" id="ddlAfterName" placeholder="字段名，如 d_corp_id">
+        </div>
+      </div>
+
+      <div class="ddl-row" id="ddlCommentRow">
+        <div class="field">
+          <label>注释（可选）</label>
+          <input type="text" id="ddlComment" placeholder="字段中文注释">
+        </div>
+      </div>
+
+      <div class="ddl-row" id="ddlDefaultRow">
+        <div class="field">
+          <label>默认值（可选，新增字段时）</label>
+          <input type="text" id="ddlDefault" placeholder="如 '' 或 0 或 now()">
+        </div>
+      </div>
+
+      <div class="ddl-row" id="ddlMatRow">
+        <div class="field" style="flex:0 0 auto">
+          <label>&nbsp;</label>
+          <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;color:#2d3436">
+            <input type="checkbox" id="ddlIsMaterialized" onchange="toggleDdlMat()"> 物化字段 (MATERIALIZED)
+          </label>
+        </div>
+        <div class="field" id="ddlMatExprField" style="display:none">
+          <label>物化表达式</label>
+          <input type="text" id="ddlMatExpr" placeholder="如 dictGet('db.table', 'field', key)">
+        </div>
+      </div>
+
+      <div class="ddl-row" id="ddlUpdateRow" style="display:none">
+        <div class="field">
+          <label>UPDATE 语句（新增字段需要回刷历史数据时）</label>
+          <div style="display:flex;gap:8px;align-items:center">
+            <input type="text" id="ddlUpdateExpr" placeholder="如 column1 = '' , column2 = 0" style="flex:1">
+            <span style="color:#636e72;font-size:12px;white-space:nowrap">WHERE</span>
+            <input type="text" id="ddlUpdateWhere" placeholder="1=1 and col = ''" style="flex:1">
+          </div>
+        </div>
+      </div>
+
+      <div class="ddl-builder" id="ddlBuilder" style="display:none">
+        <div class="ddl-builder-title"><span class="builder-icon">🔗</span> JOIN 取数构建器</div>
+        <div class="ddl-join-row">
+          <div class="field">
+            <label>主表（当前表）</label>
+            <input type="text" id="ddlJoinMainTable" placeholder="当前表名自动填入">
+          </div>
+          <div class="field">
+            <label>主表别名</label>
+            <input type="text" id="ddlJoinMainAlias" value="a" placeholder="如 a">
+          </div>
+        </div>
+
+        <div id="ddlJoinTables"></div>
+        <button class="ddl-join-add" onclick="addJoinTable()" style="margin:8px 0">+ 添加关联表</button>
+
+        <div style="margin-top:8px">
+          <button class="ddl-gen-btn" onclick="generateJoinSQL()" style="background:#6c5ce7">预览取数 SQL</button>
+        </div>
+        <div class="ddl-builder-sql" id="ddlBuilderSql" style="display:none">
+          <button class="copy-btn" onclick="copyBuilderSql()">复制</button>
+          <pre id="ddlBuilderCode"></pre>
+        </div>
+      </div>
+
+      <div class="ddl-output" id="ddlOutput">
+        <span class="ddl-placeholder">点击「生成 SQL」后在此显示结果</span>
+      </div>
+      <div id="ddlConfirmRow" style="display:none;margin-top:10px;text-align:center">
+        <button class="ddl-gen-btn" onclick="confirmExecute()" style="background:#00b894;max-width:300px;margin:0 auto">已确认在远程执行</button>
+      </div>
+    </div>
+    <div class="ddl-footer">
+      <button class="ddl-gen-btn" onclick="generateDDL()">生成 SQL</button>
+    </div>
+  </div>
+</div>
+
 <!-- Graph Overlay -->
 <div class="graph-overlay" id="graphOverlay">
   <div class="graph-container">
@@ -257,6 +491,52 @@ function highlightSQL(sql) {
   return s;
 }
 
+// ========== Copy field ==========
+function copyField(td) {
+  const text = td.textContent.trim();
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text);
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  }
+  showToast('已复制: ' + text);
+}
+function showToast(msg) {
+  let toast = document.getElementById('copiedToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'copiedToast';
+    toast.className = 'copied-toast';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = msg;
+  toast.classList.add('show');
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => toast.classList.remove('show'), 1200);
+}
+
+// ========== Export single table CSV ==========
+function exportCKTable(name) {
+  const t = DATA[name];
+  if (!t) return;
+  const rows = [['字段名', '数据类型', '注释']];
+  t.fields.forEach(f => rows.push([f.name, f.type, f.comment]));
+  const csv = rows.map(r => r.map(v => '"' + String(v).replace(/"/g, '""') + '"').join(',')).join('\n');
+  const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = name + '.csv';
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('已导出: ' + name + '.csv');
+}
+
 // ========== SQL Modal ==========
 function openSqlModal(title, sql) {
   document.getElementById('modalTitle').textContent = title;
@@ -276,6 +556,786 @@ document.getElementById('sqlModal').addEventListener('click', function(e) {
   if (e.target === this) closeSqlModal();
 });
 
+// ========== DDL Generator ==========
+// Build cross-table field index: fieldName -> [{table, type, comment, layer}]
+const FIELD_INDEX = {};
+Object.entries(DATA).forEach(([tbl, info]) => {
+  (info.fields || []).forEach(f => {
+    if (!FIELD_INDEX[f.name]) FIELD_INDEX[f.name] = [];
+    FIELD_INDEX[f.name].push({ table: tbl, type: f.type, comment: f.comment, layer: info.layer });
+  });
+});
+
+let acIndex = -1; // autocomplete active index
+let acItems = []; // current autocomplete results
+
+function openDdlModal(tableName, op) {
+  document.getElementById('ddlTableName').value = tableName;
+  document.getElementById('ddlTitle').textContent = 'DDL 生成器: ' + tableName;
+  document.getElementById('ddlOpAdd').checked = (op === 'add');
+  document.getElementById('ddlOpJoin').checked = (op === 'join');
+  document.getElementById('ddlOpModify').checked = (op === 'modify');
+  document.getElementById('ddlOpDelete').checked = (op === 'delete');
+  document.getElementById('ddlColName').value = '';
+  document.getElementById('ddlColType').value = 'String';
+  document.getElementById('ddlComment').value = '';
+  document.getElementById('ddlDefault').value = '';
+  document.getElementById('ddlPosition').value = 'last';
+  document.getElementById('ddlAfterName').value = '';
+  document.getElementById('ddlIsMaterialized').checked = false;
+  document.getElementById('ddlMatExpr').value = '';
+  document.getElementById('ddlUpdateExpr').value = '';
+  document.getElementById('ddlUpdateWhere').value = '';
+  document.querySelectorAll('.ddl-type-chip').forEach(c => c.classList.remove('active'));
+  document.querySelector('.ddl-type-chip').classList.add('active');
+  toggleDdlAfter();
+  toggleDdlMat();
+  toggleDdlOpFields();
+  // Reset autocomplete
+  document.getElementById('ddlAc').classList.remove('open');
+  document.getElementById('ddlAc').innerHTML = '';
+  document.getElementById('ddlExistsWarn').style.display = 'none';
+  // Reset builder
+  document.getElementById('ddlBuilderSql').style.display = 'none';
+  document.getElementById('ddlJoinMainTable').value = tableName;
+  document.getElementById('ddlJoinMainAlias').value = 'a';
+  jtIdx = 0;
+  document.getElementById('ddlJoinTables').innerHTML = '';
+  addJoinTable();
+  document.getElementById('ddlOutput').innerHTML = '<span class="ddl-placeholder">点击「生成 SQL」后在此显示结果</span>';
+  document.getElementById('ddlConfirmRow').style.display = 'none';
+  document.getElementById('ddlModal').classList.add('show');
+}
+function closeDdlModal() {
+  document.getElementById('ddlModal').classList.remove('show');
+  document.getElementById('ddlAc').classList.remove('open');
+}
+document.getElementById('ddlModal').addEventListener('click', function(e) {
+  if (e.target === this) closeDdlModal();
+});
+function selectDdlType(chip, type) {
+  document.querySelectorAll('.ddl-type-chip').forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  document.getElementById('ddlColType').value = type;
+}
+function toggleDdlAfter() {
+  document.getElementById('ddlAfterField').style.display =
+    document.getElementById('ddlPosition').value === 'after' ? '' : 'none';
+}
+function toggleDdlMat() {
+  document.getElementById('ddlMatExprField').style.display =
+    document.getElementById('ddlIsMaterialized').checked ? '' : 'none';
+}
+function toggleDdlOpFields() {
+  const op = document.querySelector('input[name="ddlOp"]:checked').value;
+  const isAdd = op === 'add';
+  const isJoin = op === 'join';
+  const isDelete = op === 'delete';
+  document.getElementById('ddlTypeRow').style.display = (isDelete || isJoin) ? 'none' : '';
+  document.getElementById('ddlPosRow').style.display = (isDelete || isJoin) ? 'none' : '';
+  document.getElementById('ddlCommentRow').style.display = (isDelete || isJoin) ? 'none' : '';
+  document.getElementById('ddlDefaultRow').style.display = isAdd ? '' : 'none';
+  document.getElementById('ddlMatRow').style.display = isAdd ? '' : 'none';
+  document.getElementById('ddlUpdateRow').style.display = isAdd ? '' : 'none';
+  document.getElementById('ddlBuilder').style.display = isJoin ? '' : 'none';
+}
+document.querySelectorAll('input[name="ddlOp"]').forEach(r => r.addEventListener('change', toggleDdlOpFields));
+
+// ========== Autocomplete ==========
+function escapeHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function renderAcDropdown(query) {
+  const ddlAc = document.getElementById('ddlAc');
+  const tableName = document.getElementById('ddlTableName').value;
+  const currentFields = DATA[tableName] ? DATA[tableName].fields.map(f => f.name) : [];
+  if (!query || query.length < 2) { ddlAc.classList.remove('open'); return; }
+  const q = query.toLowerCase();
+  acItems = [];
+  // Check if field already exists in current table
+  const existsInCurrent = currentFields.some(f => f.toLowerCase() === q);
+  Object.entries(FIELD_INDEX).forEach(([fieldName, entries]) => {
+    if (fieldName.toLowerCase().includes(q)) {
+      entries.forEach(e => {
+        if (e.table !== tableName) {
+          acItems.push({ fieldName, table: e.table, type: e.type, comment: e.comment, layer: e.layer });
+        }
+      });
+    }
+  });
+  acItems.sort((a, b) => {
+    const aExact = a.fieldName.toLowerCase().startsWith(q) ? 0 : 1;
+    const bExact = b.fieldName.toLowerCase().startsWith(q) ? 0 : 1;
+    return aExact - bExact || a.fieldName.localeCompare(b.fieldName);
+  });
+  acItems = acItems.slice(0, 30); // limit
+  let html = '';
+  if (existsInCurrent) {
+    html += '<div class="ddl-ac-warn">⚠ 该字段在当前表 <b>' + tableName + '</b> 中已存在</div>';
+    document.getElementById('ddlExistsWarn').style.display = '';
+  } else {
+    document.getElementById('ddlExistsWarn').style.display = 'none';
+  }
+  if (acItems.length === 0) {
+    html += '<div class="ddl-ac-empty">未在其他表中找到匹配字段</div>';
+  } else {
+    acItems.forEach((item, i) => {
+      const nameHL = item.fieldName.replace(new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\') + ')', 'gi'), '<mark class="ac-hl">$1</mark>');
+      html += '<div class="ddl-ac-item' + (i === acIndex ? ' active' : '') + '" data-idx="' + i + '">' +
+        '<span class="ac-name">' + nameHL + '</span>' +
+        '<span class="ac-type">' + item.type + '</span>' +
+        '<span class="ac-table">' + item.layer + '.' + item.table + '</span>' +
+        '<span class="ac-comment">' + escapeHtml(item.comment || '') + '</span>' +
+      '</div>';
+    });
+  }
+  ddlAc.innerHTML = html;
+  ddlAc.classList.add('open');
+  acIndex = -1;
+  // Bind click on items
+  ddlAc.querySelectorAll('.ddl-ac-item').forEach(el => {
+    el.addEventListener('mousedown', function(e) {
+      e.preventDefault();
+      selectAcItem(parseInt(this.dataset.idx));
+    });
+  });
+}
+function selectAcItem(idx) {
+  if (idx < 0 || idx >= acItems.length) return;
+  const item = acItems[idx];
+  document.getElementById('ddlColName').value = item.fieldName;
+  // Auto-fill type
+  document.getElementById('ddlColType').value = item.type;
+  document.querySelectorAll('.ddl-type-chip').forEach(c => {
+    c.classList.toggle('active', c.textContent.trim() === item.type);
+  });
+  if (!document.querySelector('.ddl-type-chip.active')) {
+    document.querySelectorAll('.ddl-type-chip').forEach(c => c.classList.remove('active'));
+  }
+  // Auto-fill comment
+  document.getElementById('ddlComment').value = item.comment || '';
+  document.getElementById('ddlAc').classList.remove('open');
+  document.getElementById('ddlExistsWarn').style.display = 'none';
+}
+// Keyboard handler for autocomplete
+document.getElementById('ddlColName').addEventListener('input', function() {
+  acIndex = -1;
+  renderAcDropdown(this.value.trim());
+});
+document.getElementById('ddlColName').addEventListener('keydown', function(e) {
+  const ddlAc = document.getElementById('ddlAc');
+  if (!ddlAc.classList.contains('open')) return;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    acIndex = Math.min(acIndex + 1, acItems.length - 1);
+    updateAcActive();
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    acIndex = Math.max(acIndex - 1, -1);
+    updateAcActive();
+  } else if (e.key === 'Enter' && acIndex >= 0) {
+    e.preventDefault();
+    selectAcItem(acIndex);
+  } else if (e.key === 'Tab' && acItems.length > 0) {
+    e.preventDefault();
+    // Select first item if none selected, or current
+    selectAcItem(acIndex >= 0 ? acIndex : 0);
+  } else if (e.key === 'Escape') {
+    ddlAc.classList.remove('open');
+  }
+});
+function updateAcActive() {
+  const ddlAc = document.getElementById('ddlAc');
+  ddlAc.querySelectorAll('.ddl-ac-item').forEach((el, i) => {
+    el.classList.toggle('active', i === acIndex);
+    if (i === acIndex) el.scrollIntoView({ block: 'nearest' });
+  });
+}
+// Close autocomplete on outside click
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.ddl-ac-wrap')) {
+    document.getElementById('ddlAc').classList.remove('open');
+  }
+});
+
+// ========== SQL JOIN Builder ==========
+function toggleDdlBuilder() {
+  // Builder is now always visible when in add mode
+  document.getElementById('ddlJoinMainTable').value = document.getElementById('ddlTableName').value;
+  document.getElementById('ddlBuilderSql').style.display = 'none';
+}
+let jtIdx = 0;
+function addJoinTable() {
+  const container = document.getElementById('ddlJoinTables');
+  const idx = container.children.length + 1;
+  const mainTable = document.getElementById('ddlJoinMainTable').value;
+  const item = document.createElement('div');
+  item.className = 'ddl-join-table-item';
+  item.dataset.jtIdx = jtIdx;
+  const srcOpts = buildSrcTableOptions(mainTable);
+  const mainFieldOpts = buildMainFieldOptions(mainTable);
+  item.innerHTML =
+    '<div class="jt-header"><span class="jt-title">关联表 ' + idx + '</span>' +
+    '<button class="jt-del" onclick="removeJoinTable(this)">删除此关联表</button></div>' +
+    // table search + alias
+    '<div class="ddl-join-row">' +
+    '<div class="field"><label>关联表</label>' +
+    '<div style="position:relative" class="src-table-wrap">' +
+    '<input type="text" class="jt-src-filter" placeholder="搜索关联表（输入关键字...）" autocomplete="off">' +
+    '<div class="src-tbl-dd"></div>' +
+    '<select class="jt-src-table" style="display:none">' + srcOpts + '</select>' +
+    '</div></div>' +
+    '<div class="field"><label>关联表别名</label>' +
+    '<input type="text" class="jt-src-alias" value="' + String.fromCharCode(97 + idx) + '" placeholder="如 b"></div></div>' +
+    // select fields
+    '<div class="jt-select-fields">' +
+    '<div class="ddl-sel-field-item" data-sf-idx="0"><div class="ddl-join-item-header"><span>取数字段 1</span></div>' +
+    '<div class="ddl-join-row"><div class="field" style="flex:2"><label>从关联表选择字段</label><select class="jsf-select"><option value="">-- 选择字段 --</option></select></div>' +
+    '<div class="field" style="flex:1"><label>别名（可留空）</label><input type="text" class="jsf-alias" placeholder="默认同字段名"></div></div></div></div>' +
+    '<button class="ddl-join-add jt-add-field-btn">+ 添加取数字段</button>' +
+    // join conditions
+    '<div class="jt-join-conditions">' +
+    '<div class="ddl-join-item" data-idx="0"><div class="ddl-join-item-header"><span>关联条件 1</span></div>' +
+    '<div class="ddl-join-row"><div class="field"><label>主表字段</label><select class="jc-main-field" onchange="onJoinFieldChange(this)">' + mainFieldOpts + '</select></div>' +
+    '<div class="field"><label>关联表字段</label><select class="jc-src-field" onchange="onJoinFieldChange(this)"><option value="">-- 选择关联表字段 --</option></select></div></div></div></div>' +
+    '<button class="ddl-join-add jt-add-cond-btn">+ 添加关联条件</button>' +
+    // join type
+    '<div class="ddl-join-row"><div class="field"><label>JOIN 类型</label>' +
+    '<select class="jt-join-type"><option value="LEFT JOIN">LEFT JOIN</option><option value="INNER JOIN">INNER JOIN</option><option value="LEFT ARRAY JOIN">LEFT ARRAY JOIN</option></select></div></div>';
+  container.appendChild(item);
+  jtIdx++;
+  // Bind events for this item
+  bindJoinTableEvents(item);
+}
+function removeJoinTable(btn) {
+  const item = btn.closest('.ddl-join-table-item');
+  item.remove();
+  document.querySelectorAll('#ddlJoinTables .ddl-join-table-item').forEach((el, i) => {
+    el.querySelector('.jt-title').textContent = '关联表 ' + (i + 1);
+  });
+}
+function buildSrcTableOptions(excludeTable) {
+  let opts = '<option value="">-- 选择关联表 --</option>';
+  Object.keys(DATA).sort().forEach(name => {
+    if (name !== excludeTable) {
+      opts += '<option value="' + name + '">' + name + ' (' + (DATA[name].cn_name || DATA[name].layer) + ')</option>';
+    }
+  });
+  return opts;
+}
+function buildMainFieldOptions(tableName) {
+  let opts = '<option value="">-- 选择主表字段 --</option>';
+  if (tableName && DATA[tableName]) {
+    DATA[tableName].fields.forEach(f => {
+      opts += '<option value="' + f.name + '">' + f.name + ' (' + (f.comment || '') + ')</option>';
+    });
+  }
+  return opts;
+}
+function buildSrcFieldOptions(srcTable) {
+  let opts = '<option value="">-- 选择关联表字段 --</option>';
+  if (srcTable && DATA[srcTable]) {
+    DATA[srcTable].fields.forEach(f => {
+      opts += '<option value="' + f.name + '">' + f.name + ' (' + f.type + ') ' + (f.comment || '') + '</option>';
+    });
+  }
+  return opts;
+}
+// Global click-outside to close all src-table dropdowns
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.src-table-wrap')) {
+    document.querySelectorAll('.src-tbl-dd.open').forEach(d => d.classList.remove('open'));
+  }
+});
+function bindJoinTableEvents(item) {
+  const filter = item.querySelector('.jt-src-filter');
+  const dd = item.querySelector('.src-tbl-dd');
+  const srcSel = item.querySelector('.jt-src-table');
+  // Search filter
+  filter.addEventListener('input', function() { filterSrcTableInItem(item, this.value); });
+  filter.addEventListener('focus', function() { filterSrcTableInItem(item, this.value); });
+  // Click item in dropdown
+  dd.addEventListener('click', function(e) {
+    const ddItem = e.target.closest('.src-tbl-dd-item');
+    if (ddItem) {
+      const name = ddItem.dataset.name;
+      srcSel.value = name;
+      filter.value = name;
+      dd.classList.remove('open');
+      onSrcTableChangeInItem(item);
+    }
+  });
+  // Keyboard nav
+  filter.addEventListener('keydown', function(e) {
+    if (!dd.classList.contains('open')) return;
+    const items = dd.querySelectorAll('.src-tbl-dd-item');
+    const active = dd.querySelector('.src-tbl-dd-item.active');
+    function setActive(el) {
+      items.forEach(it => { it.classList.remove('active'); it.style.background = ''; });
+      if (el) { el.classList.add('active'); el.style.background = '#e8f4fd'; el.scrollIntoView({ block: 'nearest' }); }
+    }
+    if (e.key === 'ArrowDown') { e.preventDefault(); setActive(active ? active.nextElementSibling : items[0]); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(active ? active.previousElementSibling : items[items.length - 1]); }
+    else if (e.key === 'Enter') { e.preventDefault(); if (active) active.click(); }
+    else if (e.key === 'Escape') { dd.classList.remove('open'); }
+  });
+  // Add field button
+  item.querySelector('.jt-add-field-btn').addEventListener('click', function() {
+    addSelectFieldInItem(item);
+  });
+  // Add condition button
+  item.querySelector('.jt-add-cond-btn').addEventListener('click', function() {
+    addJoinConditionInItem(item);
+  });
+}
+function filterSrcTableInItem(item, q) {
+  const dd = item.querySelector('.src-tbl-dd');
+  const sel = item.querySelector('.jt-src-table');
+  const ql = (q || '').toLowerCase();
+  let items = [];
+  for (let i = 1; i < sel.options.length; i++) {
+    const opt = sel.options[i];
+    const name = opt.value;
+    const label = opt.textContent.replace(/^.*\(/, '').replace(/\)$/, '') || '';
+    if (!ql || name.toLowerCase().includes(ql) || label.toLowerCase().includes(ql)) {
+      items.push({ name, label });
+    }
+  }
+  if (items.length === 0) {
+    dd.innerHTML = '<div class="src-tbl-dd-empty">无匹配结果</div>';
+  } else {
+    dd.innerHTML = items.map(it =>
+      '<div class="src-tbl-dd-item" data-name="' + it.name + '">' +
+      '<span class="dd-name">' + hlSrcMatch(it.name, ql) + '</span>' +
+      (it.label ? '<span class="dd-label">' + it.label + '</span>' : '') +
+      '</div>'
+    ).join('');
+  }
+  dd.classList.add('open');
+}
+function hlSrcMatch(text, q) {
+  if (!q) return text;
+  const i = text.toLowerCase().indexOf(q.toLowerCase());
+  if (i === -1) return text;
+  return text.slice(0, i) + '<mark style="background:#ffeaa7;padding:0 1px;border-radius:2px">' + text.slice(i, i + q.length) + '</mark>' + text.slice(i + q.length);
+}
+function onSrcTableChangeInItem(item) {
+  const srcTable = item.querySelector('.jt-src-table').value;
+  // Refresh select field dropdowns within this item
+  item.querySelectorAll('.jsf-select').forEach(sel => {
+    const prev = sel.value;
+    sel.innerHTML = buildSrcFieldOptions(srcTable);
+    sel.value = prev;
+  });
+  // Refresh src-field dropdowns in join conditions within this item
+  item.querySelectorAll('.jc-src-field').forEach(sel => {
+    const prev = sel.value;
+    sel.innerHTML = buildSrcFieldOptions(srcTable);
+    sel.value = prev;
+  });
+}
+function addSelectFieldInItem(item) {
+  const container = item.querySelector('.jt-select-fields');
+  const idx = container.children.length + 1;
+  const srcTable = item.querySelector('.jt-src-table').value;
+  const el = document.createElement('div');
+  el.className = 'ddl-sel-field-item';
+  el.innerHTML = '<div class="ddl-join-item-header"><span>取数字段 ' + idx + '</span>' +
+    '<button class="ddl-join-del" onclick="removeSelectField(this)">删除</button></div>' +
+    '<div class="ddl-join-row"><div class="field" style="flex:2"><label>从关联表选择字段</label>' +
+    '<select class="jsf-select">' + buildSrcFieldOptions(srcTable) + '</select></div>' +
+    '<div class="field" style="flex:1"><label>别名（可留空）</label>' +
+    '<input type="text" class="jsf-alias" placeholder="默认同字段名"></div></div>';
+  container.appendChild(el);
+  el.querySelector('.jsf-select').focus();
+}
+function removeSelectField(btn) {
+  const item = btn.closest('.ddl-sel-field-item');
+  const container = item.parentElement;
+  item.remove();
+  container.querySelectorAll('.ddl-sel-field-item').forEach((el, i) => {
+    el.querySelector('.ddl-join-item-header span').textContent = '取数字段 ' + (i + 1);
+  });
+}
+function addJoinConditionInItem(item) {
+  const container = item.querySelector('.jt-join-conditions');
+  const idx = container.children.length + 1;
+  const mainTable = document.getElementById('ddlJoinMainTable').value;
+  const srcTable = item.querySelector('.jt-src-table').value;
+  const el = document.createElement('div');
+  el.className = 'ddl-join-item';
+  el.innerHTML = '<div class="ddl-join-item-header"><span>关联条件 ' + idx + '</span>' +
+    '<button class="ddl-join-del" onclick="removeJoinCondition(this)">删除</button></div>' +
+    '<div class="ddl-join-row"><div class="field"><label>主表字段</label><select class="jc-main-field" onchange="onJoinFieldChange(this)">' + buildMainFieldOptions(mainTable) + '</select></div>' +
+    '<div class="field"><label>关联表字段</label><select class="jc-src-field" onchange="onJoinFieldChange(this)">' + buildSrcFieldOptions(srcTable) + '</select></div></div>';
+  container.appendChild(el);
+  el.querySelector('.jc-main-field').focus();
+}
+function removeJoinCondition(btn) {
+  const item = btn.closest('.ddl-join-item');
+  const container = item.parentElement;
+  item.remove();
+  container.querySelectorAll('.ddl-join-item').forEach((el, i) => {
+    el.querySelector('.ddl-join-item-header span').textContent = '关联条件 ' + (i + 1);
+  });
+}
+function onJoinFieldChange(sel) {
+  const item = sel.closest('.ddl-join-item');
+  if (!item) return;
+  const mainSel = item.querySelector('.jc-main-field');
+  const srcSel = item.querySelector('.jc-src-field');
+  // Auto-match same name
+  if (sel === mainSel && mainSel.value) {
+    let matched = false;
+    for (let i = 0; i < srcSel.options.length; i++) {
+      if (srcSel.options[i].value === mainSel.value) {
+        srcSel.value = mainSel.value;
+        matched = true;
+        break;
+      }
+    }
+    if (!matched) srcSel.value = '';
+  }
+  // Auto-focus next empty condition in same table item
+  if (mainSel.value && srcSel.value) {
+    const tableItem = item.closest('.ddl-join-table-item');
+    const allItems = tableItem.querySelectorAll('.jt-join-conditions .ddl-join-item');
+    for (const nextItem of allItems) {
+      const nm = nextItem.querySelector('.jc-main-field');
+      const ns = nextItem.querySelector('.jc-src-field');
+      if (!nm.value || !ns.value) { nm.focus(); return; }
+    }
+  }
+}
+function generateJoinSQL() {
+  const mainTable = document.getElementById('ddlJoinMainTable').value.trim();
+  const mainAlias = document.getElementById('ddlJoinMainAlias').value.trim() || 'a';
+  if (!mainTable) { showToast('请输入主表名'); return; }
+  const tableItems = document.querySelectorAll('#ddlJoinTables .ddl-join-table-item');
+  if (tableItems.length === 0) { showToast('请至少添加一个关联表'); return; }
+  let allFieldLines = [];
+  let allJoinClauses = [];
+  let firstMatExpr = '';
+  for (const ti of tableItems) {
+    const srcTable = ti.querySelector('.jt-src-table').value;
+    const srcAlias = ti.querySelector('.jt-src-alias').value.trim() || 'b';
+    const joinType = ti.querySelector('.jt-join-type').value;
+    if (!srcTable) { showToast('请选择关联表'); return; }
+    // Select fields
+    const selFields = [];
+    ti.querySelectorAll('.jt-select-fields .ddl-sel-field-item').forEach(el => {
+      const f = el.querySelector('.jsf-select').value;
+      const a = el.querySelector('.jsf-alias').value.trim();
+      if (f) selFields.push({ field: f, alias: a || f });
+    });
+    if (selFields.length === 0) { showToast('请至少选择一个取数字段'); return; }
+    selFields.forEach(f => {
+      allFieldLines.push('  ' + srcAlias + '.' + f.field + ' AS ' + f.alias);
+    });
+    // Conditions
+    const conditions = [];
+    ti.querySelectorAll('.jt-join-conditions .ddl-join-item').forEach(el => {
+      const mF = el.querySelector('.jc-main-field').value.trim();
+      const sF = el.querySelector('.jc-src-field').value.trim();
+      if (mF && sF) conditions.push({ main: mF, src: sF });
+    });
+    if (conditions.length === 0) { showToast('请至少填写一个关联条件'); return; }
+    const onClause = conditions.map(c => mainAlias + '.' + c.main + ' = ' + srcAlias + '.' + c.src).join('\n  AND ');
+    allJoinClauses.push({ joinType, srcTable, srcAlias, onClause });
+    // First mat expr
+    if (!firstMatExpr) {
+      firstMatExpr = '(SELECT ' + srcAlias + '.' + selFields[0].field + ' FROM ' + srcTable + ' AS ' + srcAlias +
+        ' WHERE ' + onClause.replace(/\n  AND /g, ' AND ') + ' LIMIT 1)';
+    }
+  }
+  // MATERIALIZED expression
+  if (firstMatExpr) {
+    document.getElementById('ddlIsMaterialized').checked = true;
+    toggleDdlMat();
+    document.getElementById('ddlMatExpr').value = firstMatExpr;
+  }
+  // Build SQL
+  let sql = 'SELECT\n  ' + mainAlias + '.*' + (allFieldLines.length ? ',\n' + allFieldLines.join(',\n') : '') + '\n';
+  sql += 'FROM ' + mainTable + ' AS ' + mainAlias + '\n';
+  allJoinClauses.forEach(j => {
+    sql += j.joinType + ' ' + j.srcTable + ' AS ' + j.srcAlias + '\nON ' + j.onClause + '\n';
+  });
+  sql += ';';
+  const el = document.getElementById('ddlBuilderSql');
+  el.style.display = '';
+  document.getElementById('ddlBuilderCode').innerHTML = highlightSQL(sql);
+  el.dataset.sql = sql;
+}
+function copyBuilderSql() {
+  const sql = document.getElementById('ddlBuilderSql').dataset.sql || '';
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(sql);
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = sql;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  }
+  showToast('SQL 已复制到剪贴板');
+}
+
+function generateDDL() {
+  const tableName = document.getElementById('ddlTableName').value;
+  const op = document.querySelector('input[name="ddlOp"]:checked').value;
+  const colName = document.getElementById('ddlColName').value.trim();
+  if (!colName) { showToast('请输入字段名称'); return; }
+  // Check if field already exists for add
+  if (op === 'add' && DATA[tableName]) {
+    const exists = DATA[tableName].fields.some(f => f.name === colName);
+    if (exists) {
+      document.getElementById('ddlExistsWarn').style.display = '';
+      showToast('该字段在当前表中已存在');
+      return;
+    }
+  }
+
+  const colType = document.getElementById('ddlColType').value.trim();
+  const comment = document.getElementById('ddlComment').value.trim();
+  const position = document.getElementById('ddlPosition').value;
+  const afterName = document.getElementById('ddlAfterName').value.trim();
+  const defaultVal = document.getElementById('ddlDefault').value.trim();
+  const isMat = document.getElementById('ddlIsMaterialized').checked;
+  const matExpr = document.getElementById('ddlMatExpr').value.trim();
+  const updateExpr = document.getElementById('ddlUpdateExpr').value.trim();
+  const updateWhere = document.getElementById('ddlUpdateWhere').value.trim();
+
+  let sql = '';
+  let extraSql = '';
+
+  if (op === 'add') {
+    sql = 'ALTER TABLE ' + tableName + ' ADD COLUMN ' + colName + ' ' + colType;
+    if (isMat && matExpr) {
+      sql += ' MATERIALIZED ' + matExpr;
+    } else if (defaultVal) {
+      sql += ' DEFAULT ' + defaultVal;
+    }
+    if (comment) sql += " COMMENT '" + comment.replace(/'/g, "\\'") + "'";
+    if (position === 'first') {
+      sql += ' FIRST';
+    } else if (position === 'after' && afterName) {
+      sql += ' AFTER ' + afterName;
+    }
+    sql += ';';
+
+    if (updateExpr || updateWhere) {
+      extraSql = '\n\n-- 回刷历史数据\nALTER TABLE ' + tableName + ' UPDATE\n';
+      if (updateExpr) {
+        extraSql += updateExpr + '\n';
+      } else {
+        extraSql += colName + " = ''\n";
+      }
+      extraSql += 'WHERE ' + (updateWhere || '1=1') + ';';
+    }
+  } else if (op === 'modify') {
+    sql = 'ALTER TABLE ' + tableName + ' MODIFY COLUMN ' + colName + ' ' + colType;
+    if (comment) sql += " COMMENT '" + comment.replace(/'/g, "\\'") + "'";
+    if (position === 'first') {
+      sql += ' FIRST';
+    } else if (position === 'after' && afterName) {
+      sql += ' AFTER ' + afterName;
+    }
+    sql += ';';
+  } else if (op === 'delete') {
+    sql = 'ALTER TABLE ' + tableName + ' DROP COLUMN ' + colName + ';';
+  } else if (op === 'join') {
+    // JOIN取数模式：从builder生成MATERIALIZED子查询（支持多关联表）
+    const mainAlias = document.getElementById('ddlJoinMainAlias').value.trim() || 'a';
+    const tableItems = document.querySelectorAll('#ddlJoinTables .ddl-join-table-item');
+    if (tableItems.length === 0) { showToast('请至少添加一个关联表'); return; }
+    const firstItem = tableItems[0];
+    const srcTable = firstItem.querySelector('.jt-src-table').value;
+    const srcAlias = firstItem.querySelector('.jt-src-alias').value.trim() || 'b';
+    if (!srcTable) { showToast('请选择关联表'); return; }
+    const firstSelField = firstItem.querySelector('.jt-select-fields .jsf-select');
+    const srcField = firstSelField ? firstSelField.value : '';
+    if (!srcField) { showToast('请至少选择一个取数字段'); return; }
+    const condEls = firstItem.querySelectorAll('.jt-join-conditions .ddl-join-item');
+    const conditions = [];
+    condEls.forEach(el => {
+      const mainF = el.querySelector('.jc-main-field').value.trim();
+      const srcF = el.querySelector('.jc-src-field').value.trim();
+      if (mainF && srcF) conditions.push({ main: mainF, src: srcF });
+    });
+    if (conditions.length === 0) { showToast('请至少填写一个关联条件'); return; }
+    const whereClause = conditions.map(c => mainAlias + '.' + c.main + ' = ' + srcAlias + '.' + c.src).join(' AND ');
+    const matExpr = '(SELECT ' + srcAlias + '.' + srcField + ' FROM ' + srcTable + ' AS ' + srcAlias + ' WHERE ' + whereClause + ' LIMIT 1)';
+    const colTypeForJoin = document.getElementById('ddlColType').value.trim() || 'String';
+
+    sql = 'ALTER TABLE ' + tableName + ' ADD COLUMN ' + colName + ' ' + colTypeForJoin + '\n' +
+      'MATERIALIZED ' + matExpr;
+    const commentForJoin = document.getElementById('ddlComment').value.trim();
+    if (commentForJoin) sql += " COMMENT '" + commentForJoin.replace(/'/g, "\\'") + "'";
+    sql += ';';
+
+    // Build reference SQL from all join tables
+    const onClause = conditions.map(c => mainAlias + '.' + c.main + ' = ' + srcAlias + '.' + c.src).join('\n  AND ');
+    let refFields = srcAlias + '.' + srcField + ' AS ' + colName;
+    let refJoins = firstItem.querySelector('.jt-join-type').value + ' ' + srcTable + ' AS ' + srcAlias + '\nON ' + onClause;
+    extraSql = '\n\n-- 取数参考 SQL\nSELECT\n  ' + mainAlias + '.*,\n  ' + refFields + '\n' +
+      'FROM ' + tableName + ' AS ' + mainAlias + '\n' + refJoins + ';';
+  }
+
+  const output = sql + extraSql;
+  document.getElementById('ddlOutput').innerHTML =
+    '<button class="copy-btn" onclick="copyDdlSql()">复制</button>' +
+    highlightSQL(output);
+  document.getElementById('ddlOutput').dataset.sql = output;
+  // Save state for confirm and show confirm button
+  lastDdlOp = op;
+  lastDdlTableName = tableName;
+  lastDdlColName = colName;
+  document.getElementById('ddlConfirmRow').style.display = '';
+}
+function copyDdlSql() {
+  const sql = document.getElementById('ddlOutput').dataset.sql || '';
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(sql);
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = sql;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  }
+  showToast('SQL 已复制到剪贴板');
+}
+
+// ========== 确认执行 ==========
+let lastDdlOp = '';
+let lastDdlTableName = '';
+let lastDdlColName = '';
+function confirmExecute() {
+  const op = lastDdlOp;
+  const tableName = lastDdlTableName;
+  const colName = lastDdlColName;
+  if (!tableName || !DATA[tableName]) return;
+
+  if (op === 'add' || op === 'join') {
+    // Add field to DATA
+    const colType = document.getElementById('ddlColType').value.trim() || 'String';
+    const comment = document.getElementById('ddlComment').value.trim();
+    DATA[tableName].fields.push({ name: colName, type: colType, comment: comment });
+    // Update DDL
+    DATA[tableName].ddl = buildNewDDL(tableName);
+    // If join, also update取数SQL in WORKFLOWS
+    if (op === 'join') {
+      updateWorkflowSql(tableName);
+    }
+    showToast('已更新 ' + tableName + '：新增字段 ' + colName);
+  } else if (op === 'modify') {
+    const t = DATA[tableName];
+    const f = t.fields.find(f => f.name === colName);
+    if (f) {
+      const newType = document.getElementById('ddlColType').value.trim();
+      const newComment = document.getElementById('ddlComment').value.trim();
+      if (newType) f.type = newType;
+      if (newComment) f.comment = newComment;
+    }
+    DATA[tableName].ddl = buildNewDDL(tableName);
+    showToast('已更新 ' + tableName + '：修改字段 ' + colName);
+  } else if (op === 'delete') {
+    const t = DATA[tableName];
+    t.fields = t.fields.filter(f => f.name !== colName);
+    DATA[tableName].ddl = buildNewDDL(tableName);
+    showToast('已更新 ' + tableName + '：删除字段 ' + colName);
+  }
+  // Rebuild the table list to reflect changes
+  renderTables();
+  // Close modal
+  closeDdlModal();
+}
+function buildNewDDL(tableName) {
+  const t = DATA[tableName];
+  if (!t) return '';
+  // Rebuild CREATE TABLE statement from fields
+  let ddl = 'CREATE TABLE ' + tableName + ' (\n';
+  t.fields.forEach((f, i) => {
+    ddl += '    ' + f.name + ' ' + f.type;
+    if (f.comment) ddl += " COMMENT '" + f.comment.replace(/'/g, "\\'") + "'";
+    if (i < t.fields.length - 1) ddl += ',';
+    ddl += '\n';
+  });
+  ddl += ') ENGINE = MergeTree()\n';
+  ddl += 'ORDER BY tuple()\n';
+  ddl += "COMMENT '" + (t.cn_name || tableName) + "';";
+  return ddl;
+}
+function updateWorkflowSql(tableName) {
+  const t = DATA[tableName];
+  if (!t || !t.lineage || !t.lineage.workflow) return;
+  const wf = WORKFLOWS[t.lineage.workflow];
+  if (!wf) return;
+  // Find the task that targets this table and has SQL
+  for (const task of wf) {
+    if (task.target === tableName && task.sql) {
+      // Read from first join table item
+      const firstItem = document.querySelector('#ddlJoinTables .ddl-join-table-item');
+      if (!firstItem) return;
+      const srcTable = firstItem.querySelector('.jt-src-table').value;
+      const srcAlias = firstItem.querySelector('.jt-src-alias').value.trim() || 'b';
+      const srcFieldEl = firstItem.querySelector('.jt-select-fields .jsf-select');
+      const srcField = srcFieldEl ? srcFieldEl.value : '';
+      const mainAlias = document.getElementById('ddlJoinMainAlias').value.trim() || 'a';
+      const joinType = firstItem.querySelector('.jt-join-type').value;
+      const colName = lastDdlColName;
+      if (!srcTable || !srcField) return;
+      // Collect conditions
+      const condEls = firstItem.querySelectorAll('.jt-join-conditions .ddl-join-item');
+      const conditions = [];
+      condEls.forEach(el => {
+        const mainF = el.querySelector('.jc-main-field').value;
+        const srcF = el.querySelector('.jc-src-field').value;
+        if (mainF && srcF) conditions.push({ main: mainF, src: srcF });
+      });
+      if (conditions.length === 0) return;
+      const whereClause = conditions.map(c => mainAlias + '.' + c.main + ' = ' + srcAlias + '.' + c.src).join(' AND ');
+      const onClause = conditions.map(c => mainAlias + '.' + c.main + ' = ' + srcAlias + '.' + c.src).join('\n      AND ');
+      // Check if this join table is already in the SQL
+      if (!task.sql.includes(srcTable)) {
+        // Need to add JOIN clause
+        const lastFrom = task.sql.lastIndexOf('FROM');
+        if (lastFrom > -1) {
+          // Find the end of FROM clause (before WHERE or end)
+          const afterFrom = task.sql.substring(lastFrom);
+          const whereIdx = afterFrom.indexOf('\nWHERE');
+          if (whereIdx > -1) {
+            // Insert JOIN before WHERE
+            const beforeWhere = task.sql.substring(0, lastFrom + whereIdx);
+            const wherePart = task.sql.substring(lastFrom + whereIdx);
+            task.sql = beforeWhere + '\n' + joinType + ' ' + srcTable + ' AS ' + srcAlias + '\n      ON ' + onClause + wherePart;
+          } else {
+            // Append JOIN at end
+            task.sql += '\n' + joinType + ' ' + srcTable + ' AS ' + srcAlias + '\n      ON ' + onClause;
+          }
+        }
+      }
+      // Add the new field to SELECT clause
+      const lastSelect = task.sql.lastIndexOf('SELECT');
+      if (lastSelect > -1) {
+        // Find the last field before FROM
+        const fromIdx = task.sql.indexOf('\nFROM', lastSelect);
+        if (fromIdx > -1) {
+          const beforeFrom = task.sql.substring(0, fromIdx);
+          const fromPart = task.sql.substring(fromIdx);
+          // Check if field already exists
+          if (!task.sql.includes(colName)) {
+            task.sql = beforeFrom + ',\n      ' + srcAlias + '.' + srcField + ' AS ' + colName + fromPart;
+          }
+        }
+      }
+      break;
+    }
+  }
+}
+
 // ========== Tables ==========
 const tables = Object.entries(DATA).filter(([,t]) => !t.is_view).map(([name, t]) => ({
   name, ...t,
@@ -292,7 +1352,7 @@ const views = Object.entries(DATA).filter(([,t]) => t.is_view).map(([name, t]) =
 let currentLayer = 'ALL';
 let currentSearch = '';
 
-function escapeHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+// escapeHtml defined in Autocomplete section above
 
 function highlightText(text, query) {
   if (!query) return escapeHtml(text);
@@ -403,6 +1463,7 @@ function renderTables() {
     if (wfSql) {
       actionsHtml += '<button class="sql-btn" onclick="event.stopPropagation();openSqlModal(\'取数SQL: ' + t.name + '\', getWorkflowSqlForTable(\'' + t.name + '\'))">取数 SQL</button>';
     }
+    actionsHtml += '<button class="sql-btn" onclick="event.stopPropagation();openDdlModal(\'' + t.name + '\',\'add\')" style="background:#00b894;color:#fff;border-color:#00b894">字段变更 DDL</button>';
     actionsHtml += '</div>';
 
     // Fields table - highlight matching fields
@@ -410,9 +1471,9 @@ function renderTables() {
       const isFieldMatch = query && (f.name.toLowerCase().includes(query) || f.comment.toLowerCase().includes(query));
       const trClass = isFieldMatch ? ' class="field-highlight"' : '';
       return '<tr' + trClass + '>' +
-        '<td class="field-name">' + highlightText(f.name, currentSearch) + '</td>' +
-        '<td class="field-type">' + escapeHtml(f.type) + '</td>' +
-        '<td class="field-comment">' + highlightText(f.comment, currentSearch) + '</td>' +
+        '<td class="field-name copyable" onclick="event.stopPropagation();copyField(this)" title="点击复制">' + highlightText(f.name, currentSearch) + '</td>' +
+        '<td class="field-type copyable" onclick="event.stopPropagation();copyField(this)" title="点击复制">' + escapeHtml(f.type) + '</td>' +
+        '<td class="field-comment copyable" onclick="event.stopPropagation();copyField(this)" title="点击复制">' + highlightText(f.comment, currentSearch) + '</td>' +
       '</tr>';
     }).join('');
 
@@ -423,6 +1484,7 @@ function renderTables() {
         '<span class="layer-badge layer-' + t.layer + '">' + t.layer + '</span>' +
         '<span class="table-name">' + highlightText(t.name, currentSearch) + cnDisplay + '</span>' +
         '<span class="table-meta">' + t.totalFields + '个字段' + (sources.length ? ' · ' + sources.length + '个上游' : '') + '</span>' +
+        '<span class="export-inline" onclick="event.stopPropagation();exportCKTable(\'' + t.name + '\')" title="导出CSV">⬇</span>' +
         '<span class="expand-icon">▶</span>' +
       '</div>' +
       '<div class="table-detail">' +
@@ -457,7 +1519,7 @@ function renderViews() {
     actionsHtml += '</div>';
 
     const fieldsHtml = t.fields.map(f =>
-      '<tr><td class="field-name">' + escapeHtml(f.name) + '</td><td class="field-type">' + escapeHtml(f.type) + '</td><td class="field-comment">' + escapeHtml(f.comment) + '</td></tr>'
+      '<tr><td class="field-name copyable" onclick="event.stopPropagation();copyField(this)" title="点击复制">' + escapeHtml(f.name) + '</td><td class="field-type copyable" onclick="event.stopPropagation();copyField(this)" title="点击复制">' + escapeHtml(f.type) + '</td><td class="field-comment copyable" onclick="event.stopPropagation();copyField(this)" title="点击复制">' + escapeHtml(f.comment) + '</td></tr>'
     ).join('');
 
     const cnDisplay = t.cn_name ? '<span class="cn-name">' + escapeHtml(t.cn_name) + '</span>' : '';
@@ -467,6 +1529,7 @@ function renderViews() {
         '<span class="layer-badge layer-' + t.layer + '">' + t.layer + ' VIEW</span>' +
         '<span class="table-name">' + escapeHtml(t.name) + cnDisplay + '</span>' +
         '<span class="table-meta">' + t.totalFields + '个字段</span>' +
+        '<span class="export-inline" onclick="event.stopPropagation();exportCKTable(\'' + t.name + '\')" title="导出CSV">⬇</span>' +
         '<span class="expand-icon">▶</span>' +
       '</div>' +
       '<div class="table-detail">' + lineageHtml + actionsHtml +
@@ -698,6 +1761,7 @@ document.querySelectorAll('.layer-btn').forEach(btn => {
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
     closeSqlModal();
+    closeDdlModal();
     closeGraph();
   }
 });
@@ -706,6 +1770,24 @@ document.addEventListener('keydown', function(e) {
 renderTables();
 renderViews();
 renderWorkflows();
+
+// Read URL params from index page search
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const q = params.get('q');
+  if (q) {
+    switchTab('tables');
+    document.getElementById('searchBox').value = q;
+    currentSearch = q;
+    renderTables();
+    setTimeout(() => {
+      const cards = document.querySelectorAll('#tableList .table-card');
+      cards.forEach(c => {
+        if (c.dataset.name === q) c.classList.add('open');
+      });
+    }, 100);
+  }
+})();
 </script>
 </body>
 </html>
